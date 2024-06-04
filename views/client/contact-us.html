@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Contact us</title>
+    <%- header_tags %>
+</head>
+
+<body>
+
+    <!------------------- navbar start--------------->
+    <%- sidebar %>
+        <!------------------- navbar end--------------->
+
+
+        <!-------------- Contact us banner start---------------->
+        <section class="mt-5 pt-4">
+            <div class="container-fluid g-0">
+                <div class="row g-0">
+                    <div class="col position-relative">
+                        <img src="assets/images/Contact-us/Section (2).png" class="img-fluid w-100" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------- Contact us banner end---------------->
+
+
+        <!-------------- Contact us Map start---------------->
+        <section class="position-relative py-5">
+            <div class="position-absolute top-0 start-0 w-100 h-100"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.065294551101!2d79.8674693!3d6.8827818999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b3f39029d81%3A0xe21b3753cd9d428!2sQueen%20Kuweni!5e0!3m2!1sen!2slk!4v1703328211091!5m2!1sen!2slk"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="position-relative mx-2 my-5 m-md-5">
+                <div class="container position-relative">
+                    <div class="row">
+                        <div class="d-flex justify-content-end">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card p-md-4 p-2 border-0">
+                                    <div class="card-body">
+                                        <div>
+                                            <h6 class="Contact-us-map-address-title mb-1">Queen Kuweni</h6>
+                                            <h6 class="Contact-us-map-address-Subtitle">Level 20, Mireka Tower, 324
+                                                Havelock Rd, Colombo 00500</h6>
+                                        </div>
+                                        <h3 class="Contact-us-map-number py-4">Ph: +94 112 262 262</h3>
+
+                                        <div>
+                                            <h6 class="Contact-us-map-address-title mb-1">Opening hours:</h6>
+                                            <h6 class="Contact-us-map-address-Subtitle">Monday - Sunday (Poya day
+                                                closed) <br> 10:00 AM to 7:00 PM</h6>
+                                        </div>
+                                        <!-- <div class="mt-4">
+                                        <button type="button" class="btn btn-dark Contact-us-btn">Send us an
+                                            email</button>
+                                    </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------- Contact us Map end---------------->
+
+
+        <!-------------- Contact us form start---------------->
+        <section class="py-md-5 my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form class="row g-3" id="Contactusform">
+                            <h3 class="view-bag-form-hadder-text mb-0">Let’s Talk</h3>
+                            <div class="col-md-6 mb-md-3 mb-3">
+                                <input type="text" class="form-control" id="first_name" placeholder="First Name*">
+                            </div>
+                            <div class="col-md-6 mb-md-3 mb-3">
+                                <input type="text" class="form-control" id="last_name" placeholder="Last Name*">
+                            </div>
+                            <div class="col-6 mb-md-3 mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Email*">
+                            </div>
+                            <div class="col-6 mb-md-3 mb-3">
+                                <input type="number" class="form-control" id="mobile" placeholder="Phone Number*">
+                            </div>
+                            <div class="col-12 mb-md-3 mb-3">
+                                <input type="text" class="form-control" id="reason" placeholder="Reason Type">
+                            </div>
+                            <div class="col-12 mb-md-3 mb-3">
+                                <textarea class="form-control h-100" placeholder="Message" id="message"
+                                    rows="10"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-md-flex justify-content-md-end">
+                        <div class="mt-4 Contact-us-form-btn-mq">
+                            <button type="button" onclick="restForm()" class="btn btn Contact-us-form-btn2 mb-md-0 mb-3"
+                                value="Reset">Reset</button>
+                            <button onclick="contact();" type="button"
+                                class="btn btn-dark Contact-us-form-btn mb-md-0 mb-3">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------- Contact us form End---------------->
+
+
+        <!-------------- Contact us form Careers banner---------------->
+        <section class="py-5 py-md-5 bg-black d-none">
+            <div class="container py-md-5">
+                <div class="row py-xl-4">
+                    <div class="col-md-6">
+                        <div style="max-width: 400px;">
+                            <h6 class="Contact-us-Careers-banner-text text-uppercase">Careers</h6>
+                            <h3 class="Contact-us-Careers-banner-tital text-white">Join our team to
+                                create the best digital solutions.</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-white mt-md-0 mt-5">
+                        <div>
+                            <h3 class="Contact-us-Careers-banner-Subtital">We're <span
+                                    class="Contact-us-Careers-banner-Subtital2">a team of creatives </span> who are
+                                excited
+                                about unique ideas and help digital and fin-tech companies <span
+                                    class="Contact-us-Careers-banner-Subtital2">to create amazing identity.</span> </h3>
+                            <button type="button" class="btn btn-dark Contact-us-Careers-banner-btn mt-4">See Open
+                                Positions
+                                <i class="fa-solid  mb-0 fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------- Contact us form Careers banner end---------------->
+
+
+        <!---------------- Get rewarded ------------------->
+        <section class="mt-5 my-xl-5 py-xl-5 d-none">
+            <div class="container">
+                <div class="row Get-rewarded-banner-image-mq">
+                    <div class="col-xl-9 col-md-6 d-flex align-items-center Get-rewarded-banner-image py-5">
+                        <div class="Get-rewarded-banner-width">
+                            <h6 class="Contact-us-Careers-mobile-app-text1 text-uppercase mb-3">Get rewarded</h6>
+                            <p class="mb-1 Contact-us-Careers-mobile-app-tital">Get started with
+                                our mobile app.</p>
+                            <p class="Contact-us-Careers-mobile-app-subtital mt-2 mb-2">Valid online & in-store with
+                                select
+                                styles.</p>
+                            <button type="button"
+                                class="btn btn-dark Contact-us-Careers-mobile-app-btn mb-0 mt-3">Download<i
+                                    class="fa-solid  mb-0 fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 d-flex align-items-center">
+                        <div class="card p-md-0 p-0 border-0">
+                            <div class="card-body">
+                                <div>
+                                    <h3 class="Contact-us-map-number py-3">Address</h3>
+                                    <h6 class="Contact-us-map-address-title mb-1">Barcelona</h6>
+                                    <h6 class="Contact-us-map-address-Subtitle">365 Gran Via de Corts Catalanes,<br> BA
+                                        08015, Spain</h6>
+                                </div>
+                                <h3 class="Contact-us-map-number mt-3 mb-3">Ph: +3.230.705.5448</h3>
+
+                                <div>
+                                    <h6 class="Contact-us-map-address-title mb-1">Assistance hours:</h6>
+                                    <h6 class="Contact-us-map-address-Subtitle">Monday - Friday <br> 6 am to 8 pm EST
+                                        (toll
+                                        free)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center">
+                            <a href=""><img src="assets/images/nearest-store/Group-155.svg" class="img-fluid"
+                                    alt=""></a>
+                            <a href=""><img src="assets/images/nearest-store/google-play-badge 1.svg" class="img-fluid"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------- Get rewarded end------------------->
+
+        <!-- Back to top button start -->
+        <section class="">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                    <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                    <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+                </button>
+            </div>
+        </section>
+        <!-- Back to top button start -->
+
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+            <%- script_tags %>
+
+                <script>
+                    function restForm() {
+                        iziToast.success({
+                            theme: 'dark',
+                            title: 'Success',
+                            message: "Success",
+                        });
+
+                        document.getElementById("first_name").value = "";
+                        document.getElementById("last_name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("mobile").value = "";
+                        document.getElementById("reason").value = "";
+                        document.getElementById("message").value = "";
+
+                    }
+
+                    function contact() {
+
+                        $.ajax({
+                            url: '/api/v1/contact/add',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "firstName": $('#first_name').val(),
+                                "lastName": $('#last_name').val(),
+                                "email": $('#email').val(),
+                                "phone": $('#mobile').val(),
+                                "reasonType": $('#reason').val(),
+                                "message": $('#message').val(),
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+
+                                    iziToast.success({
+                                        theme: 'dark',
+                                        title: 'Success',
+                                        message: data.message,
+                                    });
+
+                                    document.getElementById("first_name").value = "";
+                                    document.getElementById("last_name").value = "";
+                                    document.getElementById("email").value = "";
+                                    document.getElementById("mobile").value = "";
+                                    document.getElementById("reason").value = "";
+                                    document.getElementById("message").value = "";
+
+                                } else {
+
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+
+                    }
+                </script>
+</body>
+
+</html>

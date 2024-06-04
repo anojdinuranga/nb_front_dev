@@ -1,0 +1,20 @@
+[
+  {
+    "category": "sarong",
+    "name": "fabric_5",
+    "file_path": "/assets/textures/fabrics/05.jpg",
+    "tiling": {
+      "wrapS": 5,
+      "wrapT": 5
+    }
+  },
+  {
+    "category": "sarong",
+    "name": "fabric_8",
+    "file_path": "/assets/textures/fabrics/08.jpg",
+    "tiling": {
+      "wrapS": 5,
+      "wrapT": 5
+    }
+  }
+]

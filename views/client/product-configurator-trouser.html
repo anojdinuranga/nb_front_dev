@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen Kuweni - Product Configurator Trouser</title>
+    <%- header_tags %>
+
+        <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.139.2/build/three.module.js"
+          }
+        }
+      </script>
+
+        <style>
+            html,
+            body {
+                overflow-x: hidden !important;
+                overflow-y: hidden !important;
+            }
+
+            @media only screen and (max-width: 600px) {
+                body {
+                    overflow-y: scroll !important;
+                }
+            }
+
+            @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                body {
+                    overflow-y: scroll !important;
+                }
+            }
+        </style>
+</head>
+
+<body class="">
+
+    <!--------- navbar start ---------->
+    <div class="div-nav">
+
+        <!----------------main navbar start----------->
+        <nav class="navbar border-bottom border-secondary py-3">
+            <div class="container-fluid">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExamplenavbar"
+                    aria-controls="offcanvasExamplenavbar">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <img src="/assets/images/Navbar/Group1.svg" alt="">
+                </a>
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="/">
+                    <span class="d-flex justify-content-center text-black"><img
+                            src="/assets/images/Navbar/nb_blk-dark.svg" class="img-fluid navbar-logo text-black"
+                            alt=""></span>
+                </a>
+                <div class="d-flex">
+                    <a href="/login.html"><img src="/assets/images/Navbar/user-dark.svg" class="img-fluid me-3"
+                            alt=""></a>
+                    <a href=""><img src="/assets/images/Navbar/cart-dark.svg" class="img-fluid" alt=""></a>
+                </div>
+                <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
+
+                </div>
+            </div>
+        </nav>
+        <!----------------main navbar end----------->
+
+        <!----------- navbar offcanvas start----------->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExamplenavbar"
+            aria-labelledby="offcanvasExampleLabelnavbar">
+            <div class="offcanvas-header d-flex justify-content-end">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div>
+                <div class="mt-4 mb-5 pt-4 d-flex justify-content-center">
+
+                    <img src="/assets/images/Navbar/nb-gold copy.svg" class="img-fluid" alt="" style="width: 165px;">
+                </div>
+                <div class="navbar-offcanvas-height-mq">
+                    <div class="overflow-y-scroll select-fabric-scrollbar navbar-offcanvas-height">
+                        <div>
+                            <div class="my-3 py-3 ms-5">
+                                <a href="/new-arrivals"
+                                    class="list-group-item list-group-item-action navbar-offcanvas mb-2">New
+                                    Arrivals</a>
+                                <a href="/gents-wear"
+                                    class="list-group-item list-group-item-action navbar-offcanvas mb-2">Gents Wear</a>
+                            </div>
+
+                            <div class="ms-5">
+                                <a href="/gift-voucher/"
+                                    class="list-group-item list-group-item-action navbar-offcanvas mb-2">Gift
+                                    Voucher</a>
+                            </div>
+
+
+                            <div class="ms-5 mt-3 pt-3">
+                                <a href="/product-configurator-suit"
+                                    class="list-group-item list-group-item-action navbar-offcanvas mb-2">Custom Suit</a>
+                                <a href="/product-configurator-trouser"
+                                    class="list-group-item list-group-item-action navbar-offcanvas mb-2">Custom
+                                    Trouser</a>
+                                <a href="/product-configurator-waistcoat"
+                                    class="list-group-item list-group-item-action navbar-offcanvas mb-2">Custom
+                                    Waistcoat</a>
+                                <a href="/product-configurator-national"
+                                    class="list-group-item list-group-item-action navbar-offcanvas mb-2">Custom Arya
+                                    Sinhala</a>
+                            </div>
+
+                            <div class="ms-5 mt-3 pt-3">
+                                <a href="/appointment-calendars"
+                                    class="list-group-item list-group-item-action navbar-offcanvas mb-2">Book your
+                                    Appointment</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------- navbar offcanvas end---------->
+
+    </div>
+    <!-------- navbar end -------->
+
+
+    <!-- product configurator start -->
+    <section class="" id="product-configurator">
+        <div class="container-fluid box1 table-row-height-width-mq">
+            <div class="row product-configurator-background-color d-block d-xl-none">
+                <div class="col-xl-6 col-md-12 tabbable">
+                    <ul class="nav nav-tabs border-0 py-3 ps-3 select-fabric-scrollbar" role="tablist">
+                        <li class="nav-item" role="presentation"><a class="nav-link tabe-underline active border-0"
+                                role="tab" data-bs-toggle="tab" href="#tab-1">1. Fabric</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link tabe-underline border-0" role="tab"
+                                data-bs-toggle="tab" href="#tab-2">2. Style</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link tabe-underline border-0" role="tab"
+                                data-bs-toggle="tab" href="#tab-3">3. Size Calculator</a></li>
+                        <!-- <li class="nav-item" role="presentation"><a class="nav-link tabe-underline border-0" role="tab"
+                                data-bs-toggle="tab" href="#tab-4">4. Summery</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="row flex-md-row-reverse table-row-height-width">
+                <div class="col-xl-6 col-md-12 product-configurator-background-color myCanvas-mq">
+                    <div class="">
+                        <div id="loading-background" class="top-0 start-0" style="display: none;">
+                            <div class="spinner-border text-light" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                        <canvas id="product-canvas" class="product-canvas-trouser"></canvas>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12 g-xl-0">
+                    <div class="tabbable product-configurator-background-color d-none d-xl-block">
+                        <ul class="nav nav-tabs border-0 py-2 ps-3 product-configurator-scrollbar" role="tablist">
+                            <li class="nav-item" role="presentation"><a class="nav-link tabe-underline active border-0"
+                                    role="tab" data-bs-toggle="tab" href="#tab-1">1. Fabric</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link tabe-underline border-0"
+                                    role="tab" data-bs-toggle="tab" href="#tab-2">2. Style</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link tabe-underline border-0"
+                                    role="tab" data-bs-toggle="tab" href="#tab-3">3. Size Calculator</a></li>
+                            <!-- <li class="nav-item" role="presentation"><a class="nav-link tabe-underline border-0"
+                                    role="tab" data-bs-toggle="tab" href="#tab-4">4. Summery</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-content pt-xl-4 pt-md-3 pt-3 bg-white px-md-3 px-xl-4">
+                        <div id="tab-1" class="tab-pane active table-height-width-mq" role="tabpanel">
+                            <div class="pt-xl-3 pt-md-0 pb-xl-4 pb-md-0">
+                                <h2 class="text-center Select-fabric-header-text">Select your fabric</h2>
+
+                                <div class="row row-cols-md-2 row-cols-1 g-2 mt-md-4 select-fabric-scrollbar select-fabric-content mt-3 pb-xl-5 overflow-y-scroll"
+                                    id="fabricList"></div>
+                            </div>
+                            <div class="bg-white">
+                                <div
+                                    class="border-top bg-white col-xl-6 col-md-12 col-12 fixed-bottom bottom-0 px-xl-4 px-3 pb-2 px-md-3">
+                                    <div class="d-flex mt-2 bg-white align-items-center justify-content-between">
+                                        <div class="">
+                                            <p class="mb-0" id="fabricPrice"></p>
+                                        </div>
+                                        <div class="">
+                                            <button type="button"
+                                                class="btn btn-secondary Select-fabric-back-btn text-white">Back</button>
+                                            <button type="button"
+                                                class="btn btn-secondary Select-fabric-next-btn text-white">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane table-height-width-mq" role="tabpanel">
+                            <div>
+                                <div class="py-xl-3">
+                                    <h2 class="text-center Select-fabric-header-text">Customize Your Trouser</h2>
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <select
+                                            class="form-select Select-fabric-form-select-text w-50 form-select-lg mb-3"
+                                            aria-label=".form-select-lg example">
+                                            <option class="Select-fabric-form-select-text" selected>Business</option>
+                                            <option class="Select-fabric-form-select-text" value="1">One</option>
+                                            <option class="Select-fabric-form-select-text" value="2">Two</option>
+                                            <option class="Select-fabric-form-select-text" value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="select-fabric-scrollbar overflow-y-scroll table-height-width mb-5 mb-xl-0 pb-5 pb-xl-0 ">
+                                    <div class="d-grid gap-2 pb-5 pb-xl-0 " id="assetsCategory"></div>
+                                </div>
+
+                                <div class="" id="assetsCategoryOffcanvas"></div>
+
+
+                                <div class="bg-white">
+                                    <div
+                                        class="border-top bg-white col-xl-6 col-md-12 col-12 pb-2 fixed-bottom bottom-0 px-xl-4 px-3 px-md-3">
+                                        <div class="d-flex mt-2 bg-white align-items-center justify-content-between">
+                                            <div class="">
+                                                <p class="mb-0"></p>
+                                            </div>
+                                            <div class="">
+                                                <button type="button"
+                                                    class="btn btn-secondary Select-fabric-back-btn text-white">Back</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary Select-fabric-next-btn text-white">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab-3" class="tab-pane" role="tabpanel">
+
+                            <div class="">
+                                <!------------ size passport start---------------->
+                                <div class="row gy-3 mb-xl-0 mb-5 pb-5 pb-xl-0" id="sizecalculator1">
+                                    <div class="col-md-12 text-center mb-xxl-5 pb-xxl-5 mb-xl-3 pb-xl-3 mb-md-3">
+                                        <h3 class="calculator-size-passport-tital">Size Passport</h3>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row g-0 position-relative border">
+                                            <div
+                                                class="col-md-4 mb-md-0 p-md-4 px-md-4 px-4 mt-md-0 mt-4 d-flex align-items-center">
+                                                <a onclick="showSizeCalculator('sizecalculator2')" href="#"
+                                                    class="stretched-link calculator-card-size-passport-tital">At
+                                                    home</a>
+
+                                            </div>
+                                            <div class="col-md-8 p-4 ps-md-0">
+                                                <p class="calculator-card-size-passport-subtital">Another instance of
+                                                    placeholder content for this other custom component. It is intended
+                                                    to mimic what some real-world content would look like, and we're
+                                                    using it here to give the component a bit of body and size.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row g-0  position-relative border">
+                                            <div
+                                                class="col-md-4 col-12 mb-md-0 p-md-4 px-md-4 px-4 mt-md-0 mt-4 d-flex align-items-center">
+                                                <a onclick="showSizeCalculator('sizecalculator3')" href="#"
+                                                    class="stretched-link calculator-card-size-passport-tital">In
+                                                    Store</a>
+                                            </div>
+                                            <div class="col-md-8 col-12 p-4 ps-md-0">
+                                                <p class="calculator-card-size-passport-subtital">Another instance of
+                                                    placeholder content for this other custom component. It is intended
+                                                    to mimic what some real-world content would look like, and we're
+                                                    using it here to give the component a bit of body and size.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-white">
+                                        <div
+                                            class="border-top bg-white col-xl-6 col-md-12 col-12 pb-2 fixed-bottom bottom-0 px-xl-4 px-3 px-md-3">
+                                            <div
+                                                class="d-flex mt-2 bg-white align-items-center justify-content-between">
+                                                <div class="">
+                                                    <p class="mb-0">$1288.80</p>
+                                                </div>
+                                                <div class="">
+                                                    <button type="button"
+                                                        class="btn btn-secondary Select-fabric-back-btn text-white">Back</button>
+                                                    <button type="button"
+                                                        class="btn btn-secondary Select-fabric-next-btn text-white">Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------ size passport end---------------->
+
+                                <!----------- At home start---------->
+                                <div class="row size-cal-select-size-height-width-mq" id="sizecalculator2"
+                                    style="display: none;">
+                                    <div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn-close"
+                                                onclick="showSizeCalculator('sizecalculator1')"></button>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="calculator-size-passport-tital mb-2">Select Your Size</p>
+                                            <p class="calculator-size-passport-subtital">Pick the size you usually wear.
+                                            </p>
+                                        </div>
+
+                                        <div class="select-fabric-scrollbar overflow-y-scroll select-fabric-content">
+                                            <table class="table table-borderless size-cart-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>
+                                                            <button id="heightBtnShort"
+                                                                onclick="handleSelectHeight('Short')"
+                                                                class="btn btn-secondary w-100 Select-fabric-next-btn text-white disabled-button">Short
+                                                                < 5.5"</button>
+                                                                    </td>
+                                                        <th>
+                                                            <button id="heightBtnRegular"
+                                                                onclick="handleSelectHeight('Regular')"
+                                                                class="btn btn-secondary w-100 Select-fabric-next-btn text-white">Regular
+                                                                5.5" - 6.1"</button>
+                                                        </th>
+                                                        <th>
+                                                            <button id="heightBtnLong"
+                                                                onclick="handleSelectHeight('Long')"
+                                                                class="btn btn-secondary w-100 Select-fabric-next-btn text-white disabled-button">Long
+                                                                > 6.1"</button>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="sizeTableBody"></tbody>
+                                            </table>
+                                        </div>
+
+
+                                        <div class="bg-white">
+                                            <div
+                                                class=" bg-white col-xl-6 col-md-12 col-12 fixed-bottom bottom-0 px-xl-4 px-md-3">
+                                                <div class="mt-4 mb-3 w-100">
+                                                    <button type="button"
+                                                        class="btn btn-secondary w-100 Select-fabric-next-btn text-white"
+                                                        onclick="getSuitSizes()" id="nextBtn" disabled>Select
+                                                        Size</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!----------- At home end---------->
+
+                                <!-----------In store  start---------->
+                                <div class="row size-cal-customize-your-jacket-height-width-mq" id="sizecalculator3"
+                                    style="display: none;">
+                                    <div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn-close"
+                                                onclick="showSizeCalculator('sizecalculator1')"></button>
+                                        </div>
+                                        <div class="py-3">
+                                            <h2 class="text-center Select-fabric-header-text">Select Your Location</h2>
+
+                                        </div>
+                                        <div
+                                            class="size-cal-customize-your-jacket-height-width select-fabric-scrollbar overflow-y-scroll">
+                                            <div class="border-3 border-bottom border-secondary">
+                                                <div class="card border-2 border-top border-secondary rounded-0 w-100"
+                                                    style="border: 0px;">
+                                                    <div class="card-body d-flex justify-content-between">
+                                                        <div>
+                                                            <a class="size-cal-in-store-card-tital stretched-link"
+                                                                onclick="showSizeCalculator('sizecalculator7')"
+                                                                href="#">Colombo</a>
+                                                            <p class="size-cal-in-store-card-subtital">1901 Thornridge
+                                                                Cir. Shiloh, Hawaii 81063</p>
+                                                            <p class="size-cal-in-store-card-time">Open today until
+                                                                8.00pm</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center ms-md-0 ms-5">
+                                                            <span><i
+                                                                    class="fa-solid fa-angle-up fa-rotate-90"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card border-2 border-top border-secondary rounded-0 w-100"
+                                                    style="border: 0px;">
+                                                    <div class="card-body d-flex justify-content-between">
+                                                        <div>
+                                                            <a class="size-cal-in-store-card-tital stretched-link"
+                                                                onclick="showSizeCalculator('sizecalculator7')"
+                                                                href="#">Colombo</a>
+                                                            <p class="size-cal-in-store-card-subtital">1901 Thornridge
+                                                                Cir. Shiloh, Hawaii 81063</p>
+                                                            <p class="size-cal-in-store-card-time">Open today until
+                                                                8.00pm</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center ms-md-0 ms-5">
+                                                            <span><i
+                                                                    class="fa-solid fa-angle-up fa-rotate-90"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card border-2 border-top border-secondary rounded-0 w-100"
+                                                    style="border: 0px;">
+                                                    <div class="card-body d-flex justify-content-between">
+                                                        <div>
+                                                            <a class="size-cal-in-store-card-tital stretched-link"
+                                                                onclick="showSizeCalculator('sizecalculator7')"
+                                                                href="#">Colombo</a>
+                                                            <p class="size-cal-in-store-card-subtital">1901 Thornridge
+                                                                Cir. Shiloh, Hawaii 81063</p>
+                                                            <p class="size-cal-in-store-card-time">Open today until
+                                                                8.00pm</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center ms-md-0 ms-5">
+                                                            <span><i
+                                                                    class="fa-solid fa-angle-up fa-rotate-90"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <!-----------In store  end---------->
+
+                                <!-------- Customize this size start--------->
+                                <div class="row" id="sizecalculator4" style="display: none;">
+                                    <div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn-close"
+                                                onclick="showSizeCalculator('sizecalculator2')"></button>
+                                        </div>
+                                        <div class="text-center px-md-0 px-4">
+                                            <p class="calculator-size-passport-tital mb-2">Customize this size?</p>
+                                            <p class="calculator-size-passport-subtital">Make adjustments by measuring a
+                                                garment that already fits you.</p>
+                                        </div>
+
+                                        <div class="d-flex justify-content-center w-100 px-4 pt-4">
+                                            <a type="button" onclick="showSizeCalculator('sizecalculator5')"
+                                                class="btn w-100 mx-2 size-cal-this-size-buttons">Yes</a>
+                                            <a type="button" onclick="showSizeCalculator('sizecalculator6')"
+                                                class="btn w-100 mx-2 size-cal-this-size-buttons">No. I'm Done</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-------- Customize this size end--------->
+
+                                <!--------- Edit Jacket Size start---------->
+                                <div class="row edit-jacket-sizesize-height-width-mq" id="sizecalculator5"
+                                    style="display: none;">
+                                    <div class="select-fabric-scrollbar overflow-y-scroll select-fabric-content">
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn-close"
+                                                onclick="showSizeCalculator('sizecalculator4')"></button>
+                                        </div>
+                                        <div class="text-center mb-4">
+                                            <p class="calculator-size-passport-tital mb-2">Edit Jacket Size</p>
+                                            <p class="calculator-size-passport-subtital">Make adjustments by measuring a
+                                                garment that already fits you.</p>
+                                        </div>
+                                        <div>
+                                            <button
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion w-100 text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Size</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text" id="selected_height">0
+                                                </p>
+                                            </button>
+                                        </div>
+
+                                        <div
+                                            class="select-fabric-scrollbar overflow-y-scroll edit-jacket-sizesize-height-width mt-2">
+                                            <div class="" id="suit-dementions">
+                                            </div>
+                                            <div id="hidden-content" class="">
+                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                    <div>
+                                                        <h6 class="size-cal-in-store-card-subtital mb-0">Chest Width
+                                                        </h6>
+                                                    </div>
+
+                                                    <div class="border border-black">
+                                                        <form action="">
+                                                            <p class="qty mb-0 px-5 mx-3">
+                                                                <button type="button" class="qtyplus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty1', 'plus')">+</button>
+                                                                <input class="text-center qtyminus-input border-0"
+                                                                    type="text" name="qty" id="qty1" min="1" max="10"
+                                                                    step="1" value="1">
+                                                                <button type="button" class="qtyminus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty1', 'minus')">-</button>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                    <div>
+                                                        <h6 class="size-cal-in-store-card-subtital mb-0">Waist Width
+                                                        </h6>
+                                                    </div>
+
+                                                    <div class="border border-black">
+                                                        <form action="">
+                                                            <p class="qty mb-0 px-5 mx-3">
+                                                                <button type="button" class="qtyplus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty2', 'plus')">+</button>
+                                                                <input class="text-center qtyminus-input border-0"
+                                                                    type="text" name="qty" id="qty2" min="1" max="10"
+                                                                    step="1" value="1">
+                                                                <button type="button" class="qtyminus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty2', 'minus')">-</button>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                    <div>
+                                                        <h6 class="size-cal-in-store-card-subtital mb-0">Jacket Width
+                                                        </h6>
+                                                    </div>
+
+                                                    <div class="border border-black">
+                                                        <form action="">
+                                                            <p class="qty mb-0 px-5 mx-3">
+                                                                <button type="button" class="qtyplus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty3', 'plus')">+</button>
+                                                                <input class="text-center qtyminus-input border-0"
+                                                                    type="text" name="qty" id="qty3" min="1" max="10"
+                                                                    step="1" value="1">
+                                                                <button type="button" class="qtyminus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty3', 'minus')">-</button>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                    <div>
+                                                        <h6 class="size-cal-in-store-card-subtital mb-0">Sleeve Length
+                                                            Right
+                                                        </h6>
+                                                    </div>
+
+                                                    <div class="border border-black">
+                                                        <form action="">
+                                                            <p class="qty mb-0 px-5 mx-3">
+                                                                <button type="button" class="qtyplus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty4', 'plus')">+</button>
+                                                                <input class="text-center qtyminus-input border-0"
+                                                                    type="text" name="qty" id="qty4" min="1" max="10"
+                                                                    step="1" value="1">
+                                                                <button type="button" class="qtyminus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty4', 'minus')">-</button>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                    <div>
+                                                        <h6 class="size-cal-in-store-card-subtital mb-0">Sleeve Length
+                                                            Left
+                                                        </h6>
+                                                    </div>
+
+                                                    <div class="border border-black">
+                                                        <form action="">
+                                                            <p class="qty mb-0 px-5 mx-3">
+                                                                <button type="button" class="qtyplus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty5', 'plus')">+</button>
+                                                                <input class="text-center qtyminus-input border-0"
+                                                                    type="text" name="qty" id="qty5" min="1" max="10"
+                                                                    step="1" value="1">
+                                                                <button type="button" class="qtyminus btn border-0"
+                                                                    aria-hidden="true"
+                                                                    onclick="updateQuantity('qty5', 'minus')">-</button>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-center w-100 px-4 pt-4 border-top border-secondary">
+                                        <a type="button" onclick="showSizeCalculator('sizecalculator4')"
+                                            class="btn w-100 mx-2 edit-jacket-size-next-prev-btn">Prev</a>
+                                        <a type="button" onclick="showSizeCalculator('sizecalculator6')"
+                                            class="btn w-100 mx-2 edit-jacket-size-next-prev-btn">Next</a>
+                                    </div>
+                                </div>
+                                <!--------- Edit Jacket Size end---------->
+
+                                <!---------- Size Adjustment start -------->
+                                <div class="row" id="sizecalculator6" style="display: none;">
+                                    <div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn-close"
+                                                onclick="showSizeCalculator('sizecalculator4')"></button>
+                                        </div>
+                                        <div class="pt-xxl-5 pt-md-4 ">
+
+                                            <div class="mt-5">
+                                                <div class="d-flex justify-content-between mx-2 mb-3">
+                                                    <h4 class="add-size-adjustment-tital">Jackets</h4>
+                                                    <h4><i class="fa-solid fa-plus"></i></h4>
+                                                </div>
+                                                <div class="card size-adjustment-card-border">
+                                                    <div
+                                                        class="card-body d-flex justify-content-center align-items-center">
+                                                        <a class="add-size-adjustment-card-tital stretched-link mb-0 py-3"
+                                                            onclick="showSizeCalculator('sizecalculator2')" href="#"><i
+                                                                class="fa-solid fa-plus me-2"></i> Add Size
+                                                            Adjustment</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-5">
+                                                <div class="d-flex justify-content-between mx-2 mb-3">
+                                                    <h4 class="add-size-adjustment-tital">Jackets</h4>
+                                                    <h4><i class="fa-solid fa-plus"></i></h4>
+                                                </div>
+                                                <div class="card size-adjustment-card-border">
+                                                    <div
+                                                        class="card-body d-flex justify-content-center align-items-center">
+                                                        <a class="add-size-adjustment-card-tital stretched-link mb-0 py-3"
+                                                            onclick="showSizeCalculator('sizecalculator2')" href="#"><i
+                                                                class="fa-solid fa-plus me-2"></i> Add Size
+                                                            Adjustment</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!---------- Size Adjustment end -------->
+
+                                <!-----------Choose Date And Time start-------->
+                                <div class="row" id="sizecalculator7" style="display: none;">
+                                    <div class="d-flex justify-content-end">
+                                        <button type="button" class="btn-close"
+                                            onclick="showSizeCalculator('sizecalculator3')"></button>
+                                    </div>
+                                    <div>
+                                        <h3 class="choose-date-and-time-tital text-center">Choose Your Date And Time
+                                        </h3>
+                                        <h3 class="choose-date-and-time-subtital text-center mt-2">Colombo</h3>
+                                    </div>
+                                    <!-- <div class="text-center">
+                                        <img src="/assets/images/product-configurator/Ellipse 2.svg" class="img-fluid" alt="" style="max-width: 60px;">
+                                        <h3 class="choose-date-and-time-image-tital mt-2">Jason Andrew</h3>
+                                    </div> -->
+                                    <div id="chooseDateandTimeOwl" class="mt-md-5 pt-4">
+                                        <div class="owl-carousel owl-theme owl-choose-Date-and-Time">
+
+                                            <div class="item">
+                                                <button type="button" id="selectSizeButton1"
+                                                    class="card d-flex align-items-center w-100  choose-your-date-and-time-card rounded-2 p-0">
+                                                    <div
+                                                        class="card-body p-2 text-center d-flex flex-column align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="mb-0 choose-date-and-time-card-tital" href="#">Oct
+                                                                24 Nd</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0">Sun</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+
+
+                                            <div class="item">
+                                                <button type="button" id="selectSizeButton2"
+                                                    class="card d-flex align-items-center w-100  choose-your-date-and-time-card rounded-2 p-0">
+                                                    <div
+                                                        class="card-body p-2 text-center d-flex flex-column align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="mb-0 choose-date-and-time-card-tital" href="#">Oct
+                                                                24 Nd</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0">Sun</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button type="button" id="selectSizeButton3"
+                                                    class="card d-flex align-items-center w-100  choose-your-date-and-time-card rounded-2 p-0">
+                                                    <div
+                                                        class="card-body p-2 text-center d-flex flex-column align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="mb-0 choose-date-and-time-card-tital" href="#">Oct
+                                                                24 Nd</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0">Sun</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button type="button" id="selectSizeButton4"
+                                                    class="card d-flex align-items-center w-100  choose-your-date-and-time-card rounded-2 p-0">
+                                                    <div
+                                                        class="card-body p-2 text-center d-flex flex-column align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="mb-0 choose-date-and-time-card-tital" href="#">Oct
+                                                                24 Nd</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0">Sun</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button type="button" id="selectSizeButton5"
+                                                    class="card d-flex align-items-center w-100  choose-your-date-and-time-card rounded-2 p-0">
+                                                    <div
+                                                        class="card-body p-2 text-center d-flex flex-column align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="mb-0 choose-date-and-time-card-tital" href="#">Oct
+                                                                24 Nd</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0">Sun</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button type="button" id="selectSizeButton6"
+                                                    class="card d-flex align-items-center w-100  choose-your-date-and-time-card rounded-2 p-0">
+                                                    <div
+                                                        class="card-body p-2 text-center d-flex flex-column align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="mb-0 choose-date-and-time-card-tital" href="#">Oct
+                                                                24 Nd</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0">Sun</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="size-cal-select-size-height-width-mq mt-5">
+                                        <div
+                                            class="row row-cols-3 g-3 select-fabric-scrollbar overflow-y-scroll size-cal-select-size-height-width">
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="button" class="btn size-cal-select-size-btn w-100"
+                                                    onclick="handleSelectDateTime()">10:00</button>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="bg-white">
+                                            <div
+                                                class=" bg-white col-xl-6 col-md-12 col-12 fixed-bottom bottom-0 px-xl-4 px-md-3">
+                                                <div class="mt-4 mb-3 w-100">
+                                                    <button type="button"
+                                                        class="btn btn-secondary w-100 Select-fabric-next-btn text-white"
+                                                        onclick="showSizeCalculator('sizecalculator8')"
+                                                        id="nextBtnSelectDateTime" disabled>Continue</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-----------Choose Date And Time end-------->
+
+                                <div class="row select-fabric-scrollbar" id="sizecalculator8" style="display: none;">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="d-flex justify-content-end">
+                                                <button type="button" class="btn-close"
+                                                    onclick="showSizeCalculator('sizecalculator3')"></button>
+                                            </div>
+                                            <div class="text-center py-3">
+                                                <h3 class="share-details-about-you-tital mb-0">Share Some Details About
+                                                    You</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row overflow-y-scroll select-fabric-scrollbar"
+                                            style="max-height: 63.5vh;">
+                                            <div class="col" id="sizeCalculatorForms">
+                                                <form class="row g-3">
+
+                                                    <div class="col-md-6 mb-md-3 mb-3">
+                                                        <input type="text" class="form-control" id="inputEmail4"
+                                                            placeholder="First Name*">
+                                                    </div>
+                                                    <div class="col-md-6 mb-md-3 mb-3">
+                                                        <input type="text" class="form-control" id="inputPassword4"
+                                                            placeholder="Last Name*">
+                                                    </div>
+                                                    <div class="col-6 mb-md-3 mb-3">
+                                                        <input type="email" class="form-control" id="inputAddress"
+                                                            placeholder="Email*">
+                                                    </div>
+                                                    <div class="col-6 mb-md-3 mb-3">
+                                                        <input type="number" class="form-control" id="inputAddress"
+                                                            placeholder="Phone Number*">
+                                                    </div>
+                                                    <div class="col-12 mb-md-3 mb-3">
+                                                        <input type="text" class="form-control" id="inputAddress2"
+                                                            placeholder="Reason Type">
+                                                    </div>
+                                                    <div class="col-12 mb-md-3 mb-3">
+                                                        <textarea class="form-control h-100" placeholder="Message"
+                                                            id="exampleFormControlTextarea1" rows="6"></textarea>
+                                                    </div>
+                                                </form>
+                                                <div class="mt-4 form-check d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input mb-1 me-2"
+                                                        id="exampleCheck1">
+                                                    <p class="details-about-check-box-text mb-0">Sing Up And Get All
+                                                        Latest News About NB</p>
+                                                </div>
+                                                <div class="mt-4 mb-3">
+                                                    <a type="button"
+                                                        class="btn details-about-check-box-buttion w-50">Confirm
+                                                        Appoinment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div id="tab-4" class="tab-pane" role="tabpanel">
+                            <div>
+                                <div>
+                                    <h2 class="text-center summary-tab-tital">Your Summary</h2>
+                                    <h2 class="text-center summary-tab-subtital">Delivery 2-5 Weeks</h2>
+                                </div>
+                                <div class="select-fabric-scrollbar overflow-y-scroll table-height-width mb-5">
+
+                                    <div class="mb-4">
+                                        <h3 class="summary-tab-category-list">Fabric</h3>
+                                        <div class="d-grid gap-2">
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Sleeve linning</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">White</p>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <h3 class="summary-tab-category-list">Fabric</h3>
+                                        <div class="d-grid gap-2">
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Closure</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">02 Buttons</p>
+                                            </button>
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Lapels</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Notch</p>
+                                            </button>
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Vent</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Double Vent</p>
+                                            </button>
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Amf</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">2mm</p>
+                                            </button>
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Side Pocket</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">standard</p>
+                                            </button>
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Ticket pocket</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">No</p>
+                                            </button>
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Linning type</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Double vent</p>
+                                            </button>
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Buttonhole Lapels</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Traditional</p>
+                                            </button>
+                                            <button data-bs-toggle="offcanvas" href="#summaryoffcanvasExample"
+                                                role="button" aria-controls="summaryoffcanvasExample"
+                                                class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between"
+                                                type="button">
+                                                <p class="mb-0 Select-fabric-long-buttion-text">Sleeve linning</p>
+                                                <p class="mb-0 Select-fabric-long-buttion-text">White</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white">
+                                    <div
+                                        class="border-top bg-white col-xl-6 col-md-12 pb-4 col-12 fixed-bottom bottom-0 px-xl-4 px-3 px-md-3">
+                                        <div class="d-flex mt-4  bg-white align-items-center justify-content-between">
+                                            <div class="">
+                                                <p class="mb-0">$1288.80</p>
+                                            </div>
+                                            <div class="">
+                                                <button type="button"
+                                                    class="btn btn-secondary Select-fabric-back-btn text-white">Back</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary Select-fabric-next-btn text-white">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product configurator end -->
+
+
+    <!-- Suit Size Load Function Start -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/three@0.124.0/build/three.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.124.0/examples/js/controls/OrbitControls.js"></script>
+    <script type="" src="/assets/js/trouser.js"></script>
+
+    <script>
+        // Function to fetch data from size.json
+        const dataLoad = async () => {
+            try {
+                const response = await fetch('/assets/json/size_chart/trouser.json');
+                const sizesData = await response.json();
+                generateTableRows(sizesData.suit);
+
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        // Function to generate table rows
+        function generateTableRows(sizes) {
+            var rows = '';
+            for (var i = 0; i < sizes.length; i++) {
+                var size = sizes[i];
+                rows += `<tr>
+                            <th scope="row">${size.size}</th>
+                            <td>
+                                <!-- <button type="button" onclick="handleSelect()" class="btn size-cal-select-size-btn w-100">${size.shortHeight}</button> -->
+                                ${size.shortHeight ? `<button type="button" onclick="handleSelect('${size.shortHeight}')" class="shortHightButtons btn size-cal-select-size-btn w-100 disabled-button">${size.shortHeight}</button>` : ''}
+                            </td>
+                            <td>
+                                <button type="button" onclick="handleSelect('${size.regularHeight}')" class="regularHightButtons btn size-cal-select-size-btn w-100">${size.regularHeight}</button>
+                            </td>
+                            <td>
+                                <!-- <button type="button" onclick="handleSelect()" class="btn size-cal-select-size-btn w-100">${size.longHeight}</button> -->
+                                ${size.longHeight ? `<button type="button" onclick="handleSelect('${size.longHeight}')" class="longHightButtons btn size-cal-select-size-btn w-100 disabled-button">${size.longHeight}</button>` : ''}
+                            </td>
+                        </tr>`;
+            }
+            document.getElementById('sizeTableBody').innerHTML = rows;
+        }
+
+        // Load data and populate the table
+        dataLoad();
+
+        function handleSelect() {
+            // Implement your handleSelect logic here
+        }
+    </script>
+    <!-- Suit Size Load Function End -->
+
+
+    <!-- script start-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        function toggleContent() {
+            var hiddenContent = document.getElementById('hidden-content');
+            var button = document.querySelector('.btn-primary');
+
+            if (hiddenContent.style.display === 'none') {
+                hiddenContent.style.display = 'block';
+                button.textContent = 'See Less';
+            } else {
+                hiddenContent.style.display = 'none';
+                button.textContent = 'See More';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            for (var i = 1; i <= 10; i++) {
+                var button = document.getElementById('selectSizeButton' + i);
+
+                if (button) {
+                    button.addEventListener('click', function () {
+                        if (!this.classList.contains('size-cal-select-size-card-btn')) {
+                            this.classList.add('size-cal-select-size-card-btn');
+                        }
+                    });
+                }
+            }
+        });
+
+        function updateQuantity(inputId, operation, min, max) {
+            const inputElement = document.getElementById(inputId);
+            let currentValue = parseFloat(inputElement.value);
+
+            if (operation === 'plus' && currentValue < max) {
+                inputElement.value = currentValue += 0.25;
+            } else if (operation === 'minus' && currentValue > min) {
+                inputElement.value = currentValue - 0.25;
+            }
+        }
+
+        function handleSelectDateTime() {
+            document.getElementById("nextBtnSelectDateTime").removeAttribute("disabled");
+        }
+
+        function handleSelect(selected_id) {
+            document.getElementById("nextBtn").removeAttribute("disabled");
+            document.getElementById("selected_height").innerText = selected_id
+        }
+
+        function handleSelectHeight(size) {
+            if (size === "Short") {
+                document.getElementById("heightBtnShort").classList.remove("disabled-button");
+                document.getElementById("heightBtnRegular").classList.add("disabled-button");
+                document.getElementById("heightBtnLong").classList.add("disabled-button");
+
+                // Remove "disabled-button" class from elements with class "shortHightButtons"
+                document.querySelectorAll(".shortHightButtons").forEach(function (element) {
+                    element.classList.remove("disabled-button");
+                });
+
+                // Add "disabled-button" class to elements with class "regularHightButtons"
+                document.querySelectorAll(".regularHightButtons").forEach(function (element) {
+                    element.classList.add("disabled-button");
+                });
+
+                // Add "disabled-button" class to elements with class "longHightButtons"
+                document.querySelectorAll(".longHightButtons").forEach(function (element) {
+                    element.classList.add("disabled-button");
+                });
+            } else if (size === "Regular") {
+                document.getElementById("heightBtnRegular").classList.remove("disabled-button");
+                document.getElementById("heightBtnShort").classList.add("disabled-button");
+                document.getElementById("heightBtnLong").classList.add("disabled-button");
+
+                // Remove "disabled-button" class from elements with class "shortHightButtons"
+                document.querySelectorAll(".regularHightButtons").forEach(function (element) {
+                    element.classList.remove("disabled-button");
+                });
+
+                // Add "disabled-button" class to elements with class "regularHightButtons"
+                document.querySelectorAll(".shortHightButtons").forEach(function (element) {
+                    element.classList.add("disabled-button");
+                });
+
+                // Add "disabled-button" class to elements with class "longHightButtons"
+                document.querySelectorAll(".longHightButtons").forEach(function (element) {
+                    element.classList.add("disabled-button");
+                });
+            } else if (size === "Long") {
+                document.getElementById("heightBtnLong").classList.remove("disabled-button");
+                document.getElementById("heightBtnShort").classList.add("disabled-button");
+                document.getElementById("heightBtnRegular").classList.add("disabled-button");
+
+                // Remove "disabled-button" class from elements with class "shortHightButtons"
+                document.querySelectorAll(".longHightButtons").forEach(function (element) {
+                    element.classList.remove("disabled-button");
+                });
+
+                // Add "disabled-button" class to elements with class "regularHightButtons"
+                document.querySelectorAll(".shortHightButtons").forEach(function (element) {
+                    element.classList.add("disabled-button");
+                });
+
+                // Add "disabled-button" class to elements with class "longHightButtons"
+                document.querySelectorAll(".regularHightButtons").forEach(function (element) {
+                    element.classList.add("disabled-button");
+                });
+            }
+        }
+
+        function showSizeCalculator(idToShow) {
+            // Hide all size calculators
+            for (let i = 1; i <= 8; i++) {
+                const calculatorId = 'sizecalculator' + i;
+                document.getElementById(calculatorId).style.display = 'none';
+            }
+
+            // Show the selected size calculator
+            document.getElementById(idToShow).style.display = 'block';
+        }
+
+        const loadAssetsData = async () => {
+            try {
+                const response = await fetch('/assets/json/trouser/assetsData.json');
+                const assetsData = await response.json();
+
+                const groupedItems = {};
+
+                assetsData.forEach(item => {
+                    const { category } = item;
+
+                    if (!groupedItems[category]) {
+                        groupedItems[category] = [];
+                    }
+
+                    // Add the current item to the array for its category
+                    groupedItems[category].push(item);
+                });
+
+                // Log the grouped items
+                const assetsCategoryElement = document.getElementById("assetsCategory");
+                const offCanvas = document.getElementById("assetsCategoryOffcanvas");
+
+                for (const category in groupedItems) {
+                    if (groupedItems.hasOwnProperty(category)) {
+
+                        // Exclude categories "sleaves" and "sharom"
+                        if (category !== "base") {
+
+                            assetsCategoryElement.innerHTML += `
+                                <button data-bs-toggle="offcanvas" href="#offcanvas${category}" role="button" aria-controls="offcanvas${category}" class="btn btn-outline-secondary my-2 Select-fabric-long-buttion text-black d-flex justify-content-between" type="button">
+                                    <p class="mb-0 Select-fabric-long-buttion-text">${groupedItems[category][0].category_name}</p>
+                                    <p class="mb-0 Select-fabric-long-buttion-text"></p>
+                                </button>
+                            `;
+
+                            let items = '';
+                            for (let i = 0; i < groupedItems[category].length; i++) {
+
+
+                                const node = groupedItems[category][i];
+                                let number = i + 1;
+
+                                items += `
+                                    <div onclick="selectAsset('${node.category}', '${node.name}', this)" class="card mb-2 assets-select" data-category="${node.category}">
+                                        <div class="card-body d-flex justify-content-between ">
+                                            <div class="col-8">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title font-size-16">0${number}.</h5>
+                                                    <h5 class="card-title font-size-16">${node.assets_name}</h5>
+                                                </div>
+                                                <p class="card-text d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                                    dolore magna aliqua.
+                                                </p>
+                                            </div>
+
+                                            <div class="col-4 d-flex justify-content-end">
+                                                <img src="${node.image}" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+
+                                if (groupedItems[category].length === i + 1) {
+                                    document.getElementById("assetsCategoryOffcanvas").innerHTML += `
+                                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas${category}" aria-labelledby="offcanvas${category}Label">
+                                            <div class="py-3">
+                                                <div class="row g-0 px-3">
+                                                    <div class="col-md-5"> </div>
+                                                    <div class="col-md-7 d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <h5 class="mt-2 ps-3">${node.category_name}</h5>
+                                                        </div>
+                                                        <div>
+                                                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="offcanvas-body select-fabric-scrollbar py-0">
+                                                ${items}
+                                            </div>
+                                            <div class="d-flex px-4 mt-2 mb-3 justify-content-center">
+                                                <div class="row mt-4 w-100">
+                                                    <div class="col-md-6 col-6">
+                                                        <a type="button" class="btn w-100 Select-fabric-offcanvas-btn" data-bs-dismiss="offcanvas" aria-label="Close">Close</a>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <a type="button" class="btn w-100 btn-secondary Select-fabric-next-btn text-white" data-bs-dismiss="offcanvas">Apply</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading assetsData:', error);
+            }
+        };
+
+        loadAssetsData();
+
+        const getSuitSizes = async () => {
+
+            document.getElementById("suit-dementions").innerHTML = '';
+            let key = document.getElementById("selected_height").innerText;
+
+            localStorage.setItem("trouser_size", key);
+
+            try {
+
+                const requestOptions = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ key: key, type: 3 }),
+                };
+
+                const response = await fetch('/api/get/suit-size', requestOptions);
+                let dementions = await response.json();
+                let index = 0;
+                for (const key in dementions) {
+                    if (dementions.hasOwnProperty(key)) {
+                        const value = dementions[key];
+
+                        document.getElementById("suit-dementions").innerHTML += `
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div>
+                                <h6 class="size-cal-in-store-card-subtital mb-0">${value.name}
+                                </h6>
+                            </div>
+
+                            <div class="">
+                                <div class="qtybutton">
+                                    <button type="button" class="qtyplus btn border-0"
+                                        aria-hidden="true"
+                                        onclick="updateQuantity('qty${index}', 'plus', '${value.min}', '${value.max}')">+</button>
+                                    <input class="text-center qtyminus-input border-0 w-100"
+                                        type="text" name="qty" id="qty${index}" min="${value.min}" max="${value.max}"
+                                        step="0.25" value="${value.default}">
+                                    <button type="button" class="qtyminus btn border-0"
+                                        aria-hidden="true"
+                                        onclick="updateQuantity('qty${index}', 'minus' ,'${value.min}', '${value.max}')">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                        index += 1;
+                    }
+                }
+
+                // for (let i = 0; i < fabricData.length; i++) {
+
+                //     document.getElementById("fabricList").innerHTML += `
+                //         <div class="col">
+                //             <div class="card fabric-select" data-category="${fabricData[i].category}" data-tilingS="${fabricData[i].tiling.wrapS}" data-tilingT="${fabricData[i].tiling.wrapS}" data-path="${fabricData[i].file_path}" data-fabric="${fabricData[i].name}"
+                //                 style="background-image: url('${fabricData[i].file_path}')">
+                //                 <div
+                //                     class="card-img-overlay d-flex align-items-end justify-content-between text-white">
+                //                     <p class="mb-0 fabric-select-text">Burgundy Wool Mohair</p>
+                //                     <p class="mb-0 fabric-select-text">$5</p>
+                //                 </div>
+                //             </div>
+                //         </div>
+                //     `;
+                // }
+
+            } catch (error) {
+                console.error('Error loading assetsData:', error);
+            }
+        };
+
+        const loadFabricsData = async () => {
+
+            document.getElementById("fabricList").innerHTML = '';
+
+            $.ajax({
+                url: '/api/v1/fabric/list',
+                method: 'GET',
+                contentType: 'application/json',
+                data: {},
+                success: function (data) {
+                    if (data.status === true || data.status === "true") {
+
+                        for (let i = 0; i < data.data.length; i++) {
+                            const node = data.data[i];
+                            if (node.type == 3) {
+
+                                document.getElementById("fabricList").innerHTML += `
+                                    <div class="col-6">
+                                        <div class="card fabric-select" onclick="selectFabric('${node.category}','${node.wraps}','${node.wrapt}','${node.fabric_image_url}','${node.name}','${node.btn_color}','${node.stiching_color}','${node.price}',this)" data-category="${node.category}" style="background-image: url('${node.fabric_preview_image_url}')">
+                                            <div
+                                                class="card-img-overlay d-flex align-items-end justify-content-between text-white">
+                                                <p class="mb-0 fabric-select-text">${node.name}</p>
+                                                <p class="mb-0 fabric-select-text">Rs. ${node.price}</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                `;
+                            }
+                        }
+
+                    } else {
+                        console.log(data);
+                        iziToast.error({
+                            theme: 'dark',
+                            title: 'Error',
+                            message: data.message,
+                        });
+                    }
+
+                },
+
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.error('Error making the request:', textStatus, errorThrown);
+                    iziToast.error({
+                        theme: 'dark',
+                        title: 'Error',
+                        message: 'An error occurred while processing your request.',
+                    });
+                }
+            });
+        };
+
+        loadFabricsData()
+    </script>
+    <!-- script end-->
+
+</body>
+
+</html>

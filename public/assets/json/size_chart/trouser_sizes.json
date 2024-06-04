@@ -1,0 +1,1675 @@
+{
+    "28S" : {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 27.5,
+          "default": 31.0,
+          "max": 35.5
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 19.0,
+          "default": 20.5,
+          "max": 22.5
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 6.75,
+          "default": 7.75,
+          "max": 9.0
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 12.0,
+          "default": 14.0,
+          "max": 19.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 22.75,
+          "default": 30.75,
+          "max": 38.5
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 22.75,
+          "default": 30.75,
+          "max": 38.5
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.0,
+          "default": 8.5,
+          "max": 11.5
+        }
+      },
+    "30S" : {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 29.0,
+          "default": 32.5,
+          "max": 37.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 20.0,
+          "default": 21.0,
+          "max": 23.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 7.25,
+          "default": 8.25,
+          "max": 9.5
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 12.5,
+          "default": 14.5,
+          "max": 19.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 23.25,
+          "default": 31.25,
+          "max": 39.0
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 23.25,
+          "default": 31.25,
+          "max": 39.0
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.25,
+          "default": 8.75,
+          "max": 11.5
+        }
+      },
+    "32S":{
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 31.0,
+          "default": 34.0,
+          "max": 39.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 21.0,
+          "default": 22.0,
+          "max": 24.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 7.5,
+          "default": 8.5,
+          "max": 9.5
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 12.5,
+          "default": 15.0,
+          "max": 19.5
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 23.5,
+          "default": 31.5,
+          "max": 39.5
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 23.5,
+          "default": 31.5,
+          "max": 39.5
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.25,
+          "default": 8.75,
+          "max": 11.5
+        }
+      },
+    "34S" : {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 32.5,
+          "default": 35.5,
+          "max": 40.5
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 21.5,
+          "default": 23.0,
+          "max": 25.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 7.5,
+          "default": 8.5,
+          "max": 9.75
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 13.0,
+          "default": 15.0,
+          "max": 20.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 24.0,
+          "default": 31.75,
+          "max": 39.75
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 24.0,
+          "default": 31.75,
+          "max": 39.75
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.5,
+          "default": 9.0,
+          "max": 11.75
+        }
+      },
+    "36S": {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 34.0,
+          "default": 37.0,
+          "max": 42.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 22.0,
+          "default": 23.0,
+          "max": 25.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 7.75,
+          "default": 8.75,
+          "max": 10.0
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 13.0,
+          "default": 15.5,
+          "max": 20.5
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 24.5,
+          "default": 32.25,
+          "max": 40.25
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 24.5,
+          "default": 32.25,
+          "max": 40.25
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.5,
+          "default": 9.0,
+          "max": 11.75
+        }
+      },
+      "38S" : {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 35.0,
+          "default": 38.5,
+          "max": 43.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 23.0,
+          "default": 24.0,
+          "max": 26.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 8.25,
+          "default": 9.25,
+          "max": 10.5
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 13.5,
+          "default": 16.0,
+          "max": 21.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 24.75,
+          "default": 32.5,
+          "max": 40.5
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 24.75,
+          "default": 32.5,
+          "max": 40.5
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.5,
+          "default": 9.25,
+          "max": 12.0
+        }
+      },
+    "40S": {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 37.0,
+          "default": 40.0,
+          "max": 45.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 23.5,
+          "default": 25.0,
+          "max": 27.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 8.5,
+          "default": 9.5,
+          "max": 12.5
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 14.0,
+          "default": 16.5,
+          "max": 21.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 25.25,
+          "default": 33.0,
+          "max": 41.0
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 25.25,
+          "default": 33.0,
+          "max": 41.0
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.5,
+          "default": 9.5,
+          "max": 12.25
+        }
+      },
+    "42S" :{
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 38.5,
+          "default": 41.5,
+          "max": 46.5
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 24.5,
+          "default": 25.5,
+          "max": 27.5
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 8.5,
+          "default": 9.5,
+          "max": 12.75
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 14.5,
+          "default": 17.0,
+          "max": 21.5
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 25.5,
+          "default": 33.5,
+          "max": 41.5
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 25.5,
+          "default": 33.5,
+          "max": 41.5
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.5,
+          "default": 9.5,
+          "max": 12.25
+        }
+      },
+    "44S":{
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 40.0,
+          "default": 43.0,
+          "max": 48.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 25.0,
+          "default": 26.5,
+          "max": 28.5
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 8.75,
+          "default": 9.75,
+          "max": 13.0
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 15.0,
+          "default": 17.0,
+          "max": 22.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 26.0,
+          "default": 33.75,
+          "max": 41.75
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 26.0,
+          "default": 33.75,
+          "max": 41.75
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.75,
+          "default": 9.5,
+          "max": 12.5
+        }
+      },
+    "46S":{
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 41.0,
+          "default": 45.0,
+          "max": 49.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 25.5,
+          "default": 27.0,
+          "max": 29.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 9.0,
+          "default": 10.0,
+          "max": 12.25
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 15.0,
+          "default": 17.5,
+          "max": 22.5
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 26.5,
+          "default": 34.25,
+          "max": 42.25
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 26.5,
+          "default": 34.25,
+          "max": 42.25
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.75,
+          "default": 9.5,
+          "max": 12.5
+        }
+      },
+    "48S":{
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 43.0,
+          "default": 46.5,
+          "max": 51.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 26.5,
+          "default": 27.5,
+          "max": 30.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 9.5,
+          "default": 10.5,
+          "max": 12.5
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 15.5,
+          "default": 18.0,
+          "max": 23.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 26.75,
+          "default": 34.5,
+          "max": 42.5
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 26.75,
+          "default": 34.5,
+          "max": 42.5
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 8.0,
+          "default": 9.75,
+          "max": 12.5
+        }
+      },
+    "50S":{
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 45.0,
+          "default": 48.0,
+          "max": 53.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 27.0,
+          "default": 28.5,
+          "max": 31.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 9.5,
+          "default": 10.5,
+          "max": 12.75
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 16.0,
+          "default": 18.5,
+          "max": 23.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 27.25,
+          "default": 35.0,
+          "max": 43.0
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 27.25,
+          "default": 35.0,
+          "max": 43.0
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 8.25,
+          "default": 10.0,
+          "max": 12.75
+        }
+      }
+       ,
+    "24":  {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 24.5,
+          "default": 27.5,
+          "max": 32.5
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 18.0,
+          "default": 19.0,
+          "max": 21.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 6.5,
+          "default": 7.5,
+          "max": 8.5
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 11.0,
+          "default": 13.0,
+          "max": 18.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 23.75,
+          "default": 31.5,
+          "max": 39.5
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 23.75,
+          "default": 31.5,
+          "max": 39.5
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 6.75,
+          "default": 8.5,
+          "max": 11.25
+        }
+      },
+    "26":{
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 26.0,
+          "default": 29.0,
+          "max": 34.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 18.5,
+          "default": 19.5,
+          "max": 21.5
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 6.5,
+          "default": 7.5,
+          "max": 8.75
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 11.5,
+          "default": 13.5,
+          "max": 18.5
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 24.25,
+          "default": 32.0,
+          "max": 40.0
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 24.25,
+          "default": 32.0,
+          "max": 40.0
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 6.75,
+          "default": 8.5,
+          "max": 11.25
+        }
+      },
+    "28" : {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 27.5,
+          "default": 31.0,
+          "max": 35.5
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 19.0,
+          "default": 20.5,
+          "max": 22.5
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 6.75,
+          "default": 7.75,
+          "max": 9.0
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 12.0,
+          "default": 14.0,
+          "max": 19.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 24.5,
+          "default": 32.5,
+          "max": 40.5
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 24.5,
+          "default": 32.5,
+          "max": 40.5
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.0,
+          "default": 8.5,
+          "max": 11.5
+        }
+      },
+    "30":  {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 29.0,
+          "default": 32.5,
+          "max": 37.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 20.0,
+          "default": 21.0,
+          "max": 23.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 7.25,
+          "default": 8.25,
+          "max": 9.5
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 12.5,
+          "default": 14.5,
+          "max": 19.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 25.0,
+          "default": 32.75,
+          "max": 40.75
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 25.0,
+          "default": 32.75,
+          "max": 40.75
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.25,
+          "default": 8.75,
+          "max": 11.5
+        }
+      },
+    "32": {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 31.0,
+          "default": 34.0,
+          "max": 39.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 21.0,
+          "default": 22.0,
+          "max": 24.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 7.5,
+          "default": 8.5,
+          "max": 9.5
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 12.5,
+          "default": 15.0,
+          "max": 19.5
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 25.5,
+          "default": 33.25,
+          "max": 41.25
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 25.5,
+          "default": 33.25,
+          "max": 41.25
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.25,
+          "default": 8.75,
+          "max": 11.5
+        }
+      },
+     "34": {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 32.5,
+          "default": 35.5,
+          "max": 40.5
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 21.5,
+          "default": 23.0,
+          "max": 25.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 7.5,
+          "default": 8.5,
+          "max": 9.75
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 13.0,
+          "default": 15.0,
+          "max": 20.0
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 25.75,
+          "default": 33.5,
+          "max": 41.5
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 25.75,
+          "default": 33.5,
+          "max": 41.5
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.5,
+          "default": 9.0,
+          "max": 11.75
+        }
+      },
+     "36" : {
+        "Waistwidth": {
+          "name": "Waist width",
+          "min": 34.0,
+          "default": 37.0,
+          "max": 41.0
+        },
+        "Upperlegwidth": {
+          "name": "Upper leg width",
+          "min": 22.0,
+          "default": 23.0,
+          "max": 25.0
+        },
+        "Middlelegwidth": {
+          "name": "Middle leg width",
+          "min": 7.75,
+          "default": 8.75,
+          "max": 10.0
+        },
+        "Footopeningwidth": {
+          "name": "Foot opening width",
+          "min": 13.0,
+          "default": 15.5,
+          "max": 20.5
+        },
+        "Insideleglengthright": {
+          "name": "Inside leg length right",
+          "min": 26.25,
+          "default": 34.0,
+          "max": 42.0
+        },
+        "Insideleglengthleft": {
+          "name": "Inside leg length left",
+          "min": 26.25,
+          "default": 34.0,
+          "max": 42.0
+        },
+        "Frontrise(golpy)": {
+          "name": "Front rise (golpy)",
+          "min": 7.5,
+          "default": 9.0,
+          "max": 11.75
+        }
+      },
+"38": {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 35.0,
+      "default": 38.5,
+      "max": 43.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 23.0,
+      "default": 24.0,
+      "max": 26.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 8.25,
+      "default": 9.25,
+      "max": 10.5
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 13.5,
+      "default": 16.0,
+      "max": 21.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 26.5,
+      "default": 34.5,
+      "max": 42.5
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 26.5,
+      "default": 34.5,
+      "max": 42.5
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.5,
+      "default": 9.25,
+      "max": 12.0
+    }
+  },
+  "40": {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 37.0,
+      "default": 40.0,
+      "max": 45.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 23.5,
+      "default": 25.0,
+      "max": 27.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 8.5,
+      "default": 9.5,
+      "max": 10.5
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 14.0,
+      "default": 16.5,
+      "max": 21.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 27.0,
+      "default": 34.75,
+      "max": 42.75
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 27.0,
+      "default": 34.75,
+      "max": 42.75
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.5,
+      "default": 9.5,
+      "max": 12.25
+    }
+  },
+  "42": {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 38.5,
+      "default": 41.5,
+      "max": 46.5
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 24.5,
+      "default": 25.5,
+      "max": 27.5
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 8.5,
+      "default": 9.5,
+      "max": 10.75
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 14.5,
+      "default": 17.0,
+      "max": 21.5
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 27.5,
+      "default": 35.25,
+      "max": 43.25
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 27.5,
+      "default": 35.25,
+      "max": 43.25
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.5,
+      "default": 9.5,
+      "max": 12.25
+    }
+  },
+  "44":{
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 40.0,
+      "default": 43.0,
+      "max": 48.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 25.0,
+      "default": 26.5,
+      "max": 28.5
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 8.75,
+      "default": 9.75,
+      "max": 11.0
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 15.0,
+      "default": 17.0,
+      "max": 22.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 27.75,
+      "default": 35.5,
+      "max": 43.5
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 27.75,
+      "default": 35.5,
+      "max": 43.5
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.75,
+      "default": 9.5,
+      "max": 12.5
+    }
+  },
+  "46": {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 41.0,
+      "default": 45.0,
+      "max": 49.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 25.5,
+      "default": 27.0,
+      "max": 29.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 9.0,
+      "default": 10.0,
+      "max": 11.25
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 15.0,
+      "default": 17.5,
+      "max": 22.5
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 28.25,
+      "default": 36.0,
+      "max": 44.0
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 28.25,
+      "default": 36.0,
+      "max": 44.0
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.75,
+      "default": 9.5,
+      "max": 12.5
+    }
+  },
+"48" :  {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 43.0,
+      "default": 46.5,
+      "max": 51.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 26.5,
+      "default": 27.5,
+      "max": 30.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 9.5,
+      "default": 10.5,
+      "max": 11.5
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 15.5,
+      "default": 18.0,
+      "max": 23.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 28.5,
+      "default": 36.5,
+      "max": 44.5
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 28.5,
+      "default": 36.5,
+      "max": 44.5
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 8.0,
+      "default": 9.75,
+      "max": 12.5
+    }
+  },
+ "50": {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 45.0,
+      "default": 48.0,
+      "max": 53.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 27.0,
+      "default": 28.5,
+      "max": 31.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 9.5,
+      "default": 10.5,
+      "max": 11.75
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 16.0,
+      "default": 18.5,
+      "max": 23.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 29.0,
+      "default": 36.75,
+      "max": 44.75
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 29.0,
+      "default": 36.75,
+      "max": 44.75
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 8.25,
+      "default": 10.0,
+      "max": 12.75
+    }
+  },
+  "52": {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 46.5,
+      "default": 49.5,
+      "max": 54.5
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 27.5,
+      "default": 29.0,
+      "max": 31.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 9.75,
+      "default": 10.75,
+      "max": 12.0
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 16.5,
+      "default": 19.0,
+      "max": 23.5
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 29.25,
+      "default": 37.25,
+      "max": 45.25
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 29.25,
+      "default": 37.25,
+      "max": 45.25
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 8.25,
+      "default": 10.0,
+      "max": 12.75
+    }
+  },
+  "54":{
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 48.0,
+      "default": 51.0,
+      "max": 56.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 28.5,
+      "default": 30.0,
+      "max": 32.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 10.0,
+      "default": 11.0,
+      "max": 12.25
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 17.0,
+      "default": 19.0,
+      "max": 24.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 29.5,
+      "default": 37.5,
+      "max": 45.5
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 29.5,
+      "default": 37.5,
+      "max": 45.5
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 8.5,
+      "default": 10.25,
+      "max": 13.0
+    }
+  },
+ "30L": {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 28.5,
+      "default": 31.5,
+      "max": 36.5
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 20.0,
+      "default": 21.0,
+      "max": 23.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 7.25,
+      "default": 8.25,
+      "max": 9.5
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 12.5,
+      "default": 14.5,
+      "max": 19.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 26.5,
+      "default": 34.5,
+      "max": 42.5
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 26.5,
+      "default": 34.5,
+      "max": 42.5
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.5,
+      "default": 9.0,
+      "max": 11.75
+    }
+  },
+  "32L":{
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 30.0,
+      "default": 33.0,
+      "max": 37.5
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 21.0,
+      "default": 22.0,
+      "max": 24.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 7.5,
+      "default": 8.5,
+      "max": 9.5
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 12.5,
+      "default": 15.0,
+      "max": 19.5
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 27.0,
+      "default": 34.75,
+      "max": 42.75
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 27.0,
+      "default": 34.75,
+      "max": 42.75
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.5,
+      "default": 9.0,
+      "max": 11.75
+    }
+  },
+  "34L": {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 31.5,
+      "default": 35.0,
+      "max": 39.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 21.0,
+      "default": 22.5,
+      "max": 24.5
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 7.5,
+      "default": 8.5,
+      "max": 9.75
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 13.0,
+      "default": 15.0,
+      "max": 20.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 27.5,
+      "default": 35.25,
+      "max": 43.25
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 27.5,
+      "default": 35.25,
+      "max": 43.25
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.5,
+      "default": 9.25,
+      "max": 12.0
+    }
+  },
+ "36L":{
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 33.0,
+      "default": 36.5,
+      "max": 41.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 22.0,
+      "default": 23.0,
+      "max": 25.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 7.75,
+      "default": 8.75,
+      "max": 10.0
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 13.0,
+      "default": 15.5,
+      "max": 20.5
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 27.75,
+      "default": 35.5,
+      "max": 43.5
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 27.75,
+      "default": 35.5,
+      "max": 43.5
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.5,
+      "default": 9.25,
+      "max": 12.0
+    }
+  },
+ "38L": {
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 34.5,
+      "default": 37.5,
+      "max": 42.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 23.0,
+      "default": 24.0,
+      "max": 26.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 8.25,
+      "default": 9.25,
+      "max": 10.5
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 13.5,
+      "default": 16.0,
+      "max": 21.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 28.25,
+      "default": 36.0,
+      "max": 44.0
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 28.25,
+      "default": 36.0,
+      "max": 44.0
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.5,
+      "default": 9.5,
+      "max": 12.25
+    }
+  },
+  "40L":{
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 36.0,
+      "default": 39.0,
+      "max": 43.5
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 23.5,
+      "default": 25.0,
+      "max": 27.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 8.5,
+      "default": 9.5,
+      "max": 10.5
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 14.0,
+      "default": 16.5,
+      "max": 21.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 28.5,
+      "default": 36.5,
+      "max": 44.5
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 28.5,
+      "default": 36.5,
+      "max": 44.5
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.75,
+      "default": 9.5,
+      "max": 12.5
+    }
+  },
+  "42L":{
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 37.5,
+      "default": 41.0,
+      "max": 45.5
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 24.5,
+      "default": 25.5,
+      "max": 27.5
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 8.5,
+      "default": 9.5,
+      "max": 10.75
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 14.5,
+      "default": 17.0,
+      "max": 21.5
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 29.0,
+      "default": 36.75,
+      "max": 44.75
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 29.0,
+      "default": 36.75,
+      "max": 44.75
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 7.75,
+      "default": 9.5,
+      "max": 12.5
+    }
+  },
+  "44L":{
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 39.0,
+      "default": 42.5,
+      "max": 47.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 25.0,
+      "default": 26.0,
+      "max": 28.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 8.75,
+      "default": 9.75,
+      "max": 11.0
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 15.0,
+      "default": 17.0,
+      "max": 22.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 29.25,
+      "default": 37.25,
+      "max": 45.25
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 29.25,
+      "default": 37.25,
+      "max": 45.25
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 8.0,
+      "default": 9.75,
+      "max": 12.5
+    }
+  },
+  "46L":{
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 41.0,
+      "default": 44.0,
+      "max": 49.0
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 25.5,
+      "default": 27.0,
+      "max": 29.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 9.0,
+      "default": 10.0,
+      "max": 11.25
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 15.0,
+      "default": 17.5,
+      "max": 22.5
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 29.5,
+      "default": 37.5,
+      "max": 45.5
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 29.5,
+      "default": 37.5,
+      "max": 45.5
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 8.0,
+      "default": 9.75,
+      "max": 12.5
+    }
+  },
+  "48L":{
+    "Waistwidth": {
+      "name": "Waist width",
+      "min": 42.5,
+      "default": 45.5,
+      "max": 50.5
+    },
+    "Upperlegwidth": {
+      "name": "Upper leg width",
+      "min": 26.5,
+      "default": 27.5,
+      "max": 30.0
+    },
+    "Middlelegwidth": {
+      "name": "Middle leg width",
+      "min": 9.5,
+      "default": 10.5,
+      "max": 11.5
+    },
+    "Footopeningwidth": {
+      "name": "Foot opening width",
+      "min": 15.5,
+      "default": 18.0,
+      "max": 23.0
+    },
+    "Insideleglengthright": {
+      "name": "Inside leg length right",
+      "min": 30.25,
+      "default": 38.0,
+      "max": 45.75
+    },
+    "Insideleglengthleft": {
+      "name": "Inside leg length left",
+      "min": 30.25,
+      "default": 38.0,
+      "max": 45.75
+    },
+    "Frontrise(golpy)": {
+      "name": "Front rise (golpy)",
+      "min": 8.25,
+      "default": 10.0,
+      "max": 12.75
+    }
+  }
+}

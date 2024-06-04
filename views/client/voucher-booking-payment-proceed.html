@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Ticket Booking Payment Proceed</title>
+    <%- header_tags %>
+        <style>
+            html,
+            body {
+                overflow-x: hidden !important;
+            }
+        </style>
+
+</head>
+
+<body>
+
+    <!------------------- navbar --------------->
+    <%- sidebar %>
+        <!--------------- navbar end --------------->
+
+
+        <!------------------ Your Shipping Information start------------------->
+        <section id="viewbegform" class="mt-5 pt-5">
+            <div class="container-fluid mt-5">
+                <div class="row g-0">
+                    <div class="col-xl-8 col-md-12 mx-auto">
+                        <form class="row g-3">
+                            <h3 class="view-bag-form-hadder-text mb-0">Your Shipping Information</h3>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name*">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name*">
+                            </div>
+                            <div class="col-6">
+                                <input type="email" class="form-control" id="email" placeholder="Email*">
+                            </div>
+                            <div class="col-6">
+                                <input type="number" class="form-control" id="phoneNumber" placeholder="Phone Number*">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="address" placeholder="Address*">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="country" placeholder="Country*">
+                            </div>
+
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="city" placeholder="City*">
+                            </div>
+
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="postalCode" placeholder="Postale Code*">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="row g-0 mt-5 d-none">
+                    <div class="col-xl-8 col-md-12 mx-auto d-none d-md-block">
+                        <div class="row border border-borderdark rounded-3 py-4 g-0">
+                            <div class="col-md-4 border-end border-black example-class d-flex justify-content-center">
+                                <div>
+                                    <h3 class="view-bag-form-hadder-text mb-3">Shipping methods</h3>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions1"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">DHL</label>
+                                    </div>
+                                    <div class="form-check form-check-inline ps-md-5">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions1"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">UPS</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 d-flex justify-content-center ps-md-5">
+                                <div>
+                                    <h3 class="view-bag-form-hadder-text mb-3">Payment Methods</h3>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions2"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">Visa / master card
+                                            AmEx</label>
+                                    </div>
+                                    <div class="form-check form-check-inline ps-5">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions2"
+                                            id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4">AmEx</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8 col-md-12 mx-auto d-block d-md-none">
+                        <div class="row border border-borderdark rounded-3 px-3 py-4 g-0">
+                            <div class="col-md-4 ps-3 pb-4 border-bottom border-black d-flex">
+                                <div>
+                                    <h3 class="view-bag-form-hadder-text mb-3">Shipping methods</h3>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions1"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">DHL</label>
+                                    </div>
+                                    <div class="form-check form-check-inline ps-md-5">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions1"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">UPS</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 pt-3 d-flex ps-3">
+                                <div>
+                                    <h3 class="view-bag-form-hadder-text mb-3">Payment Methods</h3>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions2"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">Visa / master card
+                                            AmEx</label>
+                                    </div>
+                                    <div class="form-check form-check-inline ps-5">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions2"
+                                            id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4">AmEx</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!------------------ Your Shipping Information End------------------->
+
+
+        <!------------------------ PROCEED TO PAY start------------------------------>
+        <section class="mt-5 view-bag-bg-color">
+            <div class="container-fluid">
+                <div class="row py-5">
+                    <div class="col-xl-8 col-md-12 mx-auto py-md-5">
+                        <div class="row g-0">
+                            <div class="col">
+                                <div class="mx-md-5 mx-2 mb-5 pb-xl-5 pb-md-4">
+                                    <div class="card" style="background-color: transparent">
+                                        <div class="card-body px-md-5 px-4 py-md-3 py-3">
+                                            <h5 class="booking-payment-proceed-card-tital text-center mt-3">Booking
+                                                Summary
+                                            </h5>
+                                            <div class="mt-4">
+                                                <h6 class="booking-payment-proceed-card-subtital text-uppercase"><span
+                                                        id="locationName"></span></h6>
+                                                <p class="booking-payment-proceed-card-paragraph mt-3">Some quick
+                                                    example
+                                                    text to build on the card title and make up the bulk of the card's
+                                                    content.</p>
+
+                                                <div class="d-flex align-items-center mb-4 mt-4">
+                                                    <img src="assets/images/ticket-booking-payment-proceed/Vector.svg"
+                                                        class="img-fluid mb-1 me-2" alt="">
+                                                    <p class="booking-payment-proceed-card-date text-uppercase mb-0">
+                                                        <span id="eventDate"></span> <span id="eventTime"></span>
+                                                    </p>
+                                                </div>
+
+
+
+                                                <div class="d-flex align-items-center py-1">
+                                                    <img src="assets/images/ticket-booking-payment-proceed/Vector1.svg"
+                                                        class="img-fluid mb-1 me-2" alt="">
+                                                    <p class="booking-payment-proceed-card-row mb-0">
+                                                        <span id="seatData"></span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mx-md-5 mx-2 mt-4 d-flex justify-content-between">
+                                    <div>
+                                        <h2 class="Ready-made-offcanvas-card-subtotal mb-3">Sub Total</h2>
+                                        <h2 class="Ready-made-offcanvas-card-subtotal mb-3 d-none">Delivery charge</h2>
+                                        <h2 class="Ready-made-offcanvas-card-total">Total</h2>
+                                    </div>
+
+                                    <div class="text-end">
+                                        <h2 class="Ready-made-offcanvas-card-price mb-3"><span id="subTotal"></span>
+                                        </h2>
+                                        <h2 class="Ready-made-offcanvas-card-price mb-3 d-none">$20.00</h2>
+                                        <h2 class="Ready-made-offcanvas-card-total"><span id="totalPrice"></span></h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div
+                            class="row g-0 mx-md-5 mx-2 mt-4 g-0 flex-md-row-reverse d-flex align-items-end justify-content-between">
+
+                            <div class="col-md-5 text-end">
+
+                                <button onclick="proceedPayment()" type="button"
+                                    class="btn btn-secondary Ready-Product-offcanvas-btn2 py-2 w-100">PROCEED TO
+                                    PAY</button>
+                            </div>
+
+                            <div
+                                class="col-md-6 mt-md-5 mt-4 d-flex align-items-end justify-content-md-start justify-content-center">
+                                <div class="d-flex">
+                                    <img class="img-fluid me-2" src="assets/images/Ready-made-single/Vector.svg" />
+                                    <img class="img-fluid me-2" src="assets/images/Ready-made-single/Group.svg" />
+                                    <img class="img-fluid me-2" src="assets/images/Ready-made-single/Group 161.svg" />
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!------------------------ PROCEED TO PAY END------------------------------>
+
+
+        <!-------------------------- select your topic start----------------------------->
+        <section class="mt-5 pt-md-0 pt-5">
+            <div class="container-fluid py-md-5">
+                <div class="col-xl-10 col-md-12 mx-auto">
+                    <div class="row g-0 py-md-5 pb-5 pb-md-0 pt-md-0 pt-2">
+
+                        <h3 class="view-bag-form-hadder-text mb-4">Select Your Topic</h3>
+
+                        <div class="col-xl-6 pe-md-3 col-md-12">
+
+                            <div class="row g-3  row-cols-2 row-cols-md-3 row-cols-xl-3">
+                                <div class="col">
+                                    <div class="card  view-bag-card-height">
+                                        <div
+                                            class="card-body text-center d-flex flex-column align-items-center justify-content-center align-items-xl-center">
+                                            <div>
+                                                <img src="assets/images/View-Bag/Scissors.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="mt-2">
+                                                <h4 class="view-bag-card-text">Tailoring</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card view-bag-card-height">
+                                        <div
+                                            class="card-body text-center d-flex flex-column justify-content-center align-items-center align-items-xl-center">
+                                            <div>
+                                                <img src="assets/images/View-Bag/Rectangle.svg" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <div class="mt-2">
+                                                <h4 class="view-bag-card-text">Shipping & Delivery</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card view-bag-card-height">
+                                        <div
+                                            class="card-body text-center d-flex flex-column justify-content-center align-items-center align-items-xl-center">
+                                            <div>
+                                                <img src="assets/images/View-Bag/Rectangle4.svg" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <div class="mt-2">
+                                                <h4 class="view-bag-card-text">Orders</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card view-bag-card-height">
+                                        <div
+                                            class="card-body text-center d-flex flex-column justify-content-center align-items-center align-items-xl-center">
+                                            <div>
+                                                <img src="assets/images/View-Bag/Creditcard.svg" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <div class="mt-2">
+                                                <h4 class="view-bag-card-text">Payment Issues</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card view-bag-card-height">
+                                        <div
+                                            class="card-body text-center d-flex flex-column align-items-center justify-content-center align-items-xl-center">
+                                            <div>
+                                                <img src="assets/images/View-Bag/Return.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="mt-2">
+                                                <h4 class="view-bag-card-text">Return</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card view-bag-card-height">
+                                        <div
+                                            class="card-body text-center d-flex flex-column justify-content-center align-items-center align-items-xl-center">
+                                            <div>
+                                                <img src="assets/images/View-Bag/Rectangle2.svg" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <div class="mt-2">
+                                                <h4 class="view-bag-card-text">Product</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-6 col-md-6 col-12 d-flex justify-content-center align-items-center bg-black text-white">
+                            <div class="d-none d-xl-block">
+                                <p class="mb-1 nearest-store-Download nearest-store">Download <br> Mobile App</p>
+                                <p class="nearest-store2">Exclusive Deals and Offers!</p>
+                                <div class="d-flex align-items-center">
+                                    <a href=""><img src="assets/images/nearest-store/Group-155.svg" class="img-fluid"
+                                            alt=""></a>
+                                    <a href=""><img src="assets/images/nearest-store/google-play-badge 1.svg"
+                                            class="img-fluid" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------------- select your topic End----------------------------->
+
+
+        <!------------------------------ Support start------------------------------>
+        <section id="viewbagsupport" class="mb-5 mt-5">
+            <div class="container-fluid pb-md-5 pb-5">
+                <div class="row g-0">
+                    <div class="col-xl-10 col-md-12 mx-auto">
+                        <div class="row g-0 d-flex align-items-center">
+                            <!-- Sidebar -->
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <div class="d-flex flex-column align-items-start">
+                                    <h5 class="mb-4 fw-bolder text-black">Support</h5>
+                                    <div class="nav flex-column nav-tabs  border-0">
+
+                                        <a class="nav-item nav-link ps-0 pb-3 view-bag-support-link active border-0"
+                                            id="tab1-tab" data-bs-toggle="pill" href="#tab1">Overview</a>
+                                        <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                            id="tab2-tab" data-bs-toggle="pill" href="#tab2">Delivery time</a>
+                                        <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                            id="tab3-tab" data-bs-toggle="pill" href="#tab3">shipping options</a>
+                                        <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                            id="tab4-tab" data-bs-toggle="pill" href="#tab4">Returns & refunds</a>
+                                        <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                            id="tab5-tab" data-bs-toggle="pill" href="#tab5">Overview</a>
+                                        <a class="nav-item nav-link ps-0 pb-3 view-bag-support-link border-0"
+                                            id="tab6-tab" data-bs-toggle="pill" href="#tab6">Selivery time</a>
+                                        <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                            id="tab7-tab" data-bs-toggle="pill" href="#tab7">Shipping options</a>
+                                        <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                            id="tab8-tab" data-bs-toggle="pill" href="#tab8">Overview</a>
+
+                                        <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                            id="tab9-tab" data-bs-toggle="pill" href="#tab9">Delivery time</a>
+
+                                        <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                            id="tab10-tab" data-bs-toggle="pill" href="#tab10">shipping options</a>
+
+
+                                        <!-- Add more tabs as needed -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="col-md-8">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="tab1">
+                                        <div class="accordion border-bottom" id="accordionExample">
+
+
+                                            <div class="accordion-item border-0">
+                                                <h2 class="accordion-header border-top" id="headingOne">
+                                                    <button class="accordion-button ps-0" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        <h3 class="view-bag-accordion-hadder mb-0 text-capitalize">How
+                                                            do i
+                                                            make a return?</h3>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body ps-md-3 ps-0">
+                                                        <p class="view-bag-accordion-description ps-md-3">Something not
+                                                            quite right or having second
+                                                            thoughts? You can return or exchange your unworn, unaltered
+                                                            product(s) within 30 days of
+                                                            delivery at no cost to you. Return online at <a
+                                                                class="link-black  view-bag-accordion-description-link"
+                                                                href="">www.suitsupply.com/return</a> by logging in with
+                                                            your order details, selecting the
+                                                            product(s) you wish to return, and indicating whether you’d
+                                                            like
+                                                            a refund or an exchange.
+                                                            You can then schedule a (free) carrier pick-up service, or
+                                                            drop
+                                                            off the product(s) yourself
+                                                            at either a store or drop-off point. Should you ship your
+                                                            returns back, you can use the
+                                                            prepaid return label that was included in the original
+                                                            shipment.
+                                                            After your return is
+                                                            processed at our warehouse, we will refund the total
+                                                            purchase
+                                                            amount to the original payment
+                                                            method used within 5-7 business days. Exchanged products
+                                                            will be
+                                                            re-shipped within 2
+                                                            business days after we received your return. Otherwise, you
+                                                            can
+                                                            visit any Suitsupply store
+                                                            for an immediate refund or exchange.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="accordion-item border-0">
+                                                <h2 class="accordion-header border-top" id="headingTwo">
+                                                    <button class="accordion-button collapsed ps-0" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        <h3 class="view-bag-accordion-hadder mb-0 text-capitalize">How
+                                                            do i
+                                                            make a return?</h3>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body ps-md-3 ps-0">
+                                                        <p class="view-bag-accordion-description ps-md-3">Something not
+                                                            quite right or having second
+                                                            thoughts? You can return or exchange your unworn, unaltered
+                                                            product(s) within 30 days of
+                                                            delivery at no cost to you. Return online at <a
+                                                                class="link-black  view-bag-accordion-description-link"
+                                                                href="">www.suitsupply.com/return</a> by logging in with
+                                                            your order details, selecting the
+                                                            product(s) you wish to return, and indicating whether you’d
+                                                            like
+                                                            a refund or an exchange.
+                                                            You can then schedule a (free) carrier pick-up service, or
+                                                            drop
+                                                            off the product(s) yourself
+                                                            at either a store or drop-off point. Should you ship your
+                                                            returns back, you can use the
+                                                            prepaid return label that was included in the original
+                                                            shipment.
+                                                            After your return is
+                                                            processed at our warehouse, we will refund the total
+                                                            purchase
+                                                            amount to the original payment
+                                                            method used within 5-7 business days. Exchanged products
+                                                            will be
+                                                            re-shipped within 2
+                                                            business days after we received your return. Otherwise, you
+                                                            can
+                                                            visit any Suitsupply store
+                                                            for an immediate refund or exchange.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="accordion-item border-0">
+                                                <h2 class="accordion-header border-top" id="headingThree">
+                                                    <button class="accordion-button collapsed ps-0" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        <h3 class="view-bag-accordion-hadder mb-0 text-capitalize">How
+                                                            do i
+                                                            make a return?</h3>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body ps-md-3 ps-0">
+                                                        <p class="view-bag-accordion-description ps-md-3">Something not
+                                                            quite right or having second
+                                                            thoughts? You can return or exchange your unworn, unaltered
+                                                            product(s) within 30 days of
+                                                            delivery at no cost to you. Return online at <a
+                                                                class="link-black  view-bag-accordion-description-link"
+                                                                href="">www.suitsupply.com/return</a> by logging in with
+                                                            your order details, selecting the
+                                                            product(s) you wish to return, and indicating whether you’d
+                                                            like
+                                                            a refund or an exchange.
+                                                            You can then schedule a (free) carrier pick-up service, or
+                                                            drop
+                                                            off the product(s) yourself
+                                                            at either a store or drop-off point. Should you ship your
+                                                            returns back, you can use the
+                                                            prepaid return label that was included in the original
+                                                            shipment.
+                                                            After your return is
+                                                            processed at our warehouse, we will refund the total
+                                                            purchase
+                                                            amount to the original payment
+                                                            method used within 5-7 business days. Exchanged products
+                                                            will be
+                                                            re-shipped within 2
+                                                            business days after we received your return. Otherwise, you
+                                                            can
+                                                            visit any Suitsupply store
+                                                            for an immediate refund or exchange.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="accordion-item border-0">
+                                                <h2 class="accordion-header border-top" id="heading4">
+                                                    <button class="accordion-button collapsed ps-0" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse4"
+                                                        aria-expanded="false" aria-controls="collapse4">
+                                                        <h3 class="view-bag-accordion-hadder mb-0 text-capitalize">How
+                                                            do i
+                                                            make a return?</h3>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse4" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body ps-md-3 ps-0">
+                                                        <p class="view-bag-accordion-description ps-md-3">Something not
+                                                            quite right or having second
+                                                            thoughts? You can return or exchange your unworn, unaltered
+                                                            product(s) within 30 days of
+                                                            delivery at no cost to you. Return online at <a
+                                                                class="link-black  view-bag-accordion-description-link"
+                                                                href="">www.suitsupply.com/return</a> by logging in with
+                                                            your order details, selecting the
+                                                            product(s) you wish to return, and indicating whether you’d
+                                                            like
+                                                            a refund or an exchange.
+                                                            You can then schedule a (free) carrier pick-up service, or
+                                                            drop
+                                                            off the product(s) yourself
+                                                            at either a store or drop-off point. Should you ship your
+                                                            returns back, you can use the
+                                                            prepaid return label that was included in the original
+                                                            shipment.
+                                                            After your return is
+                                                            processed at our warehouse, we will refund the total
+                                                            purchase
+                                                            amount to the original payment
+                                                            method used within 5-7 business days. Exchanged products
+                                                            will be
+                                                            re-shipped within 2
+                                                            business days after we received your return. Otherwise, you
+                                                            can
+                                                            visit any Suitsupply store
+                                                            for an immediate refund or exchange.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab2">
+                                        <h3>Tab 2 Content</h3>
+                                        <p>This is the content of Tab 2.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab3">
+                                        <h3>Tab 3 Content</h3>
+                                        <p>This is the content of Tab 3.</p>
+                                    </div>
+                                    <!-- Add more tab content as needed -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!------------------------------ Support End------------------------------>
+
+        <!-- Back to top button start -->
+        <section class="">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                    <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                    <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+                </button>
+            </div>
+        </section>
+        <!-- Back to top button start -->
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+            <input type="hidden" name="" id="eventId" value="0">
+
+            <!-- script -->
+            <%- script_tags %>
+                <!-- script -->
+
+                <script>
+                    // Get the current URL
+                    const currentUrl = window.location.search;
+                    const urlParams = new URLSearchParams(currentUrl);
+                    var voucherId = urlParams.get('voucher');
+                    var seatCount = urlParams.get('seatCount');
+
+                    function formatTime(inputTime) {
+                        // Split the input time into hours and minutes
+                        var timeParts = inputTime.split(':');
+                        var hours = parseInt(timeParts[0], 10);
+                        var minutes = parseInt(timeParts[1], 10);
+
+                        // Create a Date object and set the hours and minutes
+                        var date = new Date();
+                        date.setHours(hours);
+                        date.setMinutes(minutes);
+
+                        // Format the time using toLocaleTimeString
+                        var formattedTime = date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+
+                        return formattedTime;
+                    }
+
+                    function formatDate(inputDate) {
+                        // Create a Date object from the input date
+                        var date = new Date(inputDate);
+
+                        // Format the date using toLocaleDateString
+                        var options = { day: '2-digit', month: 'long', year: 'numeric' };
+                        var formattedDate = date.toLocaleDateString('en-US', options);
+
+                        // Append the ordinal suffix to the day
+                        var day = date.getDate();
+                        var ordinalSuffix = getOrdinalSuffix(day);
+                        formattedDate = formattedDate.replace(/\d{1,2}/, day + ordinalSuffix);
+
+                        return formattedDate;
+                    }
+
+                    function getOrdinalSuffix(number) {
+                        var suffix = 'th';
+                        if (number % 10 === 1 && number % 100 !== 11) {
+                            suffix = 'st';
+                        } else if (number % 10 === 2 && number % 100 !== 12) {
+                            suffix = 'nd';
+                        } else if (number % 10 === 3 && number % 100 !== 13) {
+                            suffix = 'rd';
+                        }
+                        return suffix;
+                    }
+
+                    function getEventData() {
+                        $.ajax({
+                            url: '/api/v1/booking/event/detail/by/voucher',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "id": voucherId,
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+
+                                    document.getElementById("eventId").value = data.data.event_id;
+
+                                    document.getElementById("locationName").innerHTML = data.data.location;
+                                    document.getElementById("eventDate").innerHTML = formatDate(data.data.event_date);
+                                    document.getElementById("eventTime").innerHTML = formatTime(data.data.event_start_time);
+                                    document.getElementById("seatData").innerHTML = data.data.ticket_category_name;
+                                    document.getElementById("subTotal").innerHTML = "LKR" + data.data.price.toLocaleString();
+                                    document.getElementById("totalPrice").innerHTML = "LKR " + data.data.price.toLocaleString();
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    getEventData()
+
+                    function proceedPayment() {
+                        $.ajax({
+                            url: '/api/v1/booking/add/by/voucher',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "firstName": $("#firstName").val(),
+                                "lastName": $("#lastName").val(),
+                                "email": $("#email").val(),
+                                "mobile": $("#phoneNumber").val(),
+                                "event": $("#eventId").val(),
+                                "seatCount": seatCount,
+                                "address": $("#address").val(),
+                                "country": $("#country").val(),
+                                "city": $("#city").val(),
+                                "postalcode": $("#postalCode").val(),
+                                "voucherId": voucherId,
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+
+                                    window.location.href = `/thank-you-page?voucher=${voucherId}`
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                </script>
+</body>
+
+</html>

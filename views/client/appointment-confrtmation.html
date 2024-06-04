@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Appointment Confirmation</title>
+    <%- header_tags %>
+        <style>
+            html,
+            body {
+                overflow-x: hidden !important;
+            }
+        </style>
+
+</head>
+
+<body>
+
+    <!------------------- navbar --------------->
+    <%- sidebar %>
+        <!--------------- navbar end --------------->
+
+        <!----------- Appointment calendar start---------->
+        <section id="appointmentConfrtmation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt-xl-5 pt-5">
+                        <div class="mt-md-4 pt-5">
+                            <h4 class="text-center appointment-calendar-tital">
+                                Appointment Confirmation
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-md-4 pb-5">
+                    <div class="col-md-12">
+                        <div class="mt-xl-5 pt-md-5 pt-3">
+                            <h4 class="text-center appointment-calendar-confrtmation-tital">
+                                FAQ
+                            </h4>
+                        </div>
+
+                        <div class="appointment-calendar-description-border mt-md-5 mt-4">
+                            <ul class="py-md-5 py-4 my-xl-3 mb-0">
+                                <li class="appointment-calendar-confrtmation-list mb-4">It is crucial to have brief and
+                                    explicit cancellation details in your appointment confirmation emails to ensure both
+                                    parties know the consequences of canceling the appointment. This will save the
+                                    customers' loyalty and reduce the number of no-shows.</li>
+                                <li class="appointment-calendar-confrtmation-list mb-4">If you like to reschedule an
+                                    appointment with us, please contact us before 24 hours to appointment date. Don't
+                                    hesitate to get in touch with us. We look forward to hearing from you.</li>
+                                <li class="appointment-calendar-confrtmation-list mb-4">In case of a missed appointment
+                                    or a cancellation, please contact us with less than 24 hours notice.</li>
+                                <li class="appointment-calendar-confrtmation-list mb-4">If you have any questions, feel
+                                    free to contact us. We look forward to seeing you soon.</li>
+                                <li class="appointment-calendar-confrtmation-list mb-4">Please check your email. We will
+                                    send confirmation email and SMS to your mobile within 1 - 2 hours.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 mt-5 pt-mb-3 text-center mb-xl-5 pb-xl-5 appointment-confrtmation-buttion-mq">
+                        <div class="d-flex justify-content-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
+                                <h3 class="gift-voucher-modal-conditions text-start">I have read &amp; accept the <a
+                                        class="gift-voucher-modal-conditions" href="">Terms &amp; Conditions</a></h3>
+                            </div>
+
+
+                        </div>
+
+                        <button type="button" class="btn appointment-confrtmation-buttion mt-xl-5 mt-md-5 mt-4"
+                            onclick="appointmentStatusChange()">CONFIRM</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!----------- Appointment calendar end---------->
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+            <!-- script -->
+            <script>
+                function getParameterByName(name, url) {
+                    if (!url) {
+                        url = window.location.href;
+                    }
+                    name = name.replace(/[[]]/g, "\\$&");
+                    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                        results = regex.exec(url);
+                    if (!results) return null;
+                    if (!results[2]) return '';
+                    return decodeURIComponent(results[2].replace(/\+/g, " "));
+                }
+
+                function appointmentStatusChange() {
+                    if (!document.getElementById("agreeCheck").checked) {
+                        iziToast.error({
+                            title: '',
+                            message: "Please agree to the terms and conditions"
+                        });
+                        return;
+                    }
+                    $.ajax({
+                        url: '/api/v1/appointment_booking/confirm',
+                        method: 'post',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            "id": getParameterByName('id')
+                        }),
+                        success: function (data) {
+                            if (data.status === true || data.status === "true") {
+                                iziToast.success({
+                                    title: '',
+                                    message: data.message,
+                                });
+
+                                setInterval(() => {
+                                    location.href = '/appointment-calendars'
+                                }, 1000)
+
+                            } else {
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: '',
+                                    message: data.message,
+                                });
+                            }
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            console.error('Error making the request:', textStatus, errorThrown);
+                            iziToast.error({
+                                theme: 'dark',
+                                title: 'Error',
+                                message: 'An error occurred while processing your request.',
+                            });
+                        }
+                    });
+                }
+
+            </script>
+
+            <%- script_tags %>
+                <!-- script -->
+</body>
+
+</html>

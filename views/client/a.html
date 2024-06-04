@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Month and Date Selection</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<div class="text-form-appointment">
+    Month
+</div>
+<select id="monthSelect" class="form-select">
+    <!-- Options will be dynamically loaded using JavaScript -->
+</select>
+
+<div class="col-md-6 d-flex gap-3 align-items-center justify-content-between mb-3">
+    <div class="text-form-appointment">
+        Date
+    </div>
+    <select id="dateSelect" class="form-select">
+        <!-- Options will be dynamically loaded using JavaScript -->
+    </select>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Populate months dropdown
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var currentMonth = new Date().getMonth();
+
+        for (var i = 0; i < 12; i++) {
+            var option = $('<option></option>').attr('value', months[i] + ' ' + (new Date().getFullYear())).text(months[i] + ' ' + (new Date().getFullYear()));
+            if (i === currentMonth) {
+                option.attr('selected', 'selected');
+            }
+            $('#monthSelect').append(option);
+        }
+
+        // Populate dates dropdown based on the selected month
+        updateDatesDropdown();
+
+        // Handle month change event
+        $('#monthSelect').change(function() {
+            updateDatesDropdown();
+        });
+
+        // Function to update dates dropdown based on the selected month
+        function updateDatesDropdown() {
+    // Parse input to extract month and year
+    let input = $('#monthSelect').val();
+    console.log(input);
+    const [monthString, yearString] = input.split(' ');
+    const month = new Date(Date.parse(monthString + ' 1, ' + yearString)).getMonth() + 1; // Months are 0-based in JavaScript
+    console.log(month);
+
+    // Get the current date
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth() + 1;
+    const currentYear = currentDate.getFullYear();
+
+    // Get the number of days in the month
+    const lastDay = new Date(yearString, month, 0).getDate();
+
+    const result = [];
+
+    // Loop through each day of the month
+    document.getElementById("dateSelect").innerHTML = ``;
+    for (let day = 1; day <= lastDay; day++) {
+        // Check if the date is not in the past
+        if (yearString > currentYear || (yearString == currentYear && month >= currentMonth)) {
+            const dateToCheck = new Date(`${month} ${day}, ${yearString}`);
+            if (dateToCheck >= currentDate) {
+                const dayOfWeek = dateToCheck.toLocaleDateString('en-US', { weekday: 'long' });
+
+                // Format the result and push to the array
+                result.push([day, `${month} - ${dayOfWeek}`]);
+                document.getElementById("dateSelect").innerHTML += `<option value="${day}">${day} - ${dayOfWeek}</option>`;
+            }
+        }
+    }
+
+    console.log(result);
+}
+
+
+    });
+</script>
+
+</body>
+</html>

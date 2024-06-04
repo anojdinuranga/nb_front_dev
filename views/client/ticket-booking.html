@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Ticket Booking</title>
+    <%- header_tags %>
+        <style>
+            html,
+            body {
+                overflow-x: hidden !important;
+            }
+        </style>
+</head>
+
+<body>
+
+    <!---------------- navbar start ---------------->
+    <%- sidebar %>
+        <!---------------- navbar end ------------------>
+
+        <!-- Glamour in the Spotlight start-->
+        <section class="bg-black pt-5 pb-5">
+            <div class="container-fluid pt-5 px-5">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-12 text-md-start text-center">
+                        <h3 class="glamour-spotlight-tital"><span class="event_name"></span></h3>
+                        <p class="glamour-spotlight-subtital"><span class="event_description"></span></p>
+
+                        <div class="d-flex mt-4">
+                            <button type="button"
+                                class="btn btn-light ticket-booking-btn d-flex align-items-center mb-0 me-3"><img
+                                    src="/assets/images/ticket-booking/akar-icons_location.svg"
+                                    class="img-fluid mb-0 me-1" alt=""><span class="location_name"></span></button>
+                            <button type="button"
+                                class="btn btn-light ticket-booking-btn d-flex align-items-center mb-0 me-3"><span
+                                    class="event_date"></span></button>
+                        </div>
+
+                    </div>
+                    <!-- <div
+                    class="col-xl-6 col-md-6 col-12 d-flex text-md-start text-center justify-content-md-end justify-content-center align-items-end">
+
+                    <div class="mt-md-0 mt-4">
+                        <h3 class="glamour-spotlight-subtital2 mb-4">You Have Selected 03 Seats</h3>
+                        <div class="d-flex">
+                            <button type="button" class="btn Contact-Careers-banner-btn2 me-3 text-white">03</button>
+                            <button type="button" class="btn btn-light Contact-Careers-banner-btn3">Change</button>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- Glamour in the Spotlight start-->
+
+        <!-- ticket booking map start-->
+        <section class="pt-5 px-xxl-5 mx-xl-5 ">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <h3 class="ticket-booking-map-tital text-uppercase">Seating chart</h3>
+                    <p class="ticket-booking-map-subtital mx-auto" style="max-width: 700px;"><span
+                            class="event_description"></span></p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="/assets/images/ticket-booking/seat_chart.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ticket booking map end-->
+
+        <!-- ticket booking cards start-->
+        <section class="py-5 my-xl-5 px-xxl-5 mx-xl-5 ">
+
+            <div class="container" id="ticketbookingbigcards">
+                <div class="row g-0">
+                    <div class="col-xl-11 col-md-12 mx-auto">
+
+                        <!-- Table Card Loop Div Start -->
+                        <div class="row gy-4 gx-4 row-cols-md-4 row-cols-2" id="Ticket_Booking_category_card"></div>
+                        <!-- Table Card Loop Div End -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5 d-none " id="part1">
+                <div class="row">
+                    <h5 class="ticket-booking-smallcard-header mb-0">Pick Your Perfect Sheets</h5>
+                </div>
+                <hr class="mt-2">
+
+                <!-- Table Card Loop Div Start -->
+                <div class="row gy-4 gx-4 row-cols-xl-6 row-cols-md-4 row-cols-2 mt-md-5 mt-3"
+                    id="Ticket_Booking_category_table_card"></div>
+                <!-- Table Card Loop Div Start -->
+
+            </div>
+
+            <div class="container  mt-5" id="part2" style="display: none;">
+                <div class="row">
+                    <h5 class="ticket-booking-smallcard-header mb-0">Pick Your Perfect Sheets</h5>
+                </div>
+                <hr class="mt-2">
+                <div class="row gy-4 gx-4 row-cols-xl-6 row-cols-md-4 row-cols-2 mt-md-5 mt-3">
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Diamond 01</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Diamond 02</h5>
+                                <a href="#" style="margin-top: 59px;"
+                                    class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
+                                    OUT</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Diamond 03</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Diamond 04</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Diamond 05</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Diamond 06</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container  mt-5" id="part3" style="display: none;">
+                <div class="row">
+                    <h5 class="ticket-booking-smallcard-header mb-0">Pick Your Perfect Sheets</h5>
+                </div>
+                <hr class="mt-2">
+                <div class="row gy-4 gx-4 row-cols-xl-6 row-cols-md-4 row-cols-2 mt-md-5 mt-3">
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Platinum 01</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Platinum 02</h5>
+                                <a href="#" style="margin-top: 59px;"
+                                    class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
+                                    OUT</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Platinum 03</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Platinum 04</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Platinum 05</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Platinum 06</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container  mt-5" id="part4" style="display: none;">
+                <div class="row">
+                    <h5 class="ticket-booking-smallcard-header mb-0">Pick Your Perfect Sheets</h5>
+                </div>
+                <hr class="mt-2">
+                <div class="row gy-4 gx-4 row-cols-xl-6 row-cols-md-4 row-cols-2 mt-md-5 mt-3">
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-gold h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Gold 01</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#gold">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-gold h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Gold 02</h5>
+
+                                <a href="#" style="margin-top: 59px;"
+                                    class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
+                                    OUT</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-gold h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Gold 03</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#gold">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-gold h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Gold 04</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#gold">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-gold h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Gold 05</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#gold">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card Ticket-Bookingpaty-card-gold h-100">
+                            <div class="card-body">
+                                <h5 class="ticket-booking-smallcard-tital">Gold 06</h5>
+                                <p class="ticket-booking-smallcard-subtital">Available <span
+                                        class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                    data-bs-toggle="modal" data-bs-target="#gold">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Button trigger modal start-->
+            <div class="dev-modals">
+
+                <!-- Diamond Plus Modal start-->
+                <div class="modal fade" id="diamondplus" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="diamondplusLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content rounded-0">
+                            <div class="modal-header border-0">
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center border-0">
+                                <div class="d-flex justify-content-center">
+                                    <div class="ticket-booking-modal-width">
+                                        <h1 class="ticket-booking-modal-tital1">Book Your Seats&nbsp;<span
+                                                class="ticket-booking-modal-tital2 ps-2 text-uppercase border-start border-2 border-black"
+                                                id="booking-model"></span>
+                                        </h1>
+                                        <p class="ticket-booking-modal-subtital mb-0">Experience high fashion, couture
+                                            elegance,
+                                            and
+                                            trendsetting styles at our exclusive runway showcase</p>
+                                    </div>
+                                </div>
+
+
+                                <!-- Seat Image Loop Div Start -->
+                                <div class="row gy-3 my-5 mx-auto" style="max-width: 75%;"
+                                    id="Ticket_Booking_category_seat_card"></div>
+                                <!-- Seat Image Loop Div End -->
+
+                            </div>
+                            <div class="modal-footer border-0 rounded-0" style="background-color: #000000BF;">
+                                <div class="row w-100">
+                                    <div
+                                        class="col-md-6  py-md-2 py-0 pb-md-2 pb-3 d-flex justify-content-md-start justify-content-center align-items-center">
+                                        <div class=" py-1 pe-md-4 pe-3 border-end ">
+                                            <h3 class="ticket-booking-modal-footer-text mb-0 "><span
+                                                    id="seat_count">0</span> Seats</h3>
+                                        </div>
+                                        <div class="py-1 ms-2 border-left border-dark">
+                                            <h3 class="ticket-booking-modal-footer-text mb-0" id="seat_price"></h3>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-6 d-flex justify-content-md-end justify-content-center justify-content-end align-items-center">
+                                        <button onclick="redirectFunction()"
+                                            class="btn btn-light Ticket-Bookingpatycard-btn d-flex align-items-center justify-content-center">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Diamond Plus Modal end-->
+
+            </div>
+            <!-- Button trigger modal end-->
+
+        </section>
+        <!-- ticket booking cards end-->
+
+        <!-- PROCEED  start-->
+        <section class="bg-black border-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-8 py-md-2 py-3 text-white d-flex align-items-center">
+                        <div class=" py-1 pe-md-4 pe-3 border-end">
+                            <h3 class="ticket-booking-price-bar mb-0 "><span id="sheetCount">0</span> Sheets</h3>
+                        </div>
+                        <div class="py-1 ms-2 border-left border-dark">
+                            <h3 class="ticket-booking-price-bar mb-0" id="sheetPrice"></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 d-flex justify-content-end align-items-center">
+                        <a href="/ticket-booking-payment-proceed"><button
+                                class="btn btn-light Ticket-Bookingpatycard-btn d-flex align-items-center justify-content-center">PROCEED</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROCEED  end-->
+
+        <!-- Back to top button start -->
+        <section class="">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                    <img src="/assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                    <img src="/assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+                </button>
+            </div>
+        </section>
+        <!-- Back to top button start -->
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+            <!-- script -->
+
+            <%- script_tags %>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        // Get references to the images
+                        var imageElements = [];
+
+                        for (var i = 1; i <= 100; i++) {
+                            var imageId = 'myImage' + i;
+                            var image = document.getElementById(imageId);
+                            imageElements.push(image);
+                        }
+
+                        // Set a single image source for all elements
+                        var commonImageSource = '/assets/images/ticket-booking/Sheet(1).svg';
+
+                        // Function to change the image for a specific image element
+                        function changeImage(imageElement) {
+                            // Update the source of the image
+                            imageElement.src = commonImageSource;
+                        }
+
+                        // Add a click event listener to each image
+                        for (var i = 0; i < imageElements.length; i++) {
+                            imageElements[i].addEventListener('click', function () {
+                                changeImage(this);
+                            });
+                        }
+                    });
+
+                    let selectedCard = null;
+
+
+                    function showPart(partNumber) {
+                        for (let i = 1; i <= 4; i++) {
+                            const part = document.getElementById('part' + i);
+                            if (i === partNumber) {
+                                part.style.display = 'block';
+                            } else {
+                                part.style.display = 'none';
+                            }
+                        }
+                    }
+                </script>
+
+                <!-- script -->
+                <input type="hidden" value="0" id="totalPrice">
+                <input type="hidden" value="0" id="totalSeatCount">
+                <input type="hidden" value="0" id="tableNumber">
+                <input type="hidden" value="" id="seatCategory">
+
+
+
+                <!-- Event Loading Function Start -->
+                <script>
+
+                    // Get the current URL
+                    var currentUrl = window.location.href;
+                    var parts = currentUrl.split('/');
+                    var id = 1;
+
+
+                    // Step 01 Function Start
+                    function getEventData() {
+                        $.ajax({
+                            url: '/api/v1/event/view-public',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "id": 1,
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+                                    id = data.data.id;
+
+                                    const location = document.getElementsByClassName("location_name");
+                                    const eventDate = document.getElementsByClassName("event_date");
+                                    const eventName = document.getElementsByClassName("event_name");
+                                    const eventDescription = document.getElementsByClassName("event_description");
+
+
+                                    for (var i = 0; i < location.length; i++) {
+                                        location[i].innerHTML = data.data.location;
+                                    }
+
+                                    for (var i = 0; i < eventDate.length; i++) {
+                                        eventDate[i].innerHTML = data.data.date;
+                                    }
+
+                                    for (var i = 0; i < eventName.length; i++) {
+                                        eventName[i].innerHTML = data.data.title;
+                                    }
+
+                                    for (var i = 0; i < eventDescription.length; i++) {
+                                        eventDescription[i].innerHTML = data.data.description;
+                                    }
+                                    getEventCategory()
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    getEventData()
+                    // Step 01 Function End
+
+                    // Step 02 Function Start (Ticket Category Loading))
+                    function getEventCategory() {
+                        $.ajax({
+                            url: '/api/v1/event_ticket_category/front-list',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "event_id": id,
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+
+                                    var arrayLength = data.data.length;
+
+                                    for (var i = 0; i < arrayLength; i++) {
+
+                                        document.getElementById("Ticket_Booking_category_card").innerHTML += `
+                        
+                        <div class="col">
+                            <div class="card p-xl-3 Ticket-Bookingpaty-card-diamond-plus h-100" style="background-color: ${data.data[i].ticket_category_color}">
+                                <div class="card-body">
+                                    <h5 class="ticket-booking-bigcard-tital">${data.data[i].ticket_category_name}</h5>
+                                    <p class="ticket-booking-bigcard-subtital">Available <span class="badge bg-white text-black ticket-booking-bigcard-subtital">${data.data[i].available_ticket_count}</span></p>
+                                    <a href="javascript:void(0)" class="btn btn-dark w-100 mt-xl-5 mt-md-4 d-flex align-items-center justify-content-center Ticket-Bookinggigcard-btn" onclick="eventTicketCategoryTable('${data.data[i].id}', \`${data.data[i].ticket_category_name}\` , '${data.data[i].ticket_category_color}')">Select</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                                    }
+
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+
+                    // Step 02 Function End
+
+
+                    // Step 03 Function Start (Table Loading))
+                    function eventTicketCategoryTable(event_ticket_category_id, name, color) {
+
+                        document.getElementById("part1").classList.remove("d-none");
+
+                        document.getElementById("seatCategory").value = name;
+
+                        $.ajax({
+                            url: '/api/v1/event_ticket_category_table/front-list',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "event_ticket_category_id": event_ticket_category_id,
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+                                    var arrayLength = data.data.length;
+                                    console.log("🚀 ~ file: ticket-booking.html:1053 ~ eventTicketCategoryTable ~ data.data:", data.data)
+
+                                    var htmlContent = "";
+
+                                    for (var i = 0; i < arrayLength; i++) {
+                                        htmlContent += `
+                                        <div class="col">
+                                            <div class="card Ticket-Bookingpaty-card-diamond-plus h-100" style="background-color: ${color}">
+                                                <div class="card-body">
+                                                    <h5 class="ticket-booking-smallcard-tital">${name} <br> Table 0${data.data[i].table_number}</h5>
+                                                    <p class="ticket-booking-smallcard-subtital">Available <span class="badge bg-white text-black ticket-booking-smallcard-subtital1">${data.data[i].available_ticket_count}</span></p>
+                                                    <a href="#" class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#diamondplus" 
+                                                    onclick="eventTicketCategorySeat('${data.data[i].id}','${data.data[i].table_number}')">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>`;
+                                    }
+
+                                    document.getElementById("Ticket_Booking_category_table_card").innerHTML = htmlContent;
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    // Step 03 Function End
+
+
+                    // Step 04 Function Start (Seat Loading))
+                    function eventTicketCategorySeat(id, table_number) {
+
+                        document.getElementById("totalPrice").value = "0";
+                        document.getElementById("totalSeatCount").value = "0";
+                        document.getElementById("tableNumber").value = id;
+
+                        $.ajax({
+                            url: '/api/v1/event_ticket_category_seat/front-list',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "event_ticket_category_table_id": id,
+                            }),
+
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+                                    var arrayLength = data.data.length;
+
+                                    var htmlContent = "";
+
+                                    let category = document.getElementById("seatCategory").value;
+
+                                    document.getElementById("booking-model").innerHTML = category + " table " + "0" + table_number;
+
+                                    for (var i = 0; i < arrayLength; i++) {
+
+                                        if (data.data[i].booking_id == null) {
+
+                                            htmlContent += `
+                            
+                                    <div onclick='ticketBookSelect(${data.data[i].id}, this)' class="col-md col-3 mt-md-0">
+                                        <input type="hidden" value="0" class="type">
+                                        <input type="hidden" value="${data.data[i].price}" class="price">
+                                        <img id="myImage28" src="/assets/images/ticket-booking/Sheet.svg"
+                                            class="img-fluid" alt="">
+                                    </div>`;
+
+                                        } else {
+
+                                            htmlContent += `
+                            
+                                    <div class="col-md col-3 mt-md-0">
+                                        <img id="myImage28" src="/assets/images/ticket-booking/Sheet(2).svg"
+                                            class="img-fluid" alt="">
+                                    </div>`;
+
+                                        }
+                                    }
+
+                                    document.getElementById("Ticket_Booking_category_seat_card").innerHTML = htmlContent;
+
+
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    // Step 04 Function End
+
+                    // Redirect Function (Confirm Button)
+                    function redirectFunction() {
+                        const table_id = $("#tableNumber").val();
+                        const seat_count = $("#totalSeatCount").val();
+
+
+                        window.location.href = `/ticket-booking-payment-proceed?table=${table_id}&seatCount=${seat_count}`
+                    }
+
+                    function ticketBookSelect(id, element) {
+                        let type = element.getElementsByClassName("type")[0].value;
+                        if (type === "0") {
+                            element.getElementsByClassName("type")[0].value = "1";
+                            let price = parseFloat(element.getElementsByClassName("price")[0].value);
+                            document.getElementById("totalSeatCount").value = parseInt(document.getElementById("totalSeatCount").value) + 1;
+                            document.getElementById("totalPrice").value = parseFloat(document.getElementById("totalPrice").value) + price;
+                            element.getElementsByClassName("img-fluid")[0].src = '/assets/images/ticket-booking/Sheet(1).svg';
+                        } else {
+                            element.getElementsByClassName("type")[0].value = "0";
+                            let price = parseFloat(element.getElementsByClassName("price")[0].value);
+                            document.getElementById("totalSeatCount").value = parseInt(document.getElementById("totalSeatCount").value) - 1;
+                            document.getElementById("totalPrice").value = parseFloat(document.getElementById("totalPrice").value) - price;
+                            element.getElementsByClassName("img-fluid")[0].src = '/assets/images/ticket-booking/Sheet.svg';
+                        }
+                        document.getElementById("seat_count").innerHTML = (document.getElementById("totalSeatCount").value);
+                        document.getElementById("seat_price").innerHTML = (document.getElementById("totalPrice").value) + " LKR";
+                        document.getElementById("sheetCount").innerHTML = (document.getElementById("totalSeatCount").value);
+                        document.getElementById("sheetPrice").innerHTML = (document.getElementById("totalPrice").value) + " LKR";
+
+                        // alert(id)
+                    }
+
+
+                </script>
+
+</body>
+
+</html>

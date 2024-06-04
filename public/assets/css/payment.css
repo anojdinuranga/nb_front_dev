@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'Avenir Book';
+	src: url('/assets/avenir/Avenir-Black-03.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-BlackOblique-04.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Book-01.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-BookOblique-02.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Heavy-05.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-HeavyOblique-06.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Light-07.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-LightOblique-08.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Medium-09.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-MediumOblique-10.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Oblique-11.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Roman-12.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir Book';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: inherit;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.container img {
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.back-button {
+    outline: none;
+    box-shadow: unset;
+    background-color: #2d2e2c;
+    border-radius: 4px;
+    height: 47px;
+    font-size: 14px;
+    font-weight: 350;
+    width: 284px;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.title {
+    text-align: center; 
+}
+
+.description {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error-message {
+    margin-top: 20px;
+    color: #ff3f3f;
+}
+
+.error-message span {
+    font-weight: 700;
+    color: #000 !important;
+}

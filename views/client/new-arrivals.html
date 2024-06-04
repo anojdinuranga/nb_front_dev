@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - New Arrivals</title>
+    <%- header_tags %>
+        <style>
+            html,
+            body {
+                overflow-x: hidden !important;
+            }
+        </style>
+</head>
+
+<body>
+
+    <!------------------- navbar --------------->
+    <%- sidebar %>
+        <!------------------- navbar end--------------->
+
+
+        <!---------------- Men’s New Arrivals start----------->
+        <div class="Arraivals-border">
+            <section class="my-xl-5 my-md-4 my-3 border-top border-secondary">
+                <div class="container-fluid g-md-0">
+                    <div class="row g-0 text-center py-xl-5 py-md-4 py-3">
+                        <h2 class="new-arraivals-hadder pb-xl-4 pb-md-3">New Arrivals</h2>
+                        <div class="d-flex justify-content-center">
+                            <p class="new-arraivals-description">Introducing the latest in fashion for both him and her
+                                at NB and QK. Explore our new arrivals that redefine style and sophistication. From
+                                cutting-edge trends for ladies to dapper essentials for gents, our curated collection
+                                ensures you stay ahead in the fashion game. Discover the freshest looks for every
+                                occasion – because your wardrobe deserves an upgrade.</p>
+                        </div>
+                    </div>
+                    <div class="row g-0 px-md-5">
+                        <div class="col-xl-2 col-md-3 col-12 Arraivals-filter-buttion-mq">
+                            <button type="button" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                aria-controls="offcanvasExample"
+                                class="btn d-flex justify-content-between Arraivals-buttons Arraivals-filter-buttion">Filter
+                                <img src="assets/images/New-Arraivals/adjustment-button-icon-filter-line-illustration-symbol.svg"
+                                    class="img-fluid ms-3" alt=""></button>
+                        </div>
+
+                        <!---------------- Men’s New Arrivals buttons start----------->
+                        <div class="col-xl-10 col-md-9 col-11" id="categories">
+                            <button type="button" class="btn  Arraivals-buttons mt-md-0 mt-3 categoryBtn"
+                                onclick="all_categories(this)">All</button>
+                        </div>
+                        <!---------------- Men’s New Arrivals buttons end----------->
+                    </div>
+
+                    <!---------------- Men’s New Arrivals cards start----------->
+                    <div class="row row-cols-md-2 row-cols-1 g-md-2 g-xl-2 pt-md-5 pt-4" id="product">
+
+
+                    </div>
+                    <!---------------- Men’s New Arrivals cards end----------->
+
+                    <!---------------- Men’s New Arrivals lord more start----------->
+                    <div class="row g-0">
+                        <div class="text-center">
+                            <!-- <h6 class="text-secondary py-3 mb-0">Loading…</h6> -->
+                        </div>
+                    </div>
+                    <!---------------- Men’s New Arrivals lord more end----------->
+
+                    <!---------------- Men’s New Arrivals offcanvas start----------->
+                    <div class="offcanvas offcanvas-start d-flex flex-column justify-content-between" tabindex="-1"
+                        id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+                        <div>
+                            <div class="offcanvas-header d-flex justify-content-end">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="text-center pt-3">
+                                <h3 class="newarrivals-offcanvas-accordion-heading">Filter & Sort</h3>
+                            </div>
+                            <div class="offcanvas-body select-fabric-scrollbar overflow-y-scroll mt-4"
+                                style="max-height: 60vh;">
+                                <div id="newarrivalsaccordion">
+                                    <div class="accordion" id="myAccordion">
+                                        <div class="accordion-item border-0 border-bottom">
+                                            <h2 class="accordion-header border-0" id="headingOne">
+                                                <button type="button" class="accordion-button collapsed border-0"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                                    <h5 class="newarrivals-offcanvas-accordion-tital mb-0 py-1">Sort By
+                                                    </h5>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#myAccordion">
+                                                <div>
+                                                    <div class="mt-4 mb-3 px-3" id="sortingOptions">
+                                                        <div class="form-check py-2">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                                Newest
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check py-2">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                Most Popular
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="form-check py-2">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault3">
+                                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                                Recommended
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="form-check py-2">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault4">
+                                                            <label class="form-check-label" for="flexRadioDefault4">
+                                                                Price High-Low
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="form-check py-2">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault5">
+                                                            <label class="form-check-label" for="flexRadioDefault5">
+                                                                Price Low-High
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion" id="myAccordion">
+                                            <div class="accordion-item border-0 border-bottom">
+                                                <h2 class="accordion-header" id="headingtwo">
+                                                    <button type="button" class="accordion-button collapsed"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapsetwo">
+                                                        <h5 class="newarrivals-offcanvas-accordion-tital mb-0 py-1">
+                                                            Colour</h5>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapsetwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#myAccordion">
+                                                    <div>
+                                                        <div class="row row-cols-3 px-3 gy-3" id="productColor">
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="d-none accordion-item border-0 border-bottom">
+                                                <h2 class="accordion-header border-0" id="headingThree">
+                                                    <button type="button" class="accordion-button collapsed border-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                                        <h5 class="newarrivals-offcanvas-accordion-tital mb-0 py-1">
+                                                            Product</h5>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    data-bs-parent="#myAccordion">
+                                                    <div id="newarrivalsaccordioncards">
+                                                        <div class="row row-cols-3 px-3 gy-3">
+                                                            <div class="col">
+                                                                <div class="card py-2 px-4">
+                                                                    <img src="assets/images/New-Arraivals/t-shirt.PNG"
+                                                                        class="img-fluid" alt="...">
+                                                                    <div class="card-body mt-2 p-0 text-center">
+                                                                        <p class="mb-0 mt-2">Black</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="col">
+                                                                <div class="card py-2 px-4">
+                                                                    <img src="assets/images/New-Arraivals/t-shirt.PNG"
+                                                                        class="img-fluid" alt="...">
+                                                                    <div class="card-body mt-2 p-0 text-center">
+                                                                        <p class="mb-0 mt-2">Black</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="col">
+                                                                <div class="card py-2 px-4">
+                                                                    <img src="assets/images/New-Arraivals/t-shirt.PNG"
+                                                                        class="img-fluid" alt="...">
+                                                                    <div class="card-body mt-2 p-0 text-center">
+                                                                        <p class="mb-0 mt-2">Black</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="col">
+                                                                <div class="card py-2 px-4">
+                                                                    <img src="assets/images/New-Arraivals/t-shirt.PNG"
+                                                                        class="img-fluid" alt="...">
+                                                                    <div class="card-body mt-2 p-0 text-center">
+                                                                        <p class="mb-0 mt-2">Black</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col">
+                                                                <div class="card py-2 px-4">
+                                                                    <img src="assets/images/New-Arraivals/t-shirt.PNG"
+                                                                        class="img-fluid" alt="...">
+                                                                    <div class="card-body mt-2 p-0 text-center">
+                                                                        <p class="mb-0 mt-2">Black</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col">
+                                                                <div class="card py-2 px-4">
+                                                                    <img src="assets/images/New-Arraivals/t-shirt.PNG"
+                                                                        class="img-fluid" alt="...">
+                                                                    <div class="card-body mt-2 p-0 text-center">
+                                                                        <p class="mb-0 mt-2">Black</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-3 mb-5">
+                            <div class="d-flex justify-content-center w-100 pt-3 border-top">
+                                <a type="button" class="btn w-100 newarrivals-accordion-offcanvas-btn1"
+                                    onclick="clear_all()">Clear All</a>
+                                <a type="button" class="btn w-100 mx-2 newarrivals-accordion-offcanvas-btn2"
+                                    data-bs-dismiss="offcanvas">Apply</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!---------------- Men’s New Arrivals offcanvas end----------->
+            </section>
+        </div>
+        <!---------------- Men’s New Arrivals end----------->
+
+
+        <!-- Back to top button start -->
+        <section class="">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                    <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                    <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+                </button>
+
+            </div>
+        </section>
+        <!-- Back to top button start -->
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+            <!-- script start -->
+            <%- script_tags %>
+                <!-- script start end-->
+
+                <script>
+                    let items = [];
+                    let currency = 'USD';
+                    let colorId = 0;
+                    let categoryId = 0;
+
+                    function getProduct() {
+                        $.ajax({
+                            url: '/api/v1/product_public/list',
+                            method: 'get',
+                            contentType: 'application/json',
+                            data: {},
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+
+                                    items = data.data.data;
+                                    currency = data.data.currency;
+                                    renderItems(items);
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    getProduct()
+
+                    function getColors() {
+                        $.ajax({
+                            url: '/api/v1/product_public/color/list',
+                            method: 'get',
+                            contentType: 'application/json',
+                            data: {},
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+                                    const productContainer = document.getElementById('productColor');
+
+                                    for (let i = 0; i < data.data.length; i++) {
+                                        const item = data.data[i];
+
+                                        // Generate HTML for each item
+                                        const productHTML = `
+                                        <div class="col">
+                                            <div onclick="colorFilter(${item.id}, this)" class="card border-0 text-center py-2 px-4">
+                                                <div class="filter-color-box" style="background-color:${item.code}"></div>
+                                                <div  class="card-body mt-2 p-0">
+                                                    <p class="mb-0 mt-2 itemName">${item.name}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        `;
+
+                                        // Append each item's HTML to the container
+                                        productContainer.innerHTML += productHTML;
+                                    }
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    getColors()
+
+                    function getSubCategories() {
+                        $.ajax({
+                            url: '/api/v1/product_sub_category/list',
+                            method: 'post',
+                            contentType: 'application/json',
+                            data: {},
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+                                
+                                    const sortedArray = data.data.sort((a, b) => {
+                                        const nameA = a.name.toUpperCase();
+                                        const nameB = b.name.toUpperCase();
+                                        if (nameA < nameB) {
+                                            return -1;
+                                        }
+                                        if (nameA > nameB) {
+                                            return 1;
+                                        }
+                                        return 0;
+                                    });
+
+                                    const productContainer = document.getElementById('categories');
+
+                                    for (let i = 0; i < sortedArray.length; i++) {
+                                        const item = sortedArray[i];
+
+                                        // Generate HTML for each item
+                                        const productHTML = ` <button type="button" class="btn categoryBtn Arraivals-buttons mt-md-0 mt-3" onclick="categoryFilter(${item.id},this)">${item.name}</button> `;
+
+                                        // Append each item's HTML to the container
+                                        productContainer.innerHTML += productHTML;
+                                    }
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    getSubCategories()
+
+
+
+                    // Add event listener to the sorting options container
+                    const sortingOptions = document.getElementById('sortingOptions');
+                    sortingOptions.addEventListener('change', (event) => {
+                        if (event.target.type === 'radio' && event.target.checked) {
+                            const sortType = event.target.id.replace('flexRadioDefault', '').toLowerCase();
+                            updateSortedItems(sortType);
+                        }
+                    });
+
+
+                    // Function to update the sorted items
+                    function updateSortedItems(sortType) {
+                        if (sortType.replace(" ", "") == "1") {
+                            // Sort by newest logic
+                            items = items.sort((a, b) => new Date(b.date) - new Date(a.date));
+                            renderItems(items);
+                        } else if (sortType.replace(" ", "") == "2") {
+                            // Sort by most popular logic
+                        } else if (sortType.replace(" ", "") == "3") {
+                            // Sort by recommended logic
+                        } else if (sortType.replace(" ", "") == "4") {
+                            // Sort by price high to low logic
+                            items = items.sort((a, b) => b.price - a.price);
+                            renderItems(items);
+                        } else if (sortType.replace(" ", "") == "5") {
+                            // Sort by price low to high logic
+                            items = items.sort((a, b) => a.price - b.price);
+                            renderItems(items);
+                        }
+                    }
+
+                    function colorFilter(id, element) {
+                        let color = element.getElementsByClassName("itemName")[0].style.color;
+                        document.querySelectorAll('.itemName').forEach(item => item.style.color = '#8c8c8c');
+                        if (color === "rgb(0, 0, 0)") {
+                            colorId = 0;
+                            renderItems(items)
+                        } else {
+                            element.getElementsByClassName("itemName")[0].style.color = "#000000";
+                            // FIlter
+                            let filteredItems = items.filter(item => item.color === id);
+                            if (categoryId !== 0) {
+                                filteredItems = filteredItems.filter(item => item.sub_category === categoryId);
+                            }
+                            colorId = id;
+                            renderItems(filteredItems)
+                        }
+
+                    }
+
+                    function categoryFilter(id, element) {
+                        let border = element.style.border;
+                        document.querySelectorAll('.categoryBtn').forEach(item => item.style.border = '');
+                        if (border === "1px solid black") {
+                            categoryId = 0;
+                            console.log("1=>", items.length, id)
+                            renderItems(items)
+                        } else {
+                            element.style.border = "1px solid black";
+                            // FIlter
+                            let filteredItems = items.filter(item => item.sub_category === id);
+                            if (colorId !== 0) {
+                                filteredItems = filteredItems.filter(item => item.color === colorId);
+                            }
+                            categoryId = id;
+                            console.log("1=>", filteredItems.length, id)
+                            renderItems(filteredItems)
+                        }
+
+                    }
+
+                    function all_categories(element) {
+                        categoryId = 0;
+                        document.querySelectorAll('.categoryBtn').forEach(item => item.style.border = '');
+                        renderItems(items);
+                    }
+                    function clear_all() {
+                        colorId = 0;
+                        document.querySelectorAll('.itemName').forEach(item => item.style.color = 'black');
+                        all_categories("")
+                    }
+
+                    function shuffleArray(array) {
+                        for (let i = array.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [array[i], array[j]] = [array[j], array[i]];
+                        }
+                        return array;
+                    }
+
+                    function renderItems(items) {
+                        // Clear existing content
+                        const productContainer = document.getElementById('product');
+                        productContainer.innerHTML = '';
+
+                        // Shuffle items array
+                        const shuffledItems = shuffleArray(items);
+
+                        // Render items
+                        for (let i = 0; i < shuffledItems.length; i++) {
+                            const item = shuffledItems[i];
+                            const productHTML = `
+                            <div class="col mb-5">
+                                <div class="card border-0" >
+                                    <img src="${item.feature_image_url}" class="img-fluid w-100" style="background-color: #EFEFEF" alt="">
+                                    <div class="ms-md-5 my-4">
+                                        <a class="stretched-link new-item-hadder-text mb-1" href="/ready-made-single-product/${item.id}">${item.title}</a>
+                                        <h5 class="new-item-hadder-description mb-1">${item.short_description}</h5>
+                                        <h1 class="new-item-hadder-text-price mb-1"> ${priceShow(currency, item.price.toLocaleString())}</h1> <span class="discounted-price">${priceShow(currency, item.price.toLocaleString())}</span>
+                                    </div>
+                                </div>
+                            </div>`;
+
+                            // Append each item's HTML to the container
+                            productContainer.innerHTML += productHTML;
+                        }
+                    }
+                    // Initial rendering of items
+                </script>
+</body>
+
+</html>

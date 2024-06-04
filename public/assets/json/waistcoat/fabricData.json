@@ -1,0 +1,20 @@
+[
+  {
+    "category": "body",
+    "name": "fabric_1",
+    "file_path": "/assets/textures/fabrics/01.jpg",
+    "tiling": {
+      "wrapS": 8,
+      "wrapT": 8
+    }
+  },
+  {
+    "category": "body",
+    "name": "fabric_5",
+    "file_path": "/assets/textures/fabrics/05.jpg",
+    "tiling": {
+      "wrapS": 5,
+      "wrapT": 5
+    }
+  }
+]

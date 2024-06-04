@@ -1,0 +1,146 @@
+[
+    {
+        "category": "coller",
+        "category_name": "Coller",
+        "name": "point_coller",
+        "file_path": "/assets/models/national/coller/point_coller.glb",
+        "image": "/assets/images/product-configurator/national/ar_coller-point.png",
+        "assets_name": "Point Coller"
+    },
+    {
+        "category": "coller",
+        "category_name": "Coller",
+        "name": "round_coller",
+        "file_path": "/assets/models/national/coller/round_coller.glb",
+        "image": "/assets/images/product-configurator/national/ar_coller-round.png",
+        "assets_name": "Round Coller"
+    },
+    {
+        "category": "coller",
+        "category_name": "Coller",
+        "name": "point_coller_with_pipin",
+        "file_path": "/assets/models/national/coller/point_coller_pipin.glb",
+        "image": "/assets/images/product-configurator/national/ar_coller-point-pipin.png",
+        "assets_name": "Point Coller With Pipin"
+    },
+    {
+        "category": "coller",
+        "category_name": "Coller",
+        "name": "round_coller_with_pipin",
+        "file_path": "/assets/models/national/coller/round_coller_pipin.glb",
+        "image": "/assets/images/product-configurator/national/ar_coller-round-pipin.png",
+        "assets_name": "Round Coller With Pipin"
+    },
+    {
+        "category": "height",
+        "category_name": "Height",
+        "name": "full_height_single",
+        "file_path": "/assets/models/national/height/full_height_single.glb",
+        "image": "/assets/images/product-configurator/national/ar_full-hight.png",
+        "assets_name": "Full Height Single"
+    },
+    {
+        "category": "height",
+        "category_name": "Height",
+        "name": "mid_height_single",
+        "file_path": "/assets/models/national/height/mid_height_single.glb",
+        "image": "/assets/images/product-configurator/national/ar_mid-hight.png",
+        "assets_name": "Mid Height Single"
+    },
+    {
+        "category": "sarong",
+        "category_name": "Sarong",
+        "name": "sarong",
+        "file_path": "/assets/models/national/sarong/sarong.glb",
+        "image": "",
+        "assets_name": "Sarong"
+    },
+    {
+        "category": "shawl",
+        "category_name": "Shawl",
+        "name": "full_height_shawl",
+        "file_path": "/assets/models/national/shawl/full_height_shawl.glb",
+        "image": "/assets/images/product-configurator/national/ar_shawl-full-hight.png",
+        "assets_name": "Full Height Shawl"
+    },
+    {
+        "category": "shawl",
+        "category_name": "Shawl",
+        "name": "mid_height_shawl",
+        "file_path": "/assets/models/national/shawl/mid_height_shawl.glb",
+        "image": "/assets/images/product-configurator/national/ar_shawl-mid-hight.png",
+        "assets_name": "Mid Height Shawl"
+    },
+    {
+        "category": "shawl",
+        "category_name": "Shawl",
+        "name": "no_shawl",
+        "file_path": "",
+        "image": "/assets/images/product-configurator/national/ar_fullhight-without-shawl.png",
+        "assets_name": "No Shawl"
+    },
+    {
+        "category": "frontClose",
+        "category_name": "Front Close",
+        "name": "front_close_standard_square_4_button_closing",
+        "file_path": "/assets/models/national/front_close/front_close_standard_square_4_button_closing.glb",
+        "image": "/assets/images/product-configurator/national/ar_front-close-standard-squre-4button-closing.png",
+        "assets_name": "Front Close Standard Square 4 Button Closing"
+    },
+    {
+        "category": "frontClose",
+        "category_name": "Front Close",
+        "name": "front_close_narrow_cut_concealed_buttons",
+        "file_path": "/assets/models/national/front_close/front_close_narrow_cut_concealed_buttons.glb",
+        "image": "/assets/images/product-configurator/national/ar_front-close-narrow-cut-concealed-buttons.png",
+        "assets_name": "Front Close Narrow Cut Concealed Buttons"
+    },
+    {
+        "category": "frontClose",
+        "category_name": "Front Close",
+        "name": "front_close_standard_concealed_button_closing",
+        "file_path": "/assets/models/national/front_close/front_close_standard_concealed_button_closing.glb",
+        "image": "/assets/images/product-configurator/national/ar_front-close-standard-concealed-button-closing.png",
+        "assets_name": "Front Close Standard Concealed Button Closing"
+    },
+    {
+        "category": "frontClose",
+        "category_name": "Front Close",
+        "name": "front_close_standard_point_4_button_closing",
+        "file_path": "/assets/models/national/front_close/front_close_standard_point_4_button_closing.glb",
+        "image": "/assets/images/product-configurator/national/ar_front-close-standard-point-4button-closing.png",
+        "assets_name": "Front Close Standard Point 4 Button Closing"
+    },
+    {
+        "category": "frontOpen",
+        "category_name": "Front Open",
+        "name": "middle_hight_front_open_concealed_buttons",
+        "file_path": "/assets/models/national/front_open/middle_hight_front_open_concealed_buttons.glb",
+        "image": "/assets/images/product-configurator/national/ar_middle-hight-front-open-concealed-buttons.png",
+        "assets_name": "Middle Hight Front Open Concealed Buttons"
+    },
+    {
+        "category": "frontOpen",
+        "category_name": "Front Open",
+        "name": "middle_hight_front_open_6_buttons",
+        "file_path": "/assets/models/national/front_open/middle_hight_front_open_6_buttons.glb",
+        "image": "/assets/images/product-configurator/national/ar_middle-hight-front-open-6-buttons.png",
+        "assets_name": "Middle Hight Front Open 6 Buttons"
+    },
+    {
+        "category": "frontOpen",
+        "category_name": "Front Open",
+        "name": "full_hight_front_open_concealed_buttons",
+        "file_path": "/assets/models/national/front_open/full_hight_front_open_concealed_buttons.glb",
+        "image": "/assets/images/product-configurator/national/ar_middle-hight-front-open-concealed-buttons.png",
+        "assets_name": "Full Hight Front Open Concealed Buttons"
+    },
+    {
+        "category": "frontOpen",
+        "category_name": "Front Open",
+        "name": "full_hight_front_open_6_buttons",
+        "file_path": "/assets/models/national/front_open/full_hight_front_open_6_buttons.glb",
+        "image": "/assets/images/product-configurator/national/ar_middle-hight-front-open-6-buttons.png",
+        "assets_name": "Full Hight Front Open 6 Buttons"
+    }
+]

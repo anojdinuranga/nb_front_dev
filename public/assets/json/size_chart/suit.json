@@ -1,0 +1,100 @@
+{
+    "suit": [
+        {
+            "size": "3XS",
+            "shortHeight": "",
+            "regularHeight": "30",
+            "longHeight": ""
+        },
+        {
+            "size": "XXS",
+            "shortHeight": "",
+            "regularHeight": "32",
+            "longHeight": ""
+        },
+        {
+            "size": "XS",
+            "shortHeight": "34S",
+            "regularHeight": "34",
+            "longHeight": ""
+        },
+        {
+            "size": "S",
+            "shortHeight": "36S",
+            "regularHeight": "36",
+            "longHeight": "36L"
+        },
+        {
+            "size": "M",
+            "shortHeight": "38S",
+            "regularHeight": "38",
+            "longHeight": "38L"
+        },
+        {
+            "size": "M/L",
+            "shortHeight": "40S",
+            "regularHeight": "40",
+            "longHeight": "40L"
+        },
+        {
+            "size": "L",
+            "shortHeight": "42S",
+            "regularHeight": "42",
+            "longHeight": "42L"
+        },
+        {
+            "size": "XL",
+            "shortHeight": "44S",
+            "regularHeight": "44",
+            "longHeight": "44L"
+        },
+        {
+            "size": "XXL",
+            "shortHeight": "46S",
+            "regularHeight": "46",
+            "longHeight": "46L"
+        },
+        {
+            "size": "3XL",
+            "shortHeight": "48S",
+            "regularHeight": "48",
+            "longHeight": "48L"
+        },
+        {
+            "size": "4XL",
+            "shortHeight": "50S",
+            "regularHeight": "50",
+            "longHeight": "50L"
+        },
+        {
+            "size": "5XL",
+            "shortHeight": "52S",
+            "regularHeight": "52",
+            "longHeight": "52L"
+        },
+        {
+            "size": "6XL",
+            "shortHeight": "54S",
+            "regularHeight": "54",
+            "longHeight": "54L"
+        },
+        {
+            "size": "7XL",
+            "shortHeight": "56S",
+            "regularHeight": "56",
+            "longHeight": ""
+        },
+        {
+            "size": "8XL",
+            "shortHeight": "",
+            "regularHeight": "58",
+            "longHeight": ""
+        },
+        {
+            "size": "9XL",
+            "shortHeight": "",
+            "regularHeight": "60",
+            "longHeight": ""
+        }
+    ]
+}

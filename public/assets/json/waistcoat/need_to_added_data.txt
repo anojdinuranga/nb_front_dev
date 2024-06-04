@@ -1,0 +1,16 @@
+    {
+        "category": "stitching",
+        "category_name": "Stitching",
+        "name": "",
+        "file_path": "",
+        "image": "/assets/images/product-configurator/waistcoat/wc_back-with-buckle.png",
+        "assets_name": "No Stitching"
+    },
+    {
+        "category": "stitching",
+        "category_name": "Stitching",
+        "name": "notch_reguler_lapel_stitching",
+        "file_path": "/assets/models/waist_coat/stiching/notch_reguler_lapel_stitching.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_back-with-buckle.png",
+        "assets_name": "Notch Reguler Lapel Stitching"
+    }

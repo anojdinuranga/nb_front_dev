@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Home</title>
+    <%- header_tags %>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+
+        <style>
+            .cover-head-catalogue ul {
+                transform: translateX(-1600px);
+                opacity: 0;
+                transition: transform 0.5s, opacity 0.5s;
+            }
+
+            .cover-head-catalogue.active ul {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            <% let j=1 %><% sliders.forEach(function(slider) {
+                    %> .hero-carousel-image-<%=j %> {
+                        background-image: url('<%= slider.image_url %>');
+                        height: 100vh;
+                        background-size: cover;
+                        background-position: center center;
+                    }
+
+                    <% j +=1 %> <%
+                });
+            %>
+        </style>
+
+</head>
+
+<body>
+
+    <!---------------- navbar start ---------------->
+    <%- sidebar %>
+        <!---------------- navbar end ------------------>
+
+
+        <!-------------- cover head start--------------->
+        <div class="div-cover-head">
+
+            <!----------------------- cover head carousel start---------->
+            <section id="coverhead" class="cover-head-catalogue-text-mq element">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide position-relative"
+                    data-bs-ride="carousel">
+                    <div class="d-none d-xl-block">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                    </div>
+                    <!-- carousel items  start-->
+                    <div class="carousel-inner" style="max-height: 100vh;">
+                        <% let i=1 %>
+                            <% sliders.forEach(function(slider) { %>
+                                <% if (i===1) { %>
+                                    <div class="carousel-item hero-carousel-image-<%= i %> active"
+                                        data-bs-interval="6000"></div>
+                                    <% i +=1 %>
+                                        <% } else { %>
+                                            <div class="carousel-item hero-carousel-image-<%= i %>"
+                                                data-bs-interval="6000"></div>
+                                            <% i +=1 %>
+                                                <% } %>
+
+                                                    <% }); %>
+
+                                                        <!-- <div class="carousel-item hero-carousel-image-1 active" data-bs-interval="6000"></div>
+                        <div class="carousel-item hero-carousel-image-2" data-bs-interval="6000"></div>
+                        <div class="carousel-item hero-carousel-image-3" data-bs-interval="6000"></div>
+                        <div class="carousel-item hero-carousel-image-4" data-bs-interval="6000"></div> -->
+                    </div>
+                    <!-- carousel items  end-->
+
+                    <!-- carousel text list start-->
+                    <div class="cover-head-catalogue container1 ms-xxl-5 ms-xl-2 ms-md-2">
+                        <ul class="">
+                            <h2 class="mt-md-3 cover-head-catalogue-text"><a class="carousel-items"
+                                    href="/new-arrivals">New Arrivals</a>
+                            </h2>
+
+                            <!-- <h2 class="mt-md-3 cover-head-catalogue-text"><a class="carousel-items"
+                                    href="/gents-wear">Gents Wear</a>
+                            </h2> -->
+
+                            <h2 class="mt-md-3 cover-head-catalogue-text"><a class="carousel-items"
+                                    href="javascript:void(0);">Custom Suit</a></h2>
+
+                            <h2 class="mt-md-3 cover-head-catalogue-text"><a class="carousel-items"
+                                    href="javascript:void(0);">Custom Trouser</a>
+                            </h2>
+
+                            <h2 class="mt-md-3 cover-head-catalogue-text"><a class="carousel-items"
+                                    href="javascript:void(0);">Custom Waistcoat</a></h2>
+
+                            <h2 class="mt-md-3 cover-head-catalogue-text"><a class="carousel-items"
+                                    href="javascript:void(0);">Custom Arya Sinhala</a>
+                            </h2>
+
+                        </ul>
+                        </p>
+                    </div>
+                    <!-- carousel text list start-->
+                </div>
+            </section>
+            <!------------ cover head carousel end---------->
+
+            <!------------ cover head image start---------->
+            <section>
+                <div class="container-fluid g-0">
+                    <div class="row g-0">
+                        <a href="<%= contents.new_arrivals_product_list[0].path  %>" class="col-md-6">
+                            <img src="<%= contents.new_arrivals_product_list[0].image_url  %>" class="img-fluid w-100"
+                                alt="">
+                            <h6 class="text-white cover-head-image-text text-capitalized">
+                                <%= contents.new_arrivals_product_list[0].title %>
+                            </h6>
+                        </a>
+                        <a href="<%= contents.new_arrivals_product_list[1].path  %>" class="col-md-6">
+                            <img src="<%= contents.new_arrivals_product_list[1].image_url  %>" class="img-fluid w-100"
+                                alt="">
+                            <h6 class="text-white cover-head-image-text">
+                                <%= contents.new_arrivals_product_list[1].title %>
+                            </h6>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!------------ cover head image end---------->
+
+        </div>
+        <!--------------- cover head end------------------>
+
+
+        <!-- Design your own Custom start-->
+        <section class="bg-light" id="DesignyourownCustom">
+            <!-- Design your own Custom desktop start -->
+            <div class="container-fluid md-g-0 px-5 d-none d-md-block">
+                <div class="row d-flex align-items-xl-center">
+                    <div class="col-md-3">
+                        <div class="mt-md-5 pt-md-5 mt-xl-0 pt-xl-0">
+                            <h6 class="mb-2 Design-your-own-Custom">Select Your Fabric</h6>
+                            <h2 class="Design-your-own">Design your own Custom Suit, Trouser, Waistcoat and Arya Sinhala
+                                Dress with desired fabric.
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-start">
+                        <!-- Design your own Custom owl carousel start-->
+                        <div class="owl-carousel owl-theme owl-carousel-CustomSuit">
+                            <div class="item">
+                                <div class="">
+                                    <div><img src="assets/images/Custom-Suit/1.avif" class="img-fluid" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="">
+                                    <div><img src="assets/images/Custom-Suit/2.avif" class="img-fluid" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="">
+                                    <div><img src="assets/images/Custom-Suit/3.avif" class="img-fluid" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Design your own Custom owl carousel end-->
+                    </div>
+                    <div class="col-md-3 your-fabrice-mq">
+                        <img src="assets/images/Custom-Suit/fabric-colle.avif" class="img-fluid your-fabrice" alt="">
+                    </div>
+                    <div class="col-md-3 d-flex align-items-center">
+
+                        <div class=" w-100">
+                            <button class="btn btn-secondary bg-white text-black rounded-1 py-md-2 w-100 mb-2"
+                                type="button" disabled>Custom Mode Tailoring</button>
+                            <a href="/appointment-calendars" class="btn btn-dark rounded-1 py-md-2  w-100"
+                                type="button">Book your
+                                appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-relative bg-light">
+                    <div class="col-md-4 choose-from-mq">
+                        <div class="choose-from">
+                            <div class="d-flex mb-2 d-flex align-items-center"><img
+                                    src="assets/images/Custom-Suit/IconGroup.svg" class="img-fluid icon150" alt="">
+                                <h1 class="mb-0 choose-from-text">150+</h1>
+                            </div>
+                            <h6 class="Choose-from-150">Choose from over 150 exceptional Italian fabrics</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Design your own Custom desktop end -->
+            <!-- Design your own Custom mobile start -->
+            <div class="container-fluid md-g-0 d-block d-md-none bg-white">
+                <div class="row pt-5 pb-5">
+                    <div class="col-12">
+                        <div class="fabrice-header">
+                            <hr>
+                            <h6 class="mb-2 Design-your-own-Custom">Select Your Fabric</h6>
+                            <h2 class="Design-your-own">Design your own Custom Suit, Trouser, Waistcoat and Arya Sinhala
+                                Dress with desired fabric.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex g-0 align-items-xl-center">
+                    <div class="col-8 d-flex align-items-start">
+                        <!-- Design your own Custom owl carousel start-->
+                        <div class="owl-carousel owl-theme owl-carousel-CustomSuit">
+                            <div class="item">
+                                <div class="">
+                                    <div><img src="assets/images/Custom-Suit/1.avif" class="img-fluid" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="">
+                                    <div><img src="assets/images/Custom-Suit/2.avif" class="img-fluid" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="">
+                                    <div><img src="assets/images/Custom-Suit/3.avif" class="img-fluid" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Design your own Custom owl carousel end-->
+                    </div>
+                    <div class="col-4">
+                        <img src="assets/images/Custom-Suit/fabric-colle.avif" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 d-flex align-items-center">
+
+                        <div class=" w-100">
+                            <button class="btn btn-secondary bg-white text-black rounded-1 py-3 w-100 mb-2"
+                                type="button" disabled>Custom Mode Tailoring</button>
+                            <a href="/appointment-calendars" class="btn btn-dark rounded-1 py-3 w-100"
+                                type="button">Book your
+                                appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-relative">
+                    <div class="col-md-4 choose-from-mq">
+                        <div class="choose-from-mobile">
+                            <div class="d-flex mb-2 d-flex align-items-center"><img
+                                    src="assets/images/Custom-Suit/IconGroup.svg" class="img-fluid" alt="">
+                                <h1 class="mb-0">150+</h1>
+                            </div>
+                            <p class="Choose-from-150">Choose from over 150 exceptional Italian fabrics</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Design your own Custom mobile end -->
+        </section>
+        <!-- Design your own Custom end-->
+
+
+        <!-- The change of direction cards start-->
+        <section>
+            <div class="container-fluid g-0">
+                <div class="row g-0">
+                    <div class="col-md-12" id="show-video-section-home">
+                        <div class="direction-cardes-1">
+                            <h6 class="text-white change-of-direction">
+                                <%= contents.site_content_brand_video_view.description %>
+                            </h6>
+                        </div>
+                        <img src="<%= contents.site_content_brand_video_view.image_url  %>" class="img-fluid w-100"
+                            alt="">
+
+                        <img onclick="showVideo()" src="assets/images/about-us/Button-(1).svg" alt=""
+                            class="img-fluid rounded-circle home-play-icon">
+                    </div>
+                </div>
+                <div class="row g-0">
+
+                    <a href="<%= contents.new_arrivals_product_list[2].path  %>" class="col-md-6">
+                        <img src="<%= contents.new_arrivals_product_list[2].image_url  %>" class="img-fluid w-100"
+                            alt="">
+                        <h6 class="text-white cover-head-image-text">
+                            <%= contents.new_arrivals_product_list[2].title %>
+                        </h6>
+                    </a>
+
+                    <a href="<%= contents.new_arrivals_product_list[3].path  %>" class="col-md-6">
+                        <img src="<%= contents.new_arrivals_product_list[3].image_url  %>" class="img-fluid w-100"
+                            alt="">
+                        <h6 class="text-white cover-head-image-text">
+                            <%= contents.new_arrivals_product_list[3].title %>
+                        </h6>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- The change of direction cards end-->
+
+
+        <!-- FASHION SHOW COLLECTIONS Start-->
+        <section id="live_feed">
+            <div class="container-fluid g-0">
+                <div class="row g-0">
+                    <img src="<%= contents.site_content_live_show_view.image_url  %>" class="img-fluid w-100" alt="">
+                    <div class="col-md-12 position-relative fashion-collections">
+                        <div class="text-center">
+                            <svg onclick="loadLiveFeed();" class="play-icon" xmlns="http://www.w3.org/2000/svg"
+                                height="4em" viewBox="0 0 512 512">
+                                <style>
+                                    svg {
+                                        fill: #ffffff
+                                    }
+                                </style>
+                                <path
+                                    d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                            </svg>
+                            <div class="text mx-auto" style="max-width: 1000px;">
+                                <h2 class="text-white mt-3 fashion-show-header">
+                                    <%= contents.site_content_live_show_view.event_name %>
+                                </h2>
+                                <h6 class="text-white fashion-collections-text mx-auto fashion-show-description">Live
+                                    streaming starting</h6>
+                                <h6 class="text-white fashion-collections-text mx-auto fashion-show-description">
+                                    <%= contents.site_content_live_show_view.starting_at %>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FASHION SHOW COLLECTIONS end-->
+
+
+        <!-- nearest store start-->
+        <section class="bg-black text-white">
+            <div class="container-fluid px-md-5 px-3 py-md-0 py-xl-0 py-4">
+                <div class="row d-flex justify-content-between py-md-5">
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <p class="nearest-store">Find your nearest store</p>
+                        <p class="nearest-store2">Visit one of our stores for customizations,
+                            fittings & styling advice.</p>
+                        <p class="mt-md-5 py-md-0 py-3 Find-store nearest-store3"> Find store</p>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <p class="mb-1 nearest-store-Download nearest-store" style="max-width: 261px;">Download Mobile
+                            App
+                        </p>
+                        <p class="nearest-store2">Exclusive Deals and Offers!</p>
+                        <div class="d-flex align-items-center">
+                            <a href=""><img src="assets/images/nearest-store/Group-155.svg" class="img-fluid"
+                                    alt=""></a>
+                            <a href=""><img src="assets/images/nearest-store/google-play-badge 1.svg" class="img-fluid"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- nearest store end-->
+
+
+        <!-- products and styling start-->
+        <section class="py-4 py-xl-5 py-3 bg-black"
+            style="border-top: 1px solid #4B4B4B; border-bottom: 1px solid #4B4B4B;">
+            <div class="container-fluid px-md-5 px-3">
+                <div class="row text-white align-items-center">
+                    <div class="col-md-5 col-12">
+                        <div class=" text-lg-start">
+                            <p class="Get-the-latest mb-2"><strong>Get the latest on products and styling</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-9">
+                        <form name="contact" class="contact-form validate-form" method="post">
+                            <div class="d-flex" data-validate="Please enter your name">
+                                <input class="input border-0" type="email" id="emailInput"
+                                    placeholder="Enter your email">
+                                <button class="btn btn-input border-0 text-white rounded-1 pe-md-4 nearest-store-btn"
+                                    type="button" id="button-addon2" onclick="newsletterAdd()">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-2 col-2">
+                        <button type="button" class="btn btn-input nearest-store-search-btn"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- products and styling end-->
+
+
+        <!-- Back to top button start -->
+        <section class="">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                    <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                    <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+                </button>
+
+            </div>
+        </section>
+        <!-- Back to top button start -->
+
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+
+            <!-- script start-->
+            <%- script_tags %>
+                <!-- script end-->
+
+                <script>
+                    function showVideo() {
+                        document.getElementById("show-video-section-home").innerHTML = "";
+
+                        document.getElementById("show-video-section-home").innerHTML = `
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="<%= contents.site_content_brand_video_view.view_link  %>" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                        `;
+                    }
+
+                    function newsletterAdd() {
+
+                        $.ajax({
+                            url: '/api/v1/newsletter/add',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "email": $('#emailInput').val(),
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+
+                                    iziToast.success({
+                                        theme: 'dark',
+                                        title: 'Success',
+                                        message: data.message,
+                                    });
+
+                                    document.getElementById("emailInput").value = "";
+
+                                } else {
+
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+
+                    }
+                </script>
+
+                <script>
+                    gsap.registerPlugin(ScrollTrigger);
+
+                    gsap.to(".cover-head-catalogue ul", {
+                        scrollTrigger: {
+                            trigger: "#coverhead",
+                            start: "top center", // Adjust as needed
+                            end: "bottom center", // Adjust as needed
+                            scrub: 1, // Set to 1 to synchronize with scroll
+                            markers: false // Remove this line in production
+                        },
+                        x: "0px",
+                        opacity: 1,
+                        duration: 0.5
+                    });
+                </script>
+
+
+
+
+                <script>
+                    function loadLiveFeed() {
+                        document.getElementById("live_feed").innerHTML = `
+                <iframe class="live-feed-player" src="<%= contents.site_content_live_show_view.live_url  %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                `
+                    }
+                </script>
+</body>
+
+</html>

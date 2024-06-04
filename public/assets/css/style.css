@@ -1,0 +1,4887 @@
+@import "bootstrap/scss/bootstrap";
+
+/* ========================================================================== Author: Description: Date: ========================================================================== */
+/* table of contents 1. common css styles 2. navbar section styles 3. cover head 4. Design your own Custom 4.1 select your fabrice 4.2 owl nav 4.3 select your fabrice mobile 5. The change of direction cardes 6. FASHION SHOW COLLECTIONS 7.nearest store 8.product configurator table 9.product configurator table offcanvas 10.product configurator table Canvas 11. footer ========================================================================== */
+/* 1. common css styles ========================================================================== */
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('/assets/font/sf-pro-display/SF-Pro.ttf') format('truetype');
+}
+
+/* //////////////////////////////////////////////////////// */
+
+@font-face {
+	font-family: 'Avenir Book';
+	src: url('/assets/avenir/Avenir-Black-03.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-BlackOblique-04.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Book-01.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-BookOblique-02.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Heavy-05.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-HeavyOblique-06.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Light-07.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-LightOblique-08.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Medium-09.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-MediumOblique-10.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Oblique-11.ttf') format('truetype');
+	src: url('/assets/font/avenir/Avenir-Roman-12.ttf') format('truetype');
+}
+
+/* //////////////////////////////////////////////////////// */
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('/assets/font/avenirnext/AvenirNext-Bold-01.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-BoldItalic-02.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-DemiBold-03.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-DemiBoldItalic-04.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-Heavy-09.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-HeavyItalic-10.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-Italic-05.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-Medium-06.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-MediumItalic-07.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-Regular-08.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-UltraLight-11.ttf') format('truetype');
+	src: url('/assets/font/avenirnext/AvenirNext-UltraLightItalic-12.ttf') format('truetype');
+}
+
+/* Select2 Styling */
+.select2-container--default .select2-selection--single {
+	height: 50px !important;
+	padding-left: 5px;
+	border: 1px solid #1e1e1e7A !important;
+}
+
+.select2-search__field {
+	outline: unset;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+	background-color: #858585 !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 45px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 50px !important;
+}
+
+.no-row-padding {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	--bs-gutter-x: 0px !important;
+}
+
+.qtybutton {
+	border: 1px solid #949494;
+}
+
+.main {
+	min-height: 72vh !important;
+}
+
+.mt-70 {
+	margin-top: 70px !important;
+}
+
+.tab-active {
+	border: 1px solid #000 !important;
+}
+
+.assets-select {
+	cursor: pointer;
+}
+
+.fabric-select {
+	cursor: pointer;
+	height: 180px;
+}
+
+.assets-select.active {
+	border: 1px solid #1e1e1e;
+}
+
+.fabric-select.active {
+	border: 2px solid #DC4C64;
+}
+
+.select-fabric-content {
+	height: 100vh;
+	padding-bottom: 320px !important;
+}
+
+.select-size-content {
+	height: 100vh;
+	padding-bottom: 360px !important;
+}
+
+.voucher-card {
+	min-height: 100%;
+}
+
+#show-video-section-home {
+	position: relative;
+}
+
+.home-play-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.about-title {
+	font-size: 48px;
+	font-weight: 800;
+	color: #111013;
+	margin-bottom: 80px;
+	margin-top: 20px;
+}
+
+.about-us-section-title {
+	font-size: 24px;
+}
+
+.about-us-section-text {
+	font-size: 20px;
+}
+
+.about-container {
+	padding: auto;
+}
+
+.text-form-appointment {
+	width: 150px !important;
+}
+
+#loading-background {
+	background-color: #000000c5;
+	position: absolute !important;
+	height: 100vh !important;
+	width: 100% !important;
+	z-index: 1031 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clear-button {
+	padding: 0;
+	margin: 0;
+	border: unset !important;
+	color: #FF4343;
+}
+
+.clear-button:hover {
+	color: #FF4343 !important;
+}
+
+.clear-button:active {
+	color: #FF4343 !important;
+}
+
+.attribute-btn-container {
+	display: grid;
+	grid-template-columns: repeat(4, 23%);
+	gap: 10px;
+}
+
+.attribute-btn {
+	padding: 10px;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+.attribute-btn-text {
+	grid-column: span 2 !important;
+	padding: 10px 15px;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+.low-stock-message {
+	color: #FF4343;
+	font-weight: 600;
+}
+
+.size-cart-table td {
+	width: 25% !important;
+	text-align: center !important;
+}
+
+.size-cart-table th {
+	width: 10% !important;
+	text-align: center !important;
+	vertical-align: middle !important;
+}
+
+.div-footer {
+
+	bottom: 0;
+	width: 100%;
+}
+
+.select-style-button {
+	border-color: #979797;
+	font-size: 18px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.8509803922);
+	padding: 5px 25px;
+}
+
+.select-style-button:hover {
+	border-color: #777;
+	font-size: 18px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.8509803922);
+}
+
+
+.select-style-button.active {
+	border-color: #1e1e1e;
+	font-size: 18px;
+	font-weight: 300;
+	color: #1e1e1e;
+	background-color: #EEEEEE;
+	padding: 5px 25px;
+}
+
+
+@media (max-width: 383px) {
+	.navbar-logo {
+		max-width: 149px !important;
+	}
+	.navbar-logo2 {
+		max-width: 107px !important;
+	}
+}
+
+@media (max-width: 425px) {
+	.home-play-icon {
+		height: 50px;
+	}
+
+	.about-title {
+		font-size: 20px;
+		margin-bottom: 50px;
+		margin-top: 0px;
+	}
+
+	.about-us-section-title {
+		font-size: 18px;
+	}
+
+	.about-us-section-text {
+		font-size: 16px;
+	}
+
+	.about-container {
+		padding: 0 30px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.voucher-card {
+		min-height: 465px;
+	}
+
+	.mt-lg-68 {
+		margin-top: 68px;
+	}
+
+	.mt-sm-68 {
+		margin-top: 0px;
+	}
+}
+
+.btn-close:focus {
+	outline: unset !important;
+	box-shadow: none !important;
+}
+
+.fashion-show-header {
+	font-size: 36px;
+	font-weight: 800;
+	font-family: 'Avenir Book';
+}
+
+.single-product-accordion-button {
+	padding: 10px 0px 0px 0px !important;
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+.navbar-offcanvas {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.cover-head-catalogue-text {
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.cover-head-image-text {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.Design-your-own-Custom {
+	font-size: 14.6px;
+}
+
+.Design-your-own {
+	font-size: 42px;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 700;
+}
+
+.choose-from-text {
+	font-size: 44px;
+	font-weight: 700;
+}
+
+.Choose-from-150 {
+	font-size: 16.4px;
+}
+
+.ticket-booking-btn {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.fashion-show-header {
+	font-size: 36px;
+	font-weight: 800;
+	font-family: 'Avenir Book';
+}
+
+.fashion-show-description {
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Avenir Book';
+}
+
+.nearest-store {
+	font-size: 35px;
+	font-weight: 300;
+	font-family: 'Avenir Book';
+}
+
+.nearest-store2 {
+	font-size: 20px;
+	font-weight: 300;
+	font-family: 'Avenir Book';
+}
+
+.nearest-store3 {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Avenir Book';
+}
+
+.Get-the-latest {
+	font-size: 35px;
+	font-weight: 300;
+	font-family: 'Avenir Book';
+}
+
+.footer-header {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.footer-list {
+	font-size: 16px;
+	font-weight: 300;
+	color: #ffffffb7;
+	font-family: 'Avenir Book';
+}
+
+.copyright-text {
+	font-size: 14px;
+	font-family: 'Avenir Book';
+	color: #ffffffb7;
+}
+
+.change-of-direction {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.tabe-underline {
+	font-size: 16px;
+	font-weight: 350;
+}
+
+.Select-fabric-header-text {
+	font-size: 24px;
+}
+
+.Select-fabric-buttons {
+	font-size: 18px;
+	font-weight: 300;
+	border-color: #979797;
+	color: #000000D9;
+}
+
+.btn.Select-fabric-buttons:hover {
+	background-color: #eee;
+	color: #000000D9;
+	border-color: #979797;
+}
+
+.btn.Select-fabric-buttons:active {
+	background-color: #c7c7c7;
+	color: #000000D9;
+	border-color: #979797;
+}
+
+.fabric-select-text {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.new-arraivals-hadder {
+	font-size: 27px;
+	font-weight: 400;
+}
+
+.new-arraivals-description {
+	max-width: 550px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.new-item-hadder-text {
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+}
+
+a.new-item-hadder-text {
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.new-item-hadder-text-price {
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+}
+
+a.new-item-hadder-text:hover {
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.new-item-hadder-description {
+	font-size: 15px;
+	font-weight: 300;
+	color: #9fa6b2;
+}
+
+.Ready-made-Product-card-name {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.Ready-made-Product-card-price {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.Ready-made-Product-card-description {
+	font-size: 14px;
+	font-weight: 350;
+}
+
+.Ready-made-Product-card-accordion-text {
+	font-size: 14px;
+	font-weight: 350;
+}
+
+.Ready-made-Product-card-image-hadder {
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.Ready-made-Product-card-image-description {
+	font-size: 14px;
+	font-weight: 350;
+}
+
+.Ready-made-Product-owl-carousel-text {
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.Ready-made-Product-owl-carousel-text {
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.Ready-made-offcanvas-text {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.Ready-made-offcanvas-price {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.Ready-made-offcanvas-card-hadder {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.Ready-made-offcanvas-card-address {
+	font-size: 14px;
+	font-weight: 300;
+	color: #1e1e1e;
+}
+
+.Ready-made-offcanvas-card-color {
+	font-size: 14px;
+	font-weight: 500;
+	color: #1e1e1e;
+}
+
+.Ready-made-offcanvas-card-price {
+	font-size: 20px;
+	font-weight: 350;
+	color: #1e1e1e;
+}
+
+.Ready-made-offcanvas-card-subtotal {
+	font-size: 16px;
+	font-weight: 350;
+	color: #1D1D1DA3;
+}
+
+.Ready-made-offcanvas-card-total {
+	font-size: 24px;
+	font-weight: 350;
+	color: #1e1e1e;
+}
+
+.view-bag-form-hadder-text {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.view-bag-card-text {
+	font-size: 16px;
+	font-weight: 350;
+}
+
+.view-bag-accordion-hadder {
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.view-bag-accordion-description {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.News-and-Events-banner-date {
+	font-size: 15.6px;
+	font-weight: 600;
+	color: #FFFFFFBF;
+	font-family: 'SF Pro Display';
+}
+
+.News-and-Events-banner-date2 {
+	font-size: 15.6px;
+	font-weight: 400;
+	color: #FFFFFFBF;
+	font-family: 'SF Pro Display';
+}
+
+.News-and-Events-banner-hadder {
+	font-size: 72px;
+	font-weight: 700;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.News-and-Events-banner-description {
+	font-size: 18.4px;
+	font-weight: 400;
+	color: #FFFFFFBF;
+	font-family: 'SF Pro Display';
+}
+
+.News-and-Events-banner-readmore {
+	font-size: 16.72px;
+	font-weight: 700;
+}
+
+.Login-Or-register-text {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.News-and-Events-description {
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'SF Pro Display';
+}
+
+.News-and-Events-card-hadder {
+	font-size: 24px;
+	font-weight: 700;
+	color: #161519;
+	font-family: 'SF Pro Display';
+}
+
+.News-and-Events-card-category-text {
+	font-size: 20px;
+	font-weight: 700;
+	color: #161519;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.News-and-Events-card-price {
+	font-size: 72px;
+	font-weight: 700;
+	color: #161519;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.News-and-Events-card-description2 {
+	font-size: 16.4px;
+	font-weight: 600;
+	color: #161519;
+	font-family: 'SF Pro Display';
+}
+
+.News-and-Events-card-list-text {
+	font-size: 15.6px;
+	font-weight: 400;
+	color: #161519;
+	font-family: 'SF Pro Display';
+}
+
+.Work-inquiries-text1 {
+	font-size: 14.6px;
+	font-weight: 500;
+	color: #FFFFFFBF;
+	font-family: "SF Pro Display";
+}
+
+.Work-inquiries-text2 {
+	font-size: 52px;
+	font-weight: 600;
+	color: #FFFFFF;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+.Work-inquiries-detalls-text1 {
+	font-size: 16.4px;
+	font-weight: 700;
+	color: #FFFFFFBF;
+	font-family: "SF Pro Display";
+}
+
+.Work-inquiries-detalls-text2 {
+	font-size: 16.4px;
+	font-weight: 400;
+	color: #FFFFFFBF;
+	font-family: "SF Pro Display";
+}
+
+.recent-news-events-Subtitle {
+	font-size: 14.6px;
+	font-weight: 500;
+	color: #161519;
+	font-family: 'SF Pro Display';
+}
+
+.recent-news-events-Header {
+	font-size: 38px;
+	font-weight: 700;
+	color: #161519;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.recent-news-events-cards-Postedby {
+	font-size: 15.6px;
+	font-weight: 400;
+	color: #161519;
+	font-family: "SF Pro Display";
+}
+
+.recent-news-events-cards-Name {
+	font-size: 16.4px;
+	font-weight: 600;
+	color: #161519;
+	font-family: "SF Pro Display";
+}
+
+.recent-news-events-cards-date {
+	font-size: 14.4px;
+	font-weight: 500;
+	color: #161519;
+	font-family: "SF Pro Display";
+}
+
+.recent-news-events-cards-Header {
+	font-size: 26px;
+	font-weight: 700;
+	color: #161519;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.about-us-Header {
+	font-size: 78px;
+	font-weight: 900;
+	font-family: 'Playfair Display', serif;
+	margin-left: 100px;
+}
+
+.about-us-Subtitle {
+	font-size: 18.4px;
+	font-weight: 500;
+	max-width: 74%;
+	font-family: "SF Pro Display";
+}
+
+.about-us-card1-title1 {
+	font-size: 14.6px;
+	font-weight: 500;
+	font-family: "SF Pro Display";
+	color: #FFFFFFBF;
+}
+
+.about-us-card1-title2 {
+	font-size: 52px;
+	font-weight: 900;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	line-height: 54px;
+}
+
+.about-us-progress-bar-title {
+	font-size: 16.8px;
+	font-weight: 700;
+	font-family: 'DM Sans', sans-serif;
+	color: #111013;
+}
+
+.Contact-us-map-address-title {
+	font-size: 16.4px;
+	font-weight: 600;
+	font-family: "SF Pro Display";
+	color: #161519;
+}
+
+.Contact-us-map-address-Subtitle {
+	font-size: 16.4px;
+	font-weight: 400;
+	font-family: "SF Pro Display";
+	line-height: 1.8;
+	color: #161519;
+}
+
+.Contact-us-map-number {
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.Contact-us-Careers-banner-text {
+	font-size: 14.6px;
+	font-weight: 500;
+	color: #91929b;
+	font-family: "SF Pro Display";
+}
+
+.Contact-us-Careers-banner-tital {
+	font-size: 38px;
+	font-weight: 900;
+	font-family: 'Playfair Display', serif;
+}
+
+.Contact-us-Careers-banner-Subtital {
+	font-size: 18.4px;
+	font-weight: 400;
+	font-family: "SF Pro Display";
+	color: #FFFFFFBF;
+}
+
+.Contact-us-Careers-banner-Subtital2 {
+	font-size: 18.4px;
+	font-weight: 800;
+	font-family: "SF Pro Display";
+	color: #FFFFFFBF;
+}
+
+.Contact-us-Careers-mobile-app-text1 {
+	font-size: 14.6px;
+	font-weight: 500;
+	font-family: "SF Pro Display";
+	color: #161519;
+}
+
+.Contact-us-Careers-mobile-app-tital {
+	font-size: 38px;
+	font-weight: 700;
+	color: #161519;
+	font-family: 'DM Sans', sans-serif;
+	line-height: 1.2;
+}
+
+.Contact-us-Careers-mobile-app-subtital {
+	font-size: 18.4px;
+	font-weight: 400;
+	color: #161519;
+	font-family: "SF Pro Display";
+	line-height: 1.2;
+}
+
+.glamour-spotlight-tital {
+	font-size: 36px;
+	font-weight: 800;
+	color: #fff;
+}
+
+.glamour-spotlight-subtital {
+	font-size: 20px;
+	font-weight: 350;
+	color: #fff;
+}
+
+.glamour-spotlight-subtital2 {
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.ticket-booking-bigcard-tital {
+	font-size: 32px;
+	font-weight: 800;
+	color: #1e1e1e;
+}
+
+.ticket-booking-bigcard-subtital {
+	font-size: 16px;
+	font-weight: 800;
+	color: #1e1e1e;
+}
+
+.ticket-booking-smallcard-tital {
+	font-size: 24px;
+	font-weight: 800;
+	color: #1e1e1e;
+}
+
+.ticket-booking-smallcard-subtital {
+	font-size: 16px;
+	font-weight: 800;
+	color: #1e1e1e;
+}
+
+.ticket-booking-smallcard-header {
+	font-size: 24px;
+	font-weight: 500;
+	color: #1e1e1e;
+}
+
+.ticket-booking-price-bar {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.about-us-testimonials-card {
+	font-size: 14.6px;
+	font-weight: 500;
+	font-family: "SF Pro Display";
+}
+
+.about-us-testimonials-card-tital1 {
+	font-size: 14.6px;
+	font-weight: 500;
+	font-family: "SF Pro Display";
+}
+
+.about-us-testimonials-card-tital {
+	font-size: 38px;
+	font-weight: 900;
+	font-family: 'Playfair Display', serif;
+	color: #111013;
+}
+
+.about-us-testimonials-card-subtital {
+	font-size: 18.4px;
+	font-weight: 400;
+	font-family: "SF Pro Display";
+	color: #111013;
+}
+
+.about-us-testimonials-card-pname {
+	font-size: 16.8px;
+	font-weight: 700;
+	font-family: 'DM Sans', sans-serif;
+	color: #111013;
+}
+
+.about-us-testimonials-card-position {
+	font-size: 15.6px;
+	font-weight: 400;
+	font-family: "SF Pro Display";
+	color: #90919cd5;
+}
+
+.about-us-testimonials-card-position2 {
+	font-size: 15.6px;
+	font-weight: 700;
+	font-family: "SF Pro Display";
+	color: #60606b;
+}
+
+.about-us-testimonials-card-number {
+	font-size: 15.84px;
+	font-weight: 700;
+	font-family: 'DM Sans', sans-serif;
+	color: #111013;
+}
+
+.gift-voucher-tital {
+	font-size: 48px;
+	font-weight: 800;
+	color: #111013;
+	line-height: 60px;
+	max-width: 790px;
+}
+
+.gift-voucher-subtital {
+	font-size: 24px;
+	font-weight: 800;
+	color: #111013;
+}
+
+.gift-voucher-pagetwo-subtital {
+	font-size: 20px;
+	font-weight: 400;
+	color: #161519;
+	font-family: "SF Pro Display";
+	line-height: 27px;
+}
+
+.gift-voucher-pagetwo-subtital2 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #161519;
+	font-family: "SF Pro Display";
+}
+
+.gift-voucher-pagetwo-subtital3 {
+	font-size: 16px;
+	font-weight: 400;
+	color: #d90a2c;
+}
+
+.gift-voucher-pagetwo-subtital4 {
+	font-size: 16px;
+	font-weight: 800;
+	color: #d90a2c;
+}
+
+.gift-voucher-accordion-tital {
+	font-size: 48px;
+	font-weight: 800;
+	color: #111013;
+}
+
+.booking-payment-proceed-card-tital {
+	font-size: 26px;
+	font-weight: 500;
+	color: #1d1d1d;
+}
+
+.booking-payment-proceed-card-subtital {
+	font-size: 24px;
+	font-weight: 800;
+	color: #1d1d1d;
+}
+
+.booking-payment-proceed-card-paragraph {
+	font-size: 16px;
+	font-weight: 300;
+	color: #1e1e1e;
+}
+
+.booking-payment-proceed-card-date {
+	font-size: 16px;
+	font-weight: 500;
+	color: #1e1e1ea3;
+}
+
+.booking-payment-proceed-card-row {
+	font-size: 20px;
+	font-weight: 500;
+	color: #1e1e1e;
+}
+
+.calculator-size-passport-tital {
+	font-size: 24px;
+	font-weight: 500;
+	color: #000 D9;
+}
+
+.calculator-size-passport-subtital {
+	font-size: 16px;
+	font-weight: 300;
+	color: #000 D9;
+}
+
+.calculator-card-size-passport-tital {
+	font-size: 24px;
+	font-weight: 800;
+	color: #000000D9;
+}
+
+.calculator-card-size-passport-tital:hover {
+	color: #000000D9;
+}
+
+.calculator-card-size-passport-subtital {
+	font-size: 16px;
+	font-weight: 300;
+	color: #000000D9;
+}
+
+.ticket-booking-map-tital {
+	font-size: 36px;
+	font-weight: 800;
+	color: #1e1e1e;
+}
+
+.ticket-booking-map-subtital {
+	font-size: 20px;
+	font-weight: 350;
+	color: #1e1e1e;
+}
+
+.ticket-booking-modal-tital1 {
+	font-size: 26px;
+	font-weight: 800;
+	color: #000;
+}
+
+.ticket-booking-modal-tital2 {
+	font-size: 26px;
+	font-weight: 400;
+	color: #1e1e1e;
+}
+
+.ticket-booking-modal-subtital {
+	font-size: 16px;
+	font-weight: 350;
+	color: #000;
+}
+
+.ticket-booking-modal-footer-text {
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+}
+
+a.size-cal-in-store-card-tital {
+	font-size: 24px;
+	font-weight: 800;
+	color: #000000D9;
+}
+
+a.size-cal-in-store-card-tital:hover {
+	font-size: 24px;
+	font-weight: 800;
+	color: #000000D9;
+}
+
+.size-cal-in-store-card-subtital {
+	font-size: 16px;
+	font-weight: 300;
+	color: #000000D9;
+}
+
+.size-cal-in-store-card-time {
+	font-size: 12px;
+	font-weight: 300;
+	color: #000000D9;
+}
+
+.add-size-adjustment-tital {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+a.add-size-adjustment-card-tital {
+	font-size: 20px;
+	font-weight: 350;
+	color: #000;
+}
+
+a.add-size-adjustment-card-tital:hover {
+	font-size: 20px;
+	font-weight: 350;
+	color: #000;
+}
+
+.newarrivals-offcanvas-accordion-tital {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.newarrivals-offcanvas-accordion-heading {
+	font-size: 27px;
+	font-weight: 500;
+}
+
+.choose-date-and-time-tital {
+	font-size: 24px;
+	font-weight: 500;
+	color: #000;
+}
+
+.choose-date-and-time-subtital {
+	font-size: 20px;
+	font-weight: 500;
+	color: #000 A3;
+}
+
+.choose-date-and-time-image-tital {
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+}
+
+a.choose-date-and-time-card-tital {
+	font-size: 18px;
+	font-weight: 350;
+	color: #000 D9;
+}
+
+a.choose-date-and-time-card-tital:hover {
+	font-size: 18px;
+	font-weight: 350;
+	color: #000 D9;
+}
+
+.choose-date-and-time-card-subtital {
+	font-size: 16px;
+	font-weight: 300;
+	color: #000 D9;
+}
+
+.share-details-about-you-tital {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.details-about-check-box-text {
+	font-size: 18px;
+	font-weight: 350;
+	color: #1e1e1e;
+}
+
+.summary-tab-tital {
+	font-size: 24px;
+	font-weight: 500;
+	color: #000;
+}
+
+.summary-tab-subtital {
+	font-size: 16px;
+	font-weight: 350;
+	color: #000;
+}
+
+.summary-tab-category-list {
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+}
+
+.gift-voucher-card-category-tital1 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #1e1e1e;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.gift-voucher-card-category-tita2 {
+	font-size: 48px;
+	font-weight: 700;
+	color: #111013;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.gift-voucher-card-category-subtital {
+	font-size: 15px;
+	font-weight: 700;
+	color: #161519;
+	font-family: "SF Pro Display";
+	line-height: 23.5px;
+}
+
+.gift-voucher-card-card-list-text {
+	font-size: 14px;
+	font-weight: 400;
+	color: #161519;
+	font-family: "SF Pro Display";
+	line-height: 23.5px;
+}
+
+.gift-voucher-modal-tital1 {
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+	font-family: 'Amiri', serif;
+	font-family: 'Playfair Display', serif;
+	line-height: 23.5px;
+}
+
+.gift-voucher-modal-tital2 {
+	font-size: 40px;
+	font-weight: 400;
+	color: #000;
+	font-family: 'Bellefair', serif;
+	line-height: 38.85px;
+}
+
+.gift-voucher-modal-date {
+	font-size: 18px;
+	font-weight: 400;
+	color: #000;
+	font-family: 'Bellefair', serif;
+	line-height: 26.17px;
+}
+
+.gift-voucher-modal-tital3 {
+	font-size: 32px;
+	font-weight: 400;
+	color: #000;
+	font-family: 'Amiri', serif;
+}
+
+.gift-voucher-modal-description {
+	font-size: 22px;
+	font-weight: 400;
+	color: #000;
+	font-family: 'Amiri', serif;
+	font-style: italic;
+	max-width: 270px;
+}
+
+.gift-voucher-modal-conditions {
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+}
+
+a.gift-voucher-modal-conditions {
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+	text-decoration: underline;
+}
+
+a.gift-voucher-modal-conditions:hover {
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+}
+
+.thank-you-tital-text {
+	font-family: 'SF Pro Display';
+	font-weight: 400;
+	font-size: 32px;
+	color: #161519;
+}
+
+.thank-you-tital-price {
+	font-weight: 400;
+	font-size: 24px;
+	color: #161519;
+}
+
+.thank-you-for-shopping-text {
+	font-family: 'SF Pro Display';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 35.5px;
+	color: #161519;
+}
+
+.thank-you-for-shopping-text2 {
+	font-family: 'SF Pro Display';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 35.5px;
+	color: #2e77bc;
+}
+
+.thank-you-for-shopping-text3 {
+	font-family: 'SF Pro Display';
+	font-weight: 300;
+	font-size: 20px;
+	font-style: italic;
+	line-height: 25.4px;
+	color: #1e1e1e;
+}
+
+.about-us-accordion-title {
+	font-size: 16.8px;
+	font-weight: 700;
+	font-family: 'DM Sans', sans-serif;
+	line-height: 27px;
+}
+
+.about-us-accordion-subtitle1 {
+	font-size: 16.4px;
+	font-weight: 400;
+	font-family: 'SF Pro Display';
+}
+
+.about-us-accordion-subtitle2 {
+	font-size: 16.4px;
+	font-weight: 600;
+	font-family: 'SF Pro Display';
+}
+
+.appointment-calendar-tital {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32.78px;
+}
+
+.appointment-calendar-subtital {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32.78px;
+}
+
+.appointment-calendar-tital {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32.78px;
+}
+
+.appointment-calendar-subtital {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32.78px;
+}
+
+.appointment-calendar-description {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 32.78px;
+}
+
+.appointment-calendar-confrtmation-tital {
+	font-weight: 800;
+	font-size: 48px;
+}
+
+.appointment-calendar-confrtmation-list {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+@media (max-width: 820px) {
+	.cover-head-catalogue-text {
+		font-size: 26px;
+	}
+
+	.cover-head-image-text {
+		font-size: 18px;
+	}
+
+	.Design-your-own-Custom {
+		font-size: 14.6px;
+	}
+
+	.Design-your-own {
+		font-size: 24px;
+	}
+
+	.choose-from-text {
+		font-size: 26px;
+	}
+
+	.Choose-from-150 {
+		font-size: 16.4px;
+	}
+
+	.fashion-show-header {
+		font-size: 26px;
+	}
+
+	.fashion-show-description {
+		font-size: 18px;
+	}
+
+	.nearest-store {
+		font-size: 26px;
+	}
+
+	.nearest-store2 {
+		font-size: 20px;
+	}
+
+	.Get-the-latest {
+		font-size: 25px;
+	}
+
+	.tabe-underline {
+		font-size: 16px;
+		font-weight: 350;
+	}
+
+	.Select-fabric-header-text {
+		font-size: 24px;
+	}
+
+	.Select-fabric-buttons {
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+	.fabric-select-text {
+		font-size: 13px;
+		font-weight: 300;
+	}
+
+	.new-arraivals-hadder {
+		font-size: 27px;
+		font-weight: 350;
+		margin-top: 20px;
+	}
+
+	.new-arraivals-description {
+		max-width: 550px;
+		font-size: 18px;
+		font-weight: 350;
+	}
+
+	.News-and-Events-banner-hadder {
+		font-size: 32px;
+		font-weight: 700;
+	}
+
+	.News-and-Events-card-price {
+		font-size: 36px;
+	}
+
+	.recent-news-events-Header {
+		font-size: 28px;
+		font-weight: 700;
+		color: #161519;
+		font-family: 'DM Sans', sans-serif;
+	}
+
+	.Contact-us-Careers-mobile-app-tital {
+		font-size: 26px;
+		font-weight: 700;
+		color: #161519;
+		font-family: 'DM Sans', sans-serif;
+		line-height: 1.2;
+	}
+
+	.about-us-Header {
+		font-size: 36px;
+		font-weight: 900;
+		font-family: 'Playfair Display', serif;
+		margin-left: 50px;
+	}
+
+	.about-us-Subtitle {
+		font-size: 16px;
+		font-weight: 600;
+		max-width: 74%;
+		font-family: "SF Pro Display";
+	}
+
+	.about-us-card1-title1 {
+		font-size: 14.6px;
+		font-weight: 500;
+		font-family: "SF Pro Display";
+		color: #fff BF;
+	}
+
+	.about-us-card1-title2 {
+		font-size: 24px;
+		font-weight: 900;
+		font-family: 'Playfair Display', serif;
+		color: #fff;
+		line-height: 25px;
+	}
+
+	.about-us-testimonials-card {
+		font-size: 14.6px;
+		font-weight: 500;
+		font-family: "SF Pro Display";
+	}
+
+	.about-us-testimonials-card-tital1 {
+		font-size: 14.6px;
+		font-weight: 500;
+		font-family: "SF Pro Display";
+	}
+
+	.about-us-testimonials-card-tital {
+		font-size: 24px;
+		font-weight: 900;
+		font-family: 'Playfair Display', serif;
+		color: #111013;
+	}
+
+	.about-us-testimonials-card-subtital {
+		font-size: 18.4px;
+		font-weight: 400;
+		font-family: "SF Pro Display";
+		color: #111013;
+	}
+
+	.about-us-testimonials-card-pname {
+		font-size: 16.8px;
+		font-weight: 700;
+		font-family: 'DM Sans', sans-serif;
+		color: #111013;
+	}
+
+	.about-us-testimonials-card-position {
+		font-size: 15.6px;
+		font-weight: 400;
+		font-family: "SF Pro Display";
+		color: #90919cd5;
+	}
+
+	.about-us-testimonials-card-position2 {
+		font-size: 15.6px;
+		font-weight: 700;
+		font-family: "SF Pro Display";
+		color: #60606b;
+	}
+
+	.about-us-testimonials-card-number {
+		font-size: 15.84px;
+		font-weight: 700;
+		font-family: 'DM Sans', sans-serif;
+		color: #111013;
+	}
+
+	.ticket-booking-bigcard-tital {
+		font-size: 20px;
+		font-weight: 800;
+		color: #1e1e1e;
+	}
+
+	.ticket-booking-bigcard-subtital {
+		font-size: 16px;
+		font-weight: 800;
+		color: #1e1e1e;
+	}
+
+	.ticket-booking-smallcard-tital {
+		font-size: 24px;
+		font-weight: 800;
+		color: #1e1e1e;
+	}
+
+	.ticket-booking-smallcard-subtital {
+		font-size: 16px;
+		font-weight: 800;
+		color: #1e1e1e;
+	}
+
+	.ticket-booking-price-bar {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	.gift-voucher-tital {
+		font-size: 36px;
+		font-weight: 800;
+		color: #111013;
+		line-height: 50px;
+	}
+
+	.gift-voucher-subtital {
+		font-size: 24px;
+		font-weight: 800;
+		color: #111013;
+	}
+
+	.gift-voucher-accordion-tital {
+		font-size: 36px;
+		font-weight: 800;
+		color: #111013;
+	}
+
+	.gift-voucher-card-category-tital1 {
+		font-size: 20px;
+		font-weight: 700;
+		color: #1e1e1e;
+		font-family: 'DM Sans', sans-serif;
+	}
+
+	.gift-voucher-card-category-tita2 {
+		font-size: 36px;
+		font-weight: 700;
+		color: #111013;
+		font-family: 'DM Sans', sans-serif;
+	}
+
+	.gift-voucher-card-category-subtital {
+		font-size: 15px;
+		font-weight: 600;
+		color: #161519;
+		font-family: "SF Pro Display";
+		line-height: 23.5px;
+	}
+
+	.gift-voucher-card-card-list-text {
+		font-size: 14px;
+		font-weight: 400;
+		color: #161519;
+		font-family: "SF Pro Display";
+		line-height: 23.5px;
+	}
+
+	.ticket-booking-modal-footer-text {
+		font-size: 18px;
+		font-weight: 500;
+		color: #fff;
+	}
+}
+
+@media (max-width: 425px) {
+	.cover-head-catalogue-text {
+		font-size: 16px;
+	}
+
+	.cover-head-image-text {
+		font-size: 18px;
+	}
+
+	.Design-your-own-Custom {
+		font-size: 14.6px;
+	}
+
+	.choose-from-text {
+		font-size: 26px;
+	}
+
+	.Choose-from-150 {
+		font-size: 16.4px;
+	}
+
+	.nearest-store {
+		font-size: 20px;
+	}
+
+	.nearest-store2 {
+		font-size: 14px;
+	}
+
+	.Find-store {
+		font-size: 20px;
+	}
+
+	.Get-the-latest {
+		font-size: 15px;
+	}
+
+	.new-arraivals-hadder {
+		font-size: 24px;
+		font-weight: 350;
+	}
+
+	.new-arraivals-description {
+		max-width: 550px;
+		font-size: 14px;
+		font-weight: 350;
+	}
+
+	.News-and-Events-banner-hadder {
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	.News-and-Events-card-price {
+		font-size: 26px;
+	}
+
+	.Work-inquiries-text2 {
+		font-size: 20px;
+		font-weight: 500;
+		color: #fff;
+		font-family: 'Space Grotesk', sans-serif;
+	}
+
+	.Contact-us-map-address-title {
+		font-size: 14px;
+		font-weight: 600;
+		font-family: "SF Pro Display";
+	}
+
+	.Contact-us-map-address-Subtitle {
+		font-size: 16px;
+		font-weight: 400;
+		font-family: "SF Pro Display";
+		line-height: 1.8;
+	}
+
+	.Contact-us-map-number {
+		font-size: 16px;
+		font-weight: 700;
+		font-family: 'DM Sans', sans-serif;
+	}
+
+	.Contact-us-Careers-mobile-app-tital {
+		font-size: 20px;
+		font-weight: 700;
+		color: #161519;
+		font-family: 'DM Sans', sans-serif;
+		line-height: 1.2;
+	}
+
+	.about-us-Header {
+		font-size: 30px;
+		font-weight: 900;
+		font-family: 'Playfair Display', serif;
+		margin-left: 50px;
+	}
+
+	.about-us-Subtitle {
+		font-size: 12px;
+		font-weight: 600;
+		max-width: 74%;
+		font-family: "SF Pro Display";
+	}
+
+	.about-us-card1-title1 {
+		font-size: 14.6px;
+		font-weight: 500;
+		font-family: "SF Pro Display";
+		color: #fff BF;
+	}
+
+	.about-us-card1-title2 {
+		font-size: 24px;
+		font-weight: 900;
+		font-family: 'Playfair Display', serif;
+		color: #fff;
+		line-height: 25px;
+	}
+
+	.about-us-testimonials-card {
+		font-size: 14.6px;
+		font-weight: 500;
+		font-family: "SF Pro Display";
+	}
+
+	.about-us-testimonials-card-tital1 {
+		font-size: 14.6px;
+		font-weight: 500;
+		font-family: "SF Pro Display";
+	}
+
+	.about-us-testimonials-card-tital {
+		font-size: 20px;
+		font-weight: 900;
+		font-family: 'Playfair Display', serif;
+		color: #111013;
+	}
+
+	.about-us-testimonials-card-subtital {
+		font-size: 18.4px;
+		font-weight: 400;
+		font-family: "SF Pro Display";
+		color: #111013;
+	}
+
+	.about-us-testimonials-card-pname {
+		font-size: 16.8px;
+		font-weight: 700;
+		font-family: 'DM Sans', sans-serif;
+		color: #111013;
+	}
+
+	.about-us-testimonials-card-position {
+		font-size: 15.6px;
+		font-weight: 400;
+		font-family: "SF Pro Display";
+		color: #90919cd5;
+	}
+
+	.about-us-testimonials-card-position2 {
+		font-size: 15.6px;
+		font-weight: 700;
+		font-family: "SF Pro Display";
+		color: #60606b;
+	}
+
+	.about-us-testimonials-card-number {
+		font-size: 15.84px;
+		font-weight: 700;
+		font-family: 'DM Sans', sans-serif;
+		color: #111013;
+	}
+
+	.ticket-booking-bigcard-tital {
+		font-size: 16px;
+		font-weight: 800;
+		color: #1e1e1e;
+	}
+
+	.ticket-booking-bigcard-subtital {
+		font-size: 14px;
+		font-weight: 800;
+		color: #1e1e1e;
+	}
+
+	.ticket-booking-smallcard-tital {
+		font-size: 20px;
+		font-weight: 800;
+		color: #1e1e1e;
+	}
+
+	.ticket-booking-smallcard-subtital {
+		font-size: 16px;
+		font-weight: 800;
+		color: #1e1e1e;
+	}
+
+	.ticket-booking-price-bar {
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.glamour-spotlight-tital {
+		font-size: 16px;
+		font-weight: 800;
+		color: #fff;
+	}
+
+	.glamour-spotlight-subtital {
+		font-size: 12px;
+		font-weight: 350;
+		color: #fff;
+	}
+
+	.glamour-spotlight-subtital2 {
+		font-size: 14px;
+		font-weight: 500;
+		color: #fff;
+	}
+
+	.ticket-booking-btn {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.gift-voucher-tital {
+		font-size: 20px;
+		font-weight: 800;
+		color: #111013;
+		line-height: 25px;
+	}
+
+	.gift-voucher-subtital {
+		font-size: 16px;
+		font-weight: 800;
+		color: #111013;
+	}
+
+	.gift-voucher-accordion-tital {
+		font-size: 20px;
+		font-weight: 800;
+		color: #111013;
+	}
+
+	.ticket-booking-map-tital {
+		font-size: 24px;
+		font-weight: 800;
+		color: #1e1e1e;
+	}
+
+	.ticket-booking-map-subtital {
+		font-size: 16px;
+		font-weight: 350;
+		color: #1e1e1e;
+	}
+
+	.gift-voucher-pagetwo-subtital {
+		font-size: 16px;
+		font-weight: 400;
+		color: #161519;
+		font-family: "SF Pro Display";
+	}
+
+	.gift-voucher-pagetwo-subtital2 {
+		font-size: 20px;
+		font-weight: 600;
+		color: #161519;
+		font-family: "SF Pro Display";
+	}
+
+	.gift-voucher-card-category-tital1 {
+		font-size: 20px;
+		font-weight: 700;
+		color: #1e1e1e;
+		font-family: 'DM Sans', sans-serif;
+	}
+
+	.gift-voucher-card-category-tita2 {
+		font-size: 24px;
+		font-weight: 700;
+		color: #111013;
+		font-family: 'DM Sans', sans-serif;
+	}
+
+	.gift-voucher-card-category-subtital {
+		font-size: 15px;
+		font-weight: 600;
+		color: #161519;
+		font-family: "SF Pro Display";
+		line-height: 23.5px;
+	}
+
+	.gift-voucher-card-card-list-text {
+		font-size: 14px;
+		font-weight: 400;
+		color: #161519;
+		font-family: "SF Pro Display";
+		line-height: 23.5px;
+	}
+
+	.gift-voucher-modal-tital1 {
+		font-size: 24px;
+		font-weight: 400;
+		color: #000;
+		font-family: 'Amiri', serif;
+		font-family: 'Playfair Display', serif;
+		line-height: 23.5px;
+	}
+
+	.gift-voucher-modal-tital2 {
+		font-size: 36px;
+		font-weight: 400;
+		color: #000;
+		font-family: 'Bellefair', serif;
+		line-height: 38.85px;
+	}
+
+	.gift-voucher-modal-date {
+		font-size: 20px;
+		font-weight: 400;
+		color: #000;
+		font-family: 'Bellefair', serif;
+		line-height: 26.17px;
+	}
+
+	.gift-voucher-modal-tital3 {
+		font-size: 28px;
+		font-weight: 400;
+		color: #000;
+		font-family: 'Amiri', serif;
+	}
+
+	.gift-voucher-modal-description {
+		font-size: 20px;
+		font-weight: 400;
+		color: #000;
+		font-family: 'Amiri', serif;
+		font-style: italic;
+		max-width: 270px;
+	}
+
+	.gift-voucher-modal-conditions {
+		font-size: 20px;
+		font-weight: 400;
+		color: #000;
+	}
+
+	a.gift-voucher-modal-conditions {
+		font-size: 20px;
+		font-weight: 400;
+		color: #000;
+		text-decoration: underline;
+	}
+
+	a.gift-voucher-modal-conditions:hover {
+		font-size: 20px;
+		font-weight: 400;
+		color: #000;
+	}
+
+	.Select-fabric-header-text {
+		font-size: 18px;
+	}
+
+	.Select-fabric-buttons {
+		font-size: 12px;
+		font-weight: 300;
+	}
+
+	.ticket-booking-modal-footer-text {
+		font-size: 15px;
+		font-weight: 500;
+		color: #fff;
+	}
+
+	.thank-you-tital-text {
+		font-family: "SF Pro Display";
+		font-weight: 400;
+		font-size: 28px;
+		color: #161519;
+	}
+
+	.thank-you-for-shopping-text {
+		font-family: "SF Pro Display";
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 35.5px;
+		color: #161519;
+	}
+
+	.thank-you-for-shopping-text2 {
+		font-family: "SF Pro Display";
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 35.5px;
+		color: #2e77bc;
+	}
+
+	.card-title {
+		font-size: 16px;
+		/* max-width: 140px;
+		min-width: 140px; */
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: #efefef;
+}
+
+body {
+	font-family: 'Avenir Book';
+	margin: 0;
+	padding: 0;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border-color: #ced4da;
+}
+
+.ticket-booking-btn input[type="date"]:focus {
+	outline: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.body {
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
+}
+
+/* 2. navbar section styles ========================================================================== */
+#navbar1.scrolled {
+	background-color: #fff;
+}
+
+#navbar2.scrolled {
+	background-color: #fff;
+}
+
+#scrolled-navbar {
+	display: none;
+	background-color: #fff;
+}
+
+/* Add your styling for the new navbar as needed */
+.navbar-logo {
+	max-width: 230px;
+}
+
+.navbar-cart-user {
+	width: 18px;
+}
+
+.navbar-toggler {
+	border: 0px;
+}
+
+.navbar-offcanvas-height {
+	height: 67vh;
+}
+
+@media (max-width: 425px) {
+	.navbar-offcanvas-height-mq .navbar-offcanvas-height {
+		height: 60vh;
+	}
+}
+
+/* 3. cover head styles ========================================================================== */
+.cover-head-catalogue {
+	position: absolute;
+	margin-top: -400px;
+}
+
+.panel {
+	margin-left: 900px;
+}
+
+.cover-head-catalogue-mobile {
+	position: absolute;
+	margin-top: -300px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 5px;
+	height: 5px;
+	padding: 0;
+	border-radius: 50%;
+	margin-right: 8px;
+	cursor: pointer;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	opacity: 0.5;
+	transition: opacity 0.6s ease;
+}
+
+.carousel-indicators .active {
+	opacity: 1 !important;
+	width: 7px !important;
+	height: 7px !important;
+	margin-top: -1px !important;
+}
+
+.carousel-indicators {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin-right: 15%;
+	margin-bottom: 32rem;
+	margin-left: -74%;
+	transform: rotate(90deg);
+}
+
+.carousel-items:hover {
+	color: #fff;
+}
+
+@media (max-width: 1800px) {
+	.cover-head-catalogue-text-mq .cover-head-catalogue {
+		margin-top: -332px;
+	}
+
+	.cover-head-catalogue-text-mq .panel {
+		margin-left: 800px;
+	}
+}
+
+@media (max-width: 1758px) {
+	.cover-head-catalogue-text-mq .cover-head-catalogue {
+		margin-top: -333px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.cover-head-catalogue-text-mq .cover-head-catalogue {
+		margin-top: -380px;
+	}
+}
+
+@media (max-width: 820px) {
+	.cover-head-catalogue-text-mq .cover-head-catalogue {
+		margin-top: -300px;
+	}
+
+	.cover-head-catalogue-text-mq .panel {
+		margin-left: 541px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cover-head-catalogue-text-mq .cover-head-catalogue {
+		margin-top: -320px;
+	}
+
+	.cover-head-catalogue-text-mq .panel {
+		margin-left: 525px;
+	}
+}
+
+@media (max-width: 766px) {
+	.cover-head-catalogue-text-mq .cover-head-catalogue {
+		margin-top: -205px;
+	}
+
+	.cover-head-catalogue-text-mq .panel {
+		margin-left: 525px;
+	}
+}
+
+@media (max-width: 425px) {
+	.cover-head-catalogue-text-mq .cover-head-catalogue {
+		margin-top: -180px;
+		margin-left: -12px;
+	}
+
+	.cover-head-catalogue-text-mq .panel {
+		margin-left: 300px;
+	}
+}
+
+.cover-head-image-text {
+	position: absolute;
+	margin-top: -41px;
+	margin-left: 41px;
+}
+
+.element {
+	transform: translateX(0px);
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.cover-head-image-size {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.hero-carousel-image {
+	background-position: center center;
+	background-size: contain;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.hero-carousel-image-1,
+	.hero-carousel-image-2 {
+		background-position: center center;
+	}
+}
+
+
+
+/* 4. Design your own Custom ========================================================================== */
+.Custom-Suit {
+	max-width: 133%;
+}
+
+.your-fabrice {
+	width: 100%;
+}
+
+.choose-from {
+	background-color: #0c1c28F5;
+	color: #fff;
+	position: absolute;
+	width: 700px;
+	margin-top: -305px;
+	margin-left: -1px;
+	padding: 83px 117px 77px 38px;
+	margin-left: 49%;
+	height: 304px;
+}
+
+@media (max-width: 1440px) {
+	.your-fabrice-mq .your-fabrice {
+		width: 160px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.choose-from-mq .choose-from {
+		background-color: #0c1c28 F5;
+		color: #fff;
+		position: absolute;
+		width: 240px;
+		margin-top: -146px;
+		margin-left: -1px;
+		padding: 21px 12px 12px 20px;
+		margin-left: 50%;
+		height: 145px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.choose-from-mq .choose-from {
+		margin-left: 112%;
+		position: relative;
+		margin-top: 0%;
+		max-width: 124%;
+		padding: 30px 56px 23px 25px;
+		height: 170px;
+	}
+}
+
+.icon150 {
+	width: 22%;
+}
+
+/* 4.2 owl nav */
+#DesignyourownCustom .owl-prev span {
+	display: none;
+}
+
+#DesignyourownCustom .owl-next span {
+	color: #000;
+}
+
+#DesignyourownCustom .owl-prev span:hover,
+#DesignyourownCustom .owl-next span:hover {
+	color: #474747;
+	background: none;
+}
+
+#DesignyourownCustom .owl-theme .owl-nav [class*=owl-]:hover {
+	background: none;
+}
+
+#DesignyourownCustom .owl-prev,
+#DesignyourownCustom .owl-next {
+	position: absolute;
+	top: 1%;
+	height: 100%;
+}
+
+#DesignyourownCustom .owl-prev {
+	left: -50px;
+}
+
+@media (max-width: 767px) {
+	#DesignyourownCustom .button.owl-next {
+		right: -7px;
+		top: 2px;
+	}
+}
+
+#DesignyourownCustom .owl-next {
+	right: -20px;
+}
+
+#DesignyourownCustom .owl-theme .owl-dots .owl-dot span {
+	margin-top: 30px;
+	width: 5px;
+	height: 5px;
+	background-color: #a3a3a3;
+}
+
+#DesignyourownCustom .owl-theme .owl-dots .owl-dot.active span,
+#DesignyourownCustom .owl-theme .owl-dots .owl-dot:hover span {
+	background: #8b8b8b !important;
+}
+
+/* 4.3 select your fabrice mobile */
+.fabrice-header {
+	max-width: 267px;
+}
+
+.choose-from-mobile {
+	background-color: #0c1c28F5;
+	color: #fff;
+	position: relative;
+	margin-top: 11%;
+	width: 220px;
+	padding: 22px 12px 15px 22px;
+}
+
+/* 5. The change of direction cardes ========================================================================== */
+.direction-cardes-1 {
+	max-width: 24%;
+	position: absolute;
+	margin-top: 6%;
+	margin-left: 67%;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.direction-cardes-1 {
+		max-width: 100%;
+		position: absolute;
+		margin-top: 15%;
+		margin-left: 0%;
+		padding: 10px 30px;
+	}
+
+	.change-of-direction {
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+/* 6. FASHION SHOW COLLECTIONS ========================================================================== */
+.fashion-collections {
+	margin-top: -41%;
+	position: absolute;
+	margin-left: 0%;
+}
+
+@media (max-width: 768px) {
+	.fashion-collections {
+		margin-top: -45%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.fashion-collections {
+		margin-top: -50%;
+	}
+}
+
+.live-feed-player {
+	width: 100%;
+	height: 1300px;
+	margin-bottom: -7px;
+}
+
+@media (max-width: 768px) {
+	.live-feed-player {
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.live-feed-player {
+		height: auto;
+	}
+}
+
+.play-icon {
+	width: 71px;
+	cursor: pointer;
+}
+
+.fashion-collections-text {
+	width: 84%;
+}
+
+/* 7.nearest store ========================================================================== */
+input.form-control {
+	background-color: #272828;
+	border: 0px;
+}
+
+button#button-addon2 {
+	margin-left: -98px;
+	width: 98px;
+}
+
+.nearest-store-search-btn {
+	border-radius: 40px 40px 40px 37px;
+	padding: 14px 15px 9px 16px;
+	background-color: #272828;
+	color: #ffffff;
+}
+
+.nearest-store-search-btn:hover {
+	border-radius: 40px 40px 40px 37px;
+	padding: 14px 15px 9px 16px;
+	background-color: #393a3a;
+	color: #ffffff;
+}
+
+.contact-form {
+	width: 100%;
+}
+
+.input {
+	width: 100%;
+	border-radius: 5px;
+	height: 47px;
+	padding-left: 15px;
+	padding-right: 10px;
+	width: 100%;
+	background-color: #272828;
+	color: #fff;
+}
+
+/* 7.Back-to-top-button ========================================================================== */
+#btn-back-to-top {
+	position: fixed;
+	bottom: 70px;
+	right: 10px;
+	display: none;
+	z-index: 4;
+}
+
+.chat-buttion {
+	position: fixed;
+	bottom: 20px;
+	right: 17px;
+	border-radius: 40px 40px 40px 37px;
+	padding: 11px 13px 6px 13px;
+	z-index: 4;
+	background-color: #1d1d1d;
+}
+
+.chat-buttion:hover {
+	position: fixed;
+	bottom: 20px;
+	right: 17px;
+	border-radius: 40px 40px 40px 37px;
+	padding: 11px 13px 6px 13px;
+	z-index: 4;
+	background-color: #1d1d1d;
+}
+
+.btn.chat-buttion:active {
+	position: fixed;
+	bottom: 20px;
+	right: 17px;
+	border-radius: 40px 40px 40px 37px;
+	padding: 11px 13px 6px 13px;
+	z-index: 4;
+	background-color: #1d1d1d;
+}
+
+/* 8.product configurator table ========================================================================== */
+a.nav-link.tabe-underline.border-0 {
+	color: #000000;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+a.nav-link.tabe-underline.active.border-0 {
+	background-color: #efefef;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.tabe-underline.active {
+	position: relative;
+	display: inline-block;
+}
+
+.tabe-underline.active:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 89%;
+	margin: 1px auto;
+	max-width: 69px;
+	height: 1px;
+	background: #000;
+}
+
+.Select-fabric-buttons:hover {
+	background-color: #f7f7f7;
+	border-color: #979797;
+	color: #979797;
+}
+
+.tabbable .nav-tabs {
+	overflow-x: auto;
+	overflow-y: hidden;
+	flex-wrap: nowrap;
+}
+
+.tabbable .nav-tabs .nav-link {
+	white-space: nowrap;
+}
+
+.product-configurator-background-color {
+	background-color: #EFEFEF;
+}
+
+.mt-sm-68 {
+	margin-top: 68px;
+}
+
+.select-fabric-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.select-fabric-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.Select-fabric-next-btn {
+	background-color: #2d2e2c;
+	font-size: 14px;
+	font-weight: 350;
+	padding: 10px 35px 10px 35px;
+	border-radius: 4px;
+}
+
+.Select-fabric-next-btn:hover {
+	background-color: #494b48;
+}
+
+.disabled-button {
+	opacity: 0.3;
+}
+
+.Select-fabric-back-btn {
+	background-color: #9fa6b2;
+	font-size: 14px;
+	font-weight: 350;
+	padding: 10px 35px 10px 35px;
+	border-radius: 4px;
+	border-width: 0px;
+}
+
+.Select-fabric-back-btn:hover {
+	background-color: #c0c0c0;
+}
+
+.btn.Select-fabric-back-btn:active {
+	background-color: #9b9b9b;
+}
+
+.Select-fabric-offcanvas-btn {
+	background-color: #fff;
+	font-size: 14px;
+	font-weight: 350;
+	padding: 10px 35px 10px 35px;
+	border-radius: 4px;
+	color: #000;
+	border-color: #1e1e1e3D;
+}
+
+.Select-fabric-offcanvas-btn:hover {
+	background-color: #d3d3d3;
+	border-color: #1e1e1e3D;
+	color: #000;
+}
+
+.btn.Select-fabric-offcanvas-btn:active {
+	background-color: #dfdfdf;
+	border-color: #1e1e1e3D;
+	color: #000;
+}
+
+select.form-select.w-50.form-select-lg.mb-3 {
+	border-color: #979797;
+}
+
+.Select-fabric-form-select-text {
+	font-weight: 300;
+	color: #979797;
+}
+
+.Select-fabric-long-buttion {
+	border-color: #979797;
+	padding: 12px 10px 12px 10px;
+}
+
+.Select-fabric-long-buttion:hover {
+	background-color: #eee;
+}
+
+.btn.Select-fabric-long-buttion:active {
+	background-color: #c7c7c7;
+}
+
+
+.Select-fabric-long-buttion-text {
+	color: #000000D9;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.table-row-height-width {
+	height: 93vh;
+}
+
+@media (max-width: 1800px) {
+	.table-row-height-width-mq .table-row-height-width {
+		height: 90vh;
+	}
+}
+
+@media (max-width: 1440px) {
+	.table-row-height-width-mq .table-row-height-width {
+		height: 89vh;
+	}
+}
+
+@media (max-width: 820px) {
+	.table-row-height-width-mq .table-row-height-width {
+		height: 85vh;
+	}
+}
+
+.table-height-width {
+	max-height: 58vh;
+}
+
+@media (max-width: 1440px) {
+	.table-height-width-mq .table-height-width {
+		max-height: 49vh;
+		padding-bottom: 52px;
+	}
+}
+
+@media (max-width: 1360px) {
+	.table-height-width-mq .table-height-width {
+		max-height: 49vh;
+		padding-bottom: 52px;
+	}
+}
+
+@media (max-width: 820px) {
+	.table-height-width-mq .table-height-width {
+		max-height: 35vh;
+		padding-bottom: 110px;
+	}
+}
+
+@media (max-width: 425px) {
+	.table-height-width-mq .table-height-width {
+		max-height: 29vh;
+		padding-bottom: 180px;
+	}
+}
+
+/* 9.product configurator table offcanvas ========================================================================== */
+#product-configurator .offcanvas {
+	position: absolute;
+	max-width: 100%;
+}
+
+#product-configurator .offcanvas.offcanvas-start {
+	margin-top: 70px;
+	left: 0;
+}
+
+@media (max-width: 1450px) {
+	#product-configurator .offcanvas {
+		position: absolute;
+		max-width: 100%;
+	}
+
+	#product-configurator .offcanvas.offcanvas-start {
+		margin-top: 70px;
+		left: 0;
+	}
+}
+
+@media (max-width: 1196px) {
+	#product-configurator .offcanvas {
+		position: fixed;
+		max-width: 100%;
+		max-height: 100%;
+		bottom: 0px;
+	}
+
+	#product-configurator .offcanvas.offcanvas-start {
+		margin-top: 0px;
+		left: 0;
+	}
+}
+
+/* 10.Select your fabric owl cal start ========================================================================== */
+#SelectyourfabricOwl .owl-prev span,
+#SelectyourfabricOwl .owl-next span {
+	color: #000;
+	border-radius: 54px 54px 54px 54px;
+	padding: 13px 15px 12px 14px;
+}
+
+#SelectyourfabricOwl .owl-prev span:hover,
+#SelectyourfabricOwl .owl-next span:hover {
+	background-color: #eee;
+	border-radius: 54px 54px 54px 54px;
+	padding: 13px 15px 12px 14px;
+}
+
+#SelectyourfabricOwl .owl-theme .owl-nav [class*=owl-]:hover {
+	background: none;
+}
+
+#SelectyourfabricOwl .owl-prev,
+#SelectyourfabricOwl .owl-next {
+	position: absolute;
+	top: -14%;
+}
+
+#SelectyourfabricOwl .owl-prev {
+	left: 5px;
+}
+
+#SelectyourfabricOwl .owl-next {
+	right: 5px;
+}
+
+#SelectyourfabricOwl .owl-theme .owl-nav .disabled {
+	display: none;
+}
+
+#SelectyourfabricOwl .owl-theme .owl-nav {
+	margin-top: 0px;
+}
+
+/* 10.Select your fabric owl cal end ========================================================================== */
+#product-configurator .offcanvas {
+	--bs-offcanvas-width: 51%;
+}
+
+@media (max-width: 1196px) {
+	#product-configurator .offcanvas {
+		--bs-offcanvas-width: 100%;
+	}
+}
+
+#product-configurator .offcanvas-backdrop.show {
+	opacity: 0;
+}
+
+/* 10.product configurator table Canvas ========================================================================== */
+.product-canvas,
+.product-canvas-national,
+.product-canvas-trouser,
+.product-canvas-waistcoat,
+.product-canvas-jacket {
+	width: 100% !important;
+	overflow-y: hidden !important;
+}
+
+@media (max-width: 1192px) {
+
+	.product-canvas-mq,
+	.product-canvas,
+	.product-canvas-national,
+	.product-canvas-trouser,
+	.product-canvas-waistcoat,
+	.product-canvas-jacket {
+		height: 36vh;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar-logo {
+		max-width: 170px;
+	}
+
+	.product-canvas-mq,
+	.product-canvas,
+	.product-canvas-national,
+	.product-canvas-trouser,
+	.product-canvas-waistcoat,
+	.product-canvas-jacket {
+		height: 41vh;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+	.product-canvas-mq,
+	.product-canvas,
+	.product-canvas-national,
+	.product-canvas-trouser,
+	.product-canvas-waistcoat,
+	.product-canvas-jacket {
+		height: 820px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#product-canvas {
+		height: 41vh !important;
+	}
+
+	.select-fabric-content {
+		max-height: 46vh;
+	}
+
+	.fabric-select {
+		height: 100px;
+	}
+}
+
+/* 10.product configurator Size Calculator start ========================================================================== */
+.size-cal-select-size-btn {
+	border-color: #979797;
+	font-size: 18px;
+	font-weight: 300;
+	color: #000 D9;
+}
+
+.size-cal-select-size-btn:hover {
+	border-color: #777;
+}
+
+.size-cal-select-size-btn:focus {
+	background-color: #494b48;
+	color: #fff;
+}
+
+.size-cal-select-size-card-btn {
+	border-color: #979797;
+	font-size: 18px;
+	font-weight: 300;
+	color: #000 D9;
+}
+
+.size-cal-select-size-card-btn:hover {
+	border-color: #000;
+}
+
+.size-cal-select-size-card-btn:focus {
+	background-color: #494b48;
+	color: #fff;
+}
+
+.size-cal-select-size-height-width {
+	max-height: 52vh;
+}
+
+@media (max-width: 1768px) {
+	.size-cal-select-size-height-width-mq .size-cal-select-size-height-width {
+		height: 43vh;
+	}
+}
+
+@media (max-width: 1440px) {
+	.size-cal-select-size-height-width-mq .size-cal-select-size-height-width {
+		height: 30vh;
+	}
+}
+
+@media (max-width: 820px) {
+	.size-cal-select-size-height-width-mq .size-cal-select-size-height-width {
+		height: 55vh;
+	}
+}
+
+.edit-jacket-sizesize-height-width {
+	max-height: 52vh;
+}
+
+@media (max-width: 1768px) {
+	.edit-jacket-sizesize-height-width-mq .edit-jacket-sizesize-height-width {
+		height: 40vh;
+	}
+}
+
+@media (max-width: 1440px) {
+	.edit-jacket-sizesize-height-width-mq .edit-jacket-sizesize-height-width {
+		height: 30vh;
+	}
+}
+
+@media (max-width: 820px) {
+	.edit-jacket-sizesize-height-width-mq .edit-jacket-sizesize-height-width {
+		height: 55vh;
+	}
+}
+
+.size-cal-customize-your-jacket-height-width {
+	max-height: 54vh;
+}
+
+@media (max-width: 1768px) {
+	.size-cal-customize-your-jacket-height-width-mq .size-cal-customize-your-jacket-height-width {
+		height: 55vh;
+	}
+}
+
+@media (max-width: 1400px) {
+	.size-cal-customize-your-jacket-height-width-mq .size-cal-customize-your-jacket-height-width {
+		height: 54vh;
+	}
+}
+
+@media (max-width: 820px) {
+	.size-cal-customize-your-jacket-height-width-mq .size-cal-customize-your-jacket-height-width {
+		height: 47vh;
+	}
+}
+
+.size-cal-this-size-buttons {
+	border-color: #979797;
+	font-size: 18px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.8509803922);
+}
+
+.size-cal-this-size-buttons:hover {
+	border-color: #777;
+	font-size: 18px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.8509803922);
+}
+
+#hidden-content {
+	display: none;
+}
+
+/* 10.size cal toggle Button start ========================================================================== */
+.form-switch .form-check-input {
+	--bs-form-switch-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e);
+	width: 43px;
+	margin-left: -2.5em;
+	background-image: var(--bs-form-switch-bg);
+	background-position: left center;
+	border-radius: 2em;
+	transition: background-position 0.15s ease-in-out;
+	height: 25px;
+}
+
+.form-check-input:checked {
+	background-color: #eee;
+	border-color: #eee;
+}
+
+/* 10.size cal toggle Button end ========================================================================== */
+/* 10.Edit Jacket Size quantity button Start ========================================================================== */
+.qtyminus {
+	font-size: 20px;
+	border-radius: 0px;
+	width: 40px;
+	font-weight: 600;
+	color: #949494;
+}
+
+.qtyminus:hover {
+	background-color: #e3e3e3;
+}
+
+.qtyminus:focus {
+	border: unset;
+	outline: unset;
+}
+
+.qtyplus {
+	font-size: 20px;
+	border-radius: 0px;
+	width: 40px;
+	font-weight: 600;
+	color: #949494;
+}
+
+.qtyplus:hover {
+	background-color: #e3e3e3;
+}
+
+.qtyplus:focus {
+	border: unset;
+	outline: unset;
+}
+
+.qtyminus-input {
+	max-width: 50px;
+	border: unset;
+}
+
+.qtyminus-input:disabled {
+	background-color: #fff !important;
+}
+
+.qtyminus-input:focus {
+	border: unset;
+	outline: unset;
+}
+
+.edit-jacket-size-option-btn {
+	border-color: #979797;
+	font-size: 14px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.8509803922);
+}
+
+.edit-jacket-size-option-btn:hover {
+	border-color: #777;
+}
+
+.edit-jacket-size-next-prev-btn {
+	border-color: #979797;
+	font-size: 14x;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.8509803922);
+}
+
+.edit-jacket-size-next-prev-btn:hover {
+	border-color: #777;
+	color: rgba(0, 0, 0, 0.8509803922);
+}
+
+/* 10.Edit Jacket Size quantity button end ========================================================================== */
+/* 10. add size adjustment start ========================================================================== */
+.size-adjustment-card-border {
+	border-style: dashed;
+	border-width: 2px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	border-color: #979797;
+}
+
+/* 10. add size adjustment end ========================================================================== */
+/* 10. choose your date and time start ========================================================================== */
+#chooseDateandTimeOwl .owl-prev span,
+#chooseDateandTimeOwl .owl-next span {
+	color: #000;
+	border-radius: 54px 54px 54px 54px;
+	padding: 13px 15px 12px 14px;
+}
+
+#chooseDateandTimeOwl .owl-prev span:hover,
+#chooseDateandTimeOwl .owl-next span:hover {
+	background-color: #eee;
+	border-radius: 54px 54px 54px 54px;
+	padding: 13px 15px 12px 14px;
+}
+
+#chooseDateandTimeOwl .owl-theme .owl-nav [class*=owl-]:hover {
+	background: none;
+}
+
+#chooseDateandTimeOwl .owl-prev,
+#chooseDateandTimeOwl .owl-next {
+	position: absolute;
+	top: 24%;
+}
+
+#chooseDateandTimeOwl .owl-prev {
+	left: 75px;
+}
+
+#chooseDateandTimeOwl .owl-next {
+	right: 73px;
+}
+
+#chooseDateandTimeOwl .owl-theme .owl-nav .disabled {
+	display: none;
+}
+
+.choose-your-date-and-time-card {
+	height: 90px;
+	border-color: #979797;
+	border-radius: 6px;
+}
+
+/* 10. choose your date and time end ========================================================================== */
+/* 10. Size Calculator Forms ========================================================================== */
+#sizeCalculatorForms input.form-control {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid #1e1e1e7A;
+	height: 50px;
+}
+
+#sizeCalculatorForms textarea.form-control {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid #1e1e1e7A;
+	height: 50px;
+}
+
+#sizeCalculatorForms .form-check-input[type=radio] {
+	border: 1px solid #000;
+}
+
+#sizeCalculatorForms .form-check-input:checked {
+	background-color: #000;
+	border-color: #000;
+	border: 0px solid #000;
+}
+
+#sizeCalculatorForms .form-check-input:checked {
+	background-color: #0a0a0a;
+	border-color: #0a0a0a;
+}
+
+#sizeCalculatorForms .form-check-input[type=checkbox] {
+	border-radius: 0px;
+	border-color: #000;
+}
+
+.details-about-check-box-buttion {
+	background-color: #2d2e2c;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 4px;
+	height: 35px;
+}
+
+.details-about-check-box-buttion:hover {
+	background-color: #2d2e2c;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 4px;
+}
+
+.btn.details-about-check-box-buttion:active {
+	background-color: #9ea19b;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 4px;
+}
+
+/* 10. Size Calculator Forms ========================================================================== */
+/* 10. product configurator scrollbar start ========================================================================== */
+.product-configurator-scrollbar::-webkit-scrollbar {
+	height: 3px;
+}
+
+/* Create a custom scrollbar style for Firefox */
+.product-configurator-scrollbar {
+	scrollbar-color: red;
+}
+
+/* Specify the colors for the custom scrollbar in Firefox */
+.product-configurator-scrollbar::-webkit-scrollbar-thumb {
+	background-color: #c2c2c2;
+}
+
+/* 10. product configurator scrollbar end ========================================================================== */
+/* 10.product configurator Size Calculator end ========================================================================== */
+/* New Arraivals buttions start ========================================================================== */
+
+.discounted-price {
+	color: #1e1e1e !important;
+	text-decoration-line: line-through; 
+	font-size: 16px;
+}
+
+.Arraivals-border {
+	padding-top: 12px;
+}
+
+.Arraivals-buttons {
+	font-size: 16px;
+	font-weight: 300;
+	border-color: #979797;
+	color: #000000D9;
+}
+
+.Arraivals-buttons:hover {
+	background-color: #f7f7f7;
+	border-color: #979797;
+	color: #000000D9;
+	font-weight: 300;
+}
+
+.filter-color-box {
+	height: 47px;
+	width: 47px;
+	border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+	.Arraivals-filter-buttion-mq .Arraivals-filter-buttion {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1196px) {
+	.Arraivals-border {
+		padding-top: 45px;
+	}
+}
+
+/* New Arraivals buttions end ========================================================================== */
+/* New Arraivals offcanvas start ========================================================================== */
+#newarrivalsaccordion .accordion-button::after {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+	transform: scale(0.5) !important;
+}
+
+#newarrivalsaccordion .accordion-button:not(.collapsed)::after {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+	font-size: 34px !important;
+}
+
+#newarrivalsaccordion .accordion-button:not(.collapsed) {
+	background-color: #fff;
+}
+
+#newarrivalsaccordion .form-check-input:checked {
+	background-color: #121212;
+	border-color: #121212;
+}
+
+#newarrivalsaccordioncards .card {
+	border-color: #fff;
+}
+
+#newarrivalsaccordioncards .card:hover {
+	border-color: #000;
+}
+
+.newarrivals-accordion-offcanvas-btn1 {
+	border-color: #1e1e1e3D;
+	font-size: 14px;
+	font-weight: 350;
+	border-radius: 4px;
+}
+
+.newarrivals-accordion-offcanvas-btn1:hover {
+	background-color: #f7f7f7;
+	border-color: #979797;
+	font-weight: 350;
+}
+
+.newarrivals-accordion-offcanvas-btn2 {
+	background-color: #2d2e2c;
+	color: #f7f7f7;
+	font-size: 14px;
+	font-weight: 350;
+	border-radius: 4px;
+}
+
+.newarrivals-accordion-offcanvas-btn2:hover {
+	background-color: #494b48;
+	color: #f7f7f7;
+	font-weight: 350;
+}
+
+.btn.newarrivals-accordion-offcanvas-btn2:active {
+	background-color: #6f726e;
+	color: #f7f7f7;
+	font-weight: 350;
+}
+
+/* New Arraivals offcanvas end ========================================================================== */
+/*11. Ready made card ========================================================================== */
+.Ready-made-card {
+	margin: 0;
+	position: absolute;
+	top: 52%;
+	-ms-transform: translateY(-52%);
+	transform: translateY(-52%);
+}
+
+.ready-made-card-stiky {
+	/* position: fixed; */
+}
+
+@media (max-width: 776px) {
+	.Ready-made-card-mq .Ready-made-card {
+		margin: none;
+		position: relative;
+		top: none;
+		transform: translateY(27%);
+	}
+}
+
+@media (max-width: 425px) {
+	.Ready-made-card-mq .Ready-made-card {
+		margin: none;
+		position: relative;
+		top: none;
+		-ms-transform: none;
+		transform: none;
+	}
+}
+
+@media (max-width: 569px) {
+	.Ready-made-card-mq .Ready-made-card {
+		max-width: 100%;
+		margin-top: 40px;
+	}
+
+	.Ready-made-card-mq .Ready-made-card-cart-btn {
+		width: 100%;
+	}
+}
+
+/*11. Ready made card buttion ========================================================================== */
+.Ready-made-card-bookmark-btn {
+	width: 15%;
+	height: 45px;
+
+	border-color: #D9D9D9;
+}
+
+.Ready-made-card-cart-btn {
+	width: 83%;
+	font-size: 14px;
+	font-weight: 350;
+	height: 45px;
+}
+
+/*11. Ready made card accordion ========================================================================== */
+#ReadymadesingleProduct .accordion-button::after {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+	transform: scale(0.5) !important;
+}
+
+#ReadymadesingleProduct .accordion-button:not(.collapsed)::after {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+#ReadymadesingleProduct .accordion-button:not(.collapsed) {
+	background-color: #fff;
+}
+
+#ReadymadesingleProduct .accordion {
+	min-width: 326px;
+}
+
+@media (max-width: 480px) {
+	#ReadymadesingleProduct .accordion {
+		max-width: 100%;
+	}
+}
+
+.Ready-made-image-text-width {
+	max-width: 33%;
+	margin-left: 9%;
+}
+
+.Ready-made-image-width {
+	width: 50%;
+}
+
+@media (max-width: 1196px) {
+	.Ready-made-image-width-mq .Ready-made-image-width {
+		width: 100%;
+	}
+
+	.Ready-made-image-width-mq .Ready-made-image-text-width1 {
+		max-width: 80%;
+		margin-left: 6%;
+		padding-top: 229px;
+		padding-bottom: 16px;
+	}
+
+	.Ready-made-image-width-mq .Ready-made-image-text-width2 {
+		max-width: 80%;
+		margin-left: 6%;
+		padding-top: 229px;
+		padding-bottom: 229px;
+	}
+}
+
+.Ready-made-overflow-y-scroll {
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+
+@media (max-width: 425px) {
+	.Ready-made-overflow-y-scroll-mq .Ready-made-overflow-y-scroll {
+		max-height: none;
+		overflow-y: hidden;
+	}
+}
+
+.ready-made-image-gallery::-webkit-scrollbar {
+	display: none;
+}
+
+.ready-made-image-gallery {
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.ready-made-image-gallery {
+		max-height: 75vh !important;
+		overflow-y: scroll;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.ready-made-image-gallery {
+		max-height: 75vh !important;
+		overflow-y: scroll;
+	}
+
+	.Ready-made-card-mq {
+		margin-top: 0px !important;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.ready-made-image-gallery {
+		max-height: 70vh !important;
+		overflow-y: scroll;
+	}
+
+	.Ready-made-card-mq {
+		margin-top: 0px !important;
+	}
+}
+
+
+
+/*Ready made single Product owl start ========================================================================== */
+#ReadymadesingleProduct-owl .owl-prev span {
+	display: none;
+}
+
+#ReadymadesingleProduct-owl .owl-next span {
+	color: #696969;
+	width: 12px;
+}
+
+#ReadymadesingleProduct-owl .owl-prev span:hover,
+#ReadymadesingleProduct-owl .owl-next span:hover {
+	color: #474747;
+	background: none;
+}
+
+#ReadymadesingleProduct-owl .owl-theme .owl-nav [class*=owl-]:hover {
+	background: none;
+}
+
+#ReadymadesingleProduct-owl .owl-prev,
+#ReadymadesingleProduct-owl .owl-next {
+	position: absolute;
+	top: 0%;
+	height: 94%;
+	width: 4%;
+}
+
+@media (max-width: 768px) {
+
+	#ReadymadesingleProduct-owl .owl-prev,
+	#ReadymadesingleProduct-owl .owl-next {
+		position: absolute;
+		top: 0%;
+		height: 89%;
+		width: 4%;
+	}
+}
+
+#ReadymadesingleProduct-owl .owl-prev {
+	left: 0px;
+}
+
+@media (max-width: 1440px) {
+	#ReadymadesingleProduct-owl button.owl-next {
+		right: 1px;
+		top: -6px;
+		height: 85%;
+	}
+}
+
+@media (max-width: 820px) {
+	#ReadymadesingleProduct-owl button.owl-next {
+		right: -3px;
+		top: -6px;
+		height: 85%;
+	}
+}
+
+@media (max-width: 762px) {
+	#ReadymadesingleProduct-owl button.owl-next {
+		right: 7px;
+		top: -6px;
+		height: 85%;
+	}
+}
+
+@media (max-width: 425px) {
+	#ReadymadesingleProduct-owl button.owl-next {
+		right: 11px;
+		top: -12px;
+	}
+}
+
+#ReadymadesingleProduct-owl .owl-next {
+	right: 1px;
+}
+
+#ReadymadesingleProduct-owl .owl-theme #ReadymadesingleProduct-owl .owl-dots #ReadymadesingleProduct-owl .owl-dot span {
+	margin-top: 30px;
+	width: 5px;
+	height: 5px;
+	background-color: #a3a3a3;
+}
+
+#ReadymadesingleProduct-owl .owl-theme .owl-dots .owl-dot.active span,
+#ReadymadesingleProduct-owl .owl-theme .owl-dots .owl-dot:hover span {
+	background: #b8b8b8 !important;
+}
+
+/* Ready made single Product owl end ========================================================================== */
+/* Ready made single Product owl 2 start ========================================================================== */
+#ReadymadesingleProduct .owl-prev span,
+#ReadymadesingleProduct .owl-next span {
+	color: #000;
+	border-radius: 54px 54px 54px 54px;
+	padding: 13px 15px 12px 14px;
+}
+
+#ReadymadesingleProduct .owl-prev span:hover,
+#ReadymadesingleProduct .owl-next span:hover {
+	background-color: #eee;
+	border-radius: 54px 54px 54px 54px;
+	padding: 13px 15px 12px 14px;
+}
+
+#ReadymadesingleProduct .owl-theme .owl-nav [class*=owl-]:hover {
+	background: none;
+}
+
+#ReadymadesingleProduct .owl-prev,
+#ReadymadesingleProduct .owl-next {
+	position: absolute;
+	top: 45%;
+}
+
+#ReadymadesingleProduct .owl-prev {
+	left: 10px;
+}
+
+#ReadymadesingleProduct .owl-next {
+	right: 10px;
+}
+
+#ReadymadesingleProduct .owl-theme .owl-nav .disabled {
+	display: none;
+}
+
+#ReadymadesingleProductoffcanvas .offcanvas {
+	--bs-offcanvas-width: 55%;
+}
+
+@media (max-width: 1024px) {
+	#ReadymadesingleProductoffcanvas .offcanvas {
+		--bs-offcanvas-width: 75%;
+	}
+}
+
+@media (max-width: 600px) {
+	#ReadymadesingleProductoffcanvas .offcanvas {
+		--bs-offcanvas-width: 100%;
+	}
+}
+
+
+.Ready-Product-offcanvas-btn1 {
+	width: 100%;
+	border-color: #979797;
+	background-color: #fff;
+	font-size: 14px;
+}
+
+.Ready-Product-offcanvas-btn1:hover {
+	width: 100%;
+	border-color: #979797;
+	background-color: #e0e0e0;
+}
+
+.btn.Ready-Product-offcanvas-btn1:active {
+	width: 100%;
+	border-color: #979797;
+	background-color: #c7c7c7;
+}
+
+.Ready-Product-offcanvas-btn2 {
+	width: 100%;
+	color: #fff;
+	background-color: #2d2e2c;
+	font-size: 14px;
+}
+
+.Ready-Product-offcanvas-btn2:hover {
+	width: 100%;
+	color: #fff;
+	background-color: #535353;
+}
+
+@media (max-width: 450px) {
+	.Ready-Product-offcanvas-overflow-mq .Ready-Product-offcanvas-overflow-scroll {
+		max-height: 60vh;
+	}
+}
+
+/* Ready made single Product offcanvas end ========================================================================== */
+#viewbegform input.form-control {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid #1e1e1e7A;
+	height: 50px;
+}
+
+#viewbegform .form-check-input[type=radio] {
+	border: 1px solid #000;
+}
+
+#viewbegform .form-check-input:checked {
+	background-color: #000;
+	border-color: #000;
+	border: 0px solid #000;
+}
+
+.view-bag-bg-color {
+	background-color: #d9d9d94D;
+}
+
+.view-bag-bg-color2 {
+	background: none;
+}
+
+.view-bag-support-link {
+	color: #323232;
+	font-size: 16px;
+	font-weight: 350;
+}
+
+.view-bag-support-link:hover {
+	color: #323232;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+#viewbagsupport .nav-tabs .nav-link.active,
+#viewbagsupport .nav-tabs .nav-item.show .nav-link {
+	color: #323232;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+#viewbagsupport .accordion-button:not(.collapsed) {
+	background: none;
+	box-shadow: none;
+}
+
+#viewbagsupport .accordion-button:focus {
+	border-color: none;
+	outline: 0;
+	box-shadow: none;
+}
+
+#viewbagsupport a.view-bag-accordion-description-link {
+	color: #000;
+	text-decoration: underline;
+}
+
+.view-bag-card-height {
+	height: 124px;
+}
+
+/*News and Events banner ========================================================================== */
+.News-and-Events-image {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 691px;
+}
+
+@media (max-width: 1024px) {
+	.News-and-Events-image-mq .News-and-Events-image {
+		margin: 0;
+		position: absolute;
+		top: 40%;
+		left: 58%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 730px;
+	}
+
+	.News-and-Events-image-mq .News-and-Events-banner {
+		margin: 0;
+		position: absolute;
+		top: 33%;
+		left: 26%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-33%, -50%);
+		max-width: 569px;
+	}
+}
+
+@media (max-width: 860px) {
+	.News-and-Events-image-mq .News-and-Events-image {
+		margin: 0;
+		position: absolute;
+		top: 35%;
+		left: 56%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 71%;
+	}
+
+	.News-and-Events-image-mq .News-and-Events-banner {
+		margin: 0;
+		position: absolute;
+		top: 31%;
+		left: 30%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-33%, -50%);
+		max-width: 569px;
+	}
+}
+
+@media (max-width: 425px) {
+	.News-and-Events-image-mq .News-and-Events-image {
+		margin: 0;
+		position: absolute;
+		top: 35%;
+		left: 60%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 68%;
+	}
+
+	.News-and-Events-image-mq .News-and-Events-banner {
+		margin: 0;
+		position: absolute;
+		top: 40%;
+		left: 29%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-33%, -50%);
+		max-width: 569px;
+	}
+}
+
+.News-and-Events-height {
+	height: 100vh;
+}
+
+@media (max-width: 860px) {
+	.News-and-Events-height-mq .News-and-Events-height {
+		height: 76vh;
+	}
+}
+
+.News-and-Events-banner {
+	margin: 0;
+	position: absolute;
+	top: 56%;
+	left: 19%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-33%, -50%);
+	max-width: 569px;
+}
+
+.News-and-Events-banner-date-dot {
+	color: #d90a2c;
+	font-size: 5px;
+}
+
+.News-and-Events-animation-text {
+	position: absolute;
+	font-size: 300px;
+	display: flex;
+	margin-top: 29%;
+	font-weight: 700;
+	color: #60606b;
+	opacity: 0.1;
+	font-family: 'DM Sans', sans-serif;
+}
+
+@media (max-width: 1366px) {
+	.News-and-Events-animation-text-mq .News-and-Events-animation-text {
+		position: absolute;
+		font-size: 140px;
+		display: flex;
+		margin-top: 34%;
+		font-weight: 700;
+		color: #60606b;
+		opacity: 0.1;
+		font-family: 'DM Sans', sans-serif;
+	}
+}
+
+@media (max-width: 1024px) {
+	.News-and-Events-animation-text-mq .News-and-Events-animation-text {
+		position: absolute;
+		font-size: 100px;
+		display: flex;
+		margin-top: 73%;
+		font-weight: 700;
+	}
+}
+
+@media (max-width: 860px) {
+	.News-and-Events-animation-text-mq .News-and-Events-animation-text {
+		position: absolute;
+		font-size: 90px;
+		display: flex;
+		margin-top: 73%;
+		font-weight: 700;
+	}
+}
+
+@media (max-width: 540px) {
+	.News-and-Events-animation-text-mq .News-and-Events-animation-text {
+		position: absolute;
+		font-size: 50px;
+		display: flex;
+		margin-top: 84%;
+		font-weight: 900;
+	}
+}
+
+@media (max-width: 430px) {
+	.News-and-Events-animation-text-mq .News-and-Events-animation-text {
+		position: absolute;
+		font-size: 35px;
+		display: flex;
+		margin-top: 148%;
+		font-weight: 900;
+	}
+}
+
+@media (max-width: 375px) {
+	.News-and-Events-animation-text-mq .News-and-Events-animation-text {
+		position: absolute;
+		font-size: 47px;
+		display: flex;
+		margin-top: 119%;
+		font-weight: 900;
+	}
+}
+
+/*News and Events banner end ========================================================================== */
+/*News and Events card ========================================================================== */
+.News-and-Events-card1-color {
+	background-color: #d8d8d8;
+}
+
+.News-and-Events-card2-color {
+	background-color: #645948;
+}
+
+.News-and-Events-card3-color {
+	background-color: #a78048;
+}
+
+.News-and-Events-badge {
+	background-color: #90919c26;
+	color: #161519;
+	font-weight: 500;
+	font-family: 'SF Pro Display';
+}
+
+.News-and-Events-text2 {
+	color: #60606b;
+}
+
+.News-and-Events-card-text3 {
+	color: #FFFFFFBF;
+}
+
+.News-and-Events-card-buttion {
+	max-width: 53%;
+	height: 42px;
+	background-color: #3E3939;
+	border-width: 0px;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 600;
+}
+
+/*News and Events card ========================================================================== */
+/*WORK INQUIRIES ========================================================================== */
+.myImage {
+	background-image: url('/assets/images/News-and-Events/Section1.png');
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 425px) {
+	.myImage {
+		background-image: url('/assets/images/News-and-Events/Section1.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.News-and-Events-Work-inquiries-btn {
+	max-width: 63%;
+	height: 42px;
+	background-color: #191f23;
+}
+
+/*WORK INQUIRIES end ========================================================================== */
+/*Recent news & EVENTS ========================================================================== */
+.Recent-news-and-events-buttion {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 15.84px;
+	background-color: #979797;
+	font-weight: 700;
+}
+
+.Recent-news-and-events-buttion:hover {
+	background-color: #a3a3a3;
+}
+
+.recent-news-events-cards-color {
+	background-color: #d9d9d94D;
+}
+
+.login-form {
+	margin: 0;
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+	width: 450px;
+}
+
+@media (max-width: 860px) {
+	.login-form-mq .login-form {
+		width: 100%;
+		top: 33%;
+	}
+}
+
+@media (max-width: 425px) {
+	.login-form-mq .login-form {
+		width: 100%;
+		top: 36%;
+	}
+}
+
+.login-button {
+	font-size: 14px;
+	font-weight: 350;
+	width: 52%;
+	height: 39px;
+	border-radius: 4px;
+}
+
+.login-button2 {
+	font-size: 16px;
+	font-weight: 100;
+	height: 50px;
+	border-color: #979797;
+}
+
+.login-button2:hover {
+	font-size: 16px;
+	font-weight: 100;
+	height: 50px;
+	border-color: #979797;
+}
+
+.btn.login-button2:active {
+	font-size: 16px;
+	font-weight: 100;
+	height: 50px;
+	border-color: #979797;
+}
+
+.Login-form-height {
+	min-height: 100vh;
+}
+
+.form-height {
+	min-height: 100vh;
+}
+
+.form-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-content {
+	width: 600px;
+}
+
+
+.main-padding-top {
+	padding-top: 70px;
+}
+
+@media (max-width: 860px) {
+	.form-content {
+		width: 95%;
+	}
+
+	.verify-form-height {
+		min-height: calc(100vh - 500px);
+	}
+}
+
+@media (max-width: 425px) {
+	#registerForm {
+		margin-top: 120px;
+		margin-bottom: 120px;
+	}
+	
+	.form-content {
+		width: 95%;
+	}
+}
+
+.login-button2:hover {
+	font-size: 16px;
+	font-weight: 100;
+	height: 50px;
+	background-color: #dbdbdb;
+}
+
+.login-form-laber {
+	color: #eb001b;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.register-form-link {
+	color: #000 !important;
+}
+
+.loginemail input {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid rgba(30, 30, 30, 0.4784313725);
+	height: 40px;
+	width: 100%;
+	padding: 6px;
+	border-radius: 4px;
+}
+
+.loginemail textarea {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid rgba(30, 30, 30, 0.4784313725);
+	width: 100%;
+	padding: 6px;
+	border-radius: 4px;
+}
+
+.loginemail select {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid rgba(30, 30, 30, 0.4784313725);
+	width: 100%;
+	padding: 6px;
+	border-radius: 4px;
+}
+
+.loginemail input:focus,
+.loginemail textarea:focus {
+	outline: none;
+}
+
+#loginpassword input {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid rgba(30, 30, 30, 0.4784313725);
+	height: 40px;
+	width: 100%;
+	padding: 6px;
+	border-radius: 4px;
+}
+
+#loginpassword input:focus,
+.loginemail textarea:focus {
+	outline: none;
+}
+
+.About-Us-Ellipse {
+	background-color: rgba(139, 88, 19, 0.7);
+	height: 70%;
+	width: 122%;
+	border-radius: 50%;
+	margin-top: 23%;
+	margin-left: -48%;
+	position: relative;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+@media (max-width: 820px) {
+	.About-Us-Ellipse-mq .About-Us-Ellipse {
+		background-color: rgba(139, 88, 19, 0.7);
+		height: 77%;
+		width: 134%;
+		border-radius: 50%;
+		margin-top: 23%;
+		margin-left: -48%;
+	}
+}
+
+@media (max-width: 620px) {
+	.About-Us-Ellipse-mq .About-Us-Ellipse {
+		background-color: rgba(139, 88, 19, 0.7);
+		height: 80%;
+		width: 141%;
+		border-radius: 50%;
+		margin-top: 23%;
+		margin-left: -48%;
+	}
+}
+
+@media (max-width: 573px) {
+	.About-Us-Ellipse-mq .About-Us-Ellipse {
+		background-color: rgba(139, 88, 19, 0.7);
+		height: 50%;
+		width: 178%;
+		border-radius: 51%;
+		margin-top: 129%;
+		margin-left: -82%;
+	}
+}
+
+.About-Us-text {
+	text-align: start;
+}
+
+.about-us-play-icon {
+	width: 56px;
+	position: absolute;
+	top: 10% !important;
+	left: 15% !important;
+	cursor: pointer;
+}
+
+.About-us-btn {
+	max-width: 63%;
+	height: 42px;
+	background-color: #191f23;
+	font-weight: 600;
+	font-family: 'DM Sans', sans-serif;
+}
+
+#AboutusAccordion .accordion-button::after {
+	background-image: url(../images/about-us/Right.svg);
+	transform: scale(0.5) !important;
+}
+
+#AboutusAccordion .accordion-button:not(.collapsed)::after {
+	background-image: url(../images/about-us/Right.svg);
+}
+
+#AboutusAccordion .accordion-button:not(.collapsed) {
+	background-color: #fff;
+}
+
+#AboutusAccordion .accordion-button:not(.collapsed) {
+	box-shadow: none;
+}
+
+#AboutusAccordion .accordion {
+	max-width: 326px;
+}
+
+@media (max-width: 480px) {
+	#AboutusAccordion .accordion {
+		max-width: 100%;
+	}
+}
+
+/*About us progress bar start ========================================================================== */
+.progress2 {
+	padding: 2px;
+	border-radius: 0px;
+	background: #90919c 26;
+}
+
+.progress-bar2 {
+	height: 7px;
+	border-radius: 30px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+	transition: 0.4s linear;
+	transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+	width: 85%;
+	background-image: linear-gradient(to left, #d80a2d, #7544dd);
+	animation: progressAnimation 6s;
+}
+
+@keyframes progressAnimation {
+	0% {
+		width: 0%;
+		background-color: #d80a2d;
+	}
+
+	100% {
+		width: 85%;
+		background-color: #7544dd;
+	}
+}
+
+/*About us progress bar end ========================================================================== */
+/*About us Testimonials start ========================================================================== */
+.about-us-testimonials-badge {
+	background-color: rgba(144, 145, 156, 0.1490196078);
+	color: #161519;
+	font-weight: 500;
+	font-family: "SF Pro Display";
+	font-size: 14.4px;
+	border-radius: 5px;
+}
+
+.about-us-testimonials-line1 {
+	background-color: #90919c0f;
+	height: 65px;
+	width: 100%;
+}
+
+@media (max-width: 1440px) {
+	.about-us-testimonials-line1-mq .about-us-testimonials-line1 {
+		background-color: #90919c0f;
+		height: 46px;
+		width: 100%;
+	}
+}
+
+/*About us Testimonials end ========================================================================== */
+/*About us video ========================================================================== */
+.aboutus-video-btn {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/*11. Contact us banner ========================================================================== */
+.Contact-us-banner-icon {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/*11. Contact us map ========================================================================== */
+.Contact-us-btn {
+	background-color: #0c1c28;
+	height: 47px;
+	font-weight: 700;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.Contact-us-btn:hover {
+	background-color: #193a53;
+	height: 47px;
+	font-weight: 700;
+	font-family: 'DM Sans', sans-serif;
+}
+
+/*11. Contact us form ========================================================================== */
+#Contactusform input.form-control {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid #1E1E1E7A;
+	height: 50px;
+}
+
+#Contactusform textarea.form-control {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid #1E1E1E7A;
+	height: 50px;
+}
+
+#Contactusform .form-check-input[type=radio] {
+	border: 1px solid #000;
+}
+
+#Contactusform .form-check-input:checked {
+	background-color: #000;
+	border-color: #000;
+	border: 0px solid #000;
+}
+
+@media (max-width: 425px) {
+	.Contact-us-form-btn-mq .Contact-us-form-btn {
+		height: 47px;
+		width: 100%;
+		border-radius: 4px;
+		font-size: 14px;
+		color: #fff;
+	}
+
+	.Contact-us-form-btn-mq .Contact-us-form-btn2 {
+		height: 47px;
+		width: 100%;
+		border-radius: 4px;
+		border-width: 1px;
+		font-size: 14px;
+		background-color: #fff;
+		color: #000;
+		border-color: #979797;
+	}
+}
+
+.Contact-us-form-btn {
+	height: 47px;
+	width: 196px;
+	border-radius: 4px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.Contact-us-form-btn2 {
+	height: 47px;
+	width: 196px;
+	border-radius: 4px;
+	border-width: 1px;
+	font-size: 14px;
+	background-color: #fff;
+	color: #000;
+	border-color: #979797;
+}
+
+.Contact-us-form-btn2:hover {
+	height: 47px;
+	width: 196px;
+	border-radius: 4px;
+	border-width: 1px;
+	font-size: 14px;
+	background-color: #ececec;
+	color: #000;
+	border-color: #979797;
+}
+
+/*11. Contact us form end ========================================================================== */
+/*11. Contact Careers banner end ========================================================================== */
+/*11. Contact Careers banner end ========================================================================== */
+/*11. Contact Careers Careers mobile app ========================================================================== */
+.Contact-us-Careers-mobile-app-btn {
+	max-width: 63%;
+	height: 42px;
+	background-color: #111013;
+}
+
+/*11. Contact Careers Careers mobile end ========================================================================== */
+.Get-rewarded-banner-image {
+	background-image: url(/assets/images/Contact-us/Column.png);
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 1192px) {
+	.Get-rewarded-banner-image-mq .Get-rewarded-banner-width {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 820px) {
+	.Get-rewarded-banner-image-mq .Get-rewarded-banner-image {
+		background-image: url(/assets/images/Contact-us/PromoBanner.png);
+		background-attachment: local;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.Get-rewarded-banner-image-mq .Get-rewarded-banner-width {
+		max-width: 100%;
+	}
+}
+
+.Get-rewarded-banner-width {
+	max-width: 40%;
+}
+
+/*11. Contact Careers Careers mobile end ========================================================================== */
+/*11 Ticket Booking banner ========================================================================== */
+.Contact-Careers-banner-btn {
+	height: 50px;
+	font-size: 16.72px;
+	font-weight: 500;
+	font-family: 'DM Sans', sans-serif;
+	border-radius: 4px;
+}
+
+.Contact-Careers-banner-btn2 {
+	width: 28%;
+	height: 50px;
+	border-radius: 0;
+	font-size: 18px;
+	font-weight: 500;
+	border-color: #FFFFFF5C;
+}
+
+.Contact-Careers-banner-btn2:hover {
+	width: 28%;
+	height: 50px;
+	border-radius: 0;
+	font-size: 18px;
+	font-weight: 500;
+	border-color: #c4c4c4;
+}
+
+.Contact-Careers-banner-btn3 {
+	height: 50px;
+	width: 70%;
+	font-size: 18px;
+	font-weight: 500;
+	background-color: #fff;
+}
+
+input#birthday {
+	border-radius: 7px;
+	border-width: 0px;
+	background-color: #efefef;
+	padding: 8px;
+}
+
+/*11 Ticket Booking banner end ========================================================================== */
+/*11 Ticket Booking card ========================================================================== */
+.Ticket-Bookinggigcard-btn {
+	border-radius: 4px;
+	height: 47px;
+	font-size: 14px;
+	font-weight: 350;
+	background-color: #2d2e2c;
+}
+
+.Ticket-Bookingsmallcard-btn {
+	border-radius: 4px;
+	height: 47px;
+	font-size: 14px;
+	font-weight: 350;
+	background-color: #2d2e2c;
+}
+
+.Ticket-Booking-sold-out-btn {
+	border-radius: 4px;
+	height: 47px;
+	font-size: 14px;
+	font-weight: 350;
+	background-color: #818181;
+	border: none;
+}
+
+.Ticket-Bookingpatycard-btn {
+	border-radius: 4px;
+	height: 40px;
+	font-size: 14px;
+	font-weight: 350;
+	background-color: #fff;
+	width: 244px;
+}
+
+/* .Ticket-Bookingpaty-card-diamond-plus {
+	 border-radius: 4px;
+	 background-color: #ebebeb;
+} */
+
+.Ticket-Bookingpaty-card-diamond-plus {
+	border-radius: 4px;
+}
+
+.Ticket-Bookingpaty-card-diamond {
+	border-radius: 4px;
+	background-color: #fef4f8;
+}
+
+.Ticket-Bookingpaty-card-platinum {
+	border-radius: 4px;
+	background-color: #80b2cc;
+}
+
+.Ticket-Bookingpaty-card-gold {
+	border-radius: 4px;
+	background-color: #e3b13e;
+}
+
+#ticketbookingbigcards .card.selected {
+	border-color: #0a5197;
+}
+
+/*11 Ticket Booking modal start ========================================================================== */
+.ticket-booking-modal-width {
+	max-width: 500px;
+}
+
+/*11 Gift Voucher banner start ========================================================================== */
+.gift-voucher-banner {
+	max-width: 34px;
+	line-height: 74.98px;
+}
+
+.gift-voucher-btn {
+	background-color: #2d2e2c;
+	border-radius: 4px;
+	height: 47px;
+	font-size: 14px;
+	font-weight: 350;
+	width: 284px;
+}
+
+@media (max-width: 425px) {
+	.gift-voucher-btn-mq .gift-voucher-btn {
+		width: 100%;
+	}
+}
+
+/*11 Gift Voucher banner end ========================================================================== */
+/*11 Gift Voucher card start ========================================================================== */
+.gift-voucher-diamond-plus-color {
+	background-color: #d8d8d8;
+	border-radius: 15px;
+}
+
+.gift-voucher-diamond-color {
+	background-color: #fef4f8;
+	border-radius: 15px;
+}
+
+.gift-voucher-platinum-color {
+	background-color: #80b2cc;
+	border-radius: 15px;
+}
+
+.gift-voucher-gold-color {
+	background-color: #e3b13e;
+	border-radius: 15px;
+}
+
+.gift-voucher-modal-buttion {
+	background-color: #2d2e2c;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 350;
+	width: 122px;
+	height: 47px;
+}
+
+#giftVoucherModal.modal {
+	--bs-modal-width: 750px;
+}
+
+#giftVoucherModal .form-check-input {
+	border-radius: 2px;
+	border-color: #000;
+}
+
+#giftVoucherModal .form-check-input:checked {
+	border-radius: 2px;
+	background-color: #000;
+	border-color: #000;
+}
+
+/*11 Gift Voucher card end ========================================================================== */
+/*11 Gift Voucher card modal start ========================================================================== */
+.gift-voucher-modal-Image {
+	background-image: url(/assets/images/gift-voucher/modal.png);
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*11 Gift Voucher accordion start ========================================================================== */
+#giftvoucheraccordion .accordion-button:not(.collapsed) {
+	background: none;
+	box-shadow: none;
+}
+
+#giftvoucheraccordion .accordion-button:focus {
+	border-color: none;
+	outline: 0;
+	box-shadow: none;
+}
+
+#giftvoucheraccordion a.view-bag-accordion-description-link {
+	color: #000;
+	text-decoration: underline;
+}
+
+/*11 Gift Voucher accordion end ========================================================================== */
+/* Appointment calendar page start */
+
+#appointmentcalendaform input.form-control {
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid #1e1e1e7A;
+	height: 50px;
+}
+
+#appointmentcalendaform .form-check-input[type=radio] {
+	border: 1px solid #000;
+}
+
+#appointmentcalendaform .form-check-input:checked {
+	background-color: #000;
+	border-color: #000;
+	border: 0px solid #000;
+}
+
+
+#appointmentcalendaform .form-select {
+	border: 1px solid #1e1e1e7A;
+	height: 50px;
+}
+
+#appointmentcalendaform .form-select:checked {
+	border: none;
+	height: 50px;
+}
+
+.form-select:focus {
+	outline: none;
+	/* Remove the default outline */
+	box-shadow: none;
+	/* Remove the default box shadow */
+	border-color: initial;
+	/* Set the border color to the initial value */
+}
+
+
+#appointmentcalendaform textarea.form-control {
+	min-height: calc(1.5em + 0.75rem + calc(var(--bs-border-width) * 2));
+	border: 1px solid #1e1e1e7A
+}
+
+
+.appointment-calenda-btn {
+	border-color: #979797;
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.appointment-calenda-btn:hover {
+	background-color: #ffffff;
+	border-color: #979797;
+}
+
+.appointment-calenda-btn:focus {
+	background-color: #D8D8D8;
+	color: #000000;
+	border-color: #D8D8D8;
+}
+
+/* .size-cal-select-size-card-btn {
+	border-color: #979797;
+	font-size: 18px;
+	font-weight: 300;
+	color: #000 D9;
+} */
+
+#appointmentcalendacards .card.selected {
+	background-color: #D8D8D8;
+}
+
+.appointment-calendar-description-border {
+	border-top: 1px solid #979797;
+	border-bottom: 1px solid #979797;
+}
+
+.btn.appointment-calendar-buttion {
+	background-color: #2D2E2C;
+	font-size: 14px;
+	font-weight: 350;
+	color: #FFFFFF;
+	width: 286px;
+	height: 47px;
+	border-radius: 4px;
+}
+
+.btn.appointment-calendar-buttion:hover {
+	background-color: #525351;
+	font-size: 14px;
+	font-weight: 350;
+	color: #FFFFFF;
+	border-radius: 4px;
+}
+
+.btn.appointment-confrtmation-buttion {
+	background-color: #2D2E2C;
+	font-size: 14px;
+	font-weight: 350;
+	color: #FFFFFF;
+	width: 230px;
+	height: 47px;
+	border-radius: 4px;
+}
+
+.btn.appointment-confrtmation-buttion:hover {
+	background-color: #525351;
+	font-size: 14px;
+	font-weight: 350;
+	color: #FFFFFF;
+	border-radius: 4px;
+
+}
+
+#appointmentConfrtmation .form-check-input {
+	border-radius: 2px;
+	border-color: #000;
+}
+
+#appointmentConfrtmation .form-check-input:checked {
+	border-radius: 2px;
+	background-color: #000;
+	border-color: #000;
+}
+
+@media (max-width: 768px) {
+	.appointment-confrtmation-buttion-mq .appointment-confrtmation-buttion {
+		width: 377px;
+
+	}
+}
+
+@media (max-width: 425px) {
+	.appointment-confrtmation-buttion-mq .appointment-confrtmation-buttion {
+		width: 268px;
+
+	}
+}
+
+
+/*11. footer ========================================================================== */
+.footer-Contact {
+	max-width: 250px;
+}
+
+#footer .accordion-button:not(.collapsed) {
+	box-shadow: none;
+}
+
+#footer .accordion-button:focus {
+	border-color: none;
+	outline: 0;
+	box-shadow: none;
+}
+
+.custom-select::after {
+	border-color: #f00;
+	/* Change this to your desired arrow color */
+}
+
+.no-gap .item {
+	margin-right: 20px;
+}

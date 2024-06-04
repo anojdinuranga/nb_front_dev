@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - About Us</title>
+    <%- header_tags %>
+</head>
+
+<body>
+
+    <!------------------- navbar --------------->
+    <%- sidebar %>
+        <!------------------- navbar end------------>
+
+
+        <!-- about us background start-->
+        <section class="bg-aboutusbackground">
+            <div class="container-fluid pt-4 g-0">
+                <div class="row g-0 mt-5" id="video-background">
+                    <div class="col-md-8 col-8">
+                        <img src="assets/images/about-us/desktop.avif" class="img-fluid w-100 d-none d-sm-block" alt=""
+                            srcset="">
+                        <img src="assets/images/about-us/mobile.avif" class="img-fluid w-100 d-block d-sm-none" alt=""
+                            srcset="">
+                    </div>
+                    <div class="col-md-4 col-4 About-Us-Ellipse-mq">
+
+                        <div class="About-Us-Ellipse">
+                            <div class="About-Us-text">
+                                <img onclick="showVideo()" src="assets/images/about-us/Button-(1).svg" alt=""
+                                    class="img-fluid rounded-circle about-us-play-icon">
+                                <h1 class="about-us-Header text-white">About</h1>
+                                <h1 class="about-us-Header text-white">NB & QK</h1>
+                                <!-- <p class="about-us-Subtitle  text-white">With unique business ideas and the passionate
+                                people behind.</p>
+                            <button type="button" class="btn btn-dark About-us-btn mb-0 mt-md-3">Get Started<i
+                                    class="fa-solid  mb-0 fa-arrow-right ms-2"></i></button> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about us background end-->
+
+
+        <!-- about us Services and projects -->
+        <section class="d-none px-xl-5 pt-md-5 pb-md-5 pt-4 mx-xl-3">
+
+            <!-- Services and projects cards start -->
+            <div class="container-fluid d-flex flex-column align-items-center">
+                <div class="row g-0 row-cols-1 row-cols-md-2 w-100">
+
+                    <div class="col order-md-first">
+                        <div class="card rounded-0"><img class="card-img rounded-0 w-100 d-block"
+                                src="assets/images/about-us/Column.png" />
+                            <div class="card-img-overlay  d-flex align-items-center justify-content-center p-4">
+                                <div style="max-width: 400px;">
+                                    <h4 class="about-us-card1-title1 text-uppercase">Capabilities</h4>
+                                    <p class="about-us-card1-title2">Team management.brand strategy.</p>
+                                    <button type="button" class="btn btn-dark About-us-btn mb-0 mt-md-3">View Services<i
+                                            class="fa-solid  mb-0 fa-arrow-right ms-2"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col order-md-first">
+                        <div class="card rounded-0"><img class="card-img rounded-0 w-100 d-block"
+                                src="assets/images/about-us/Column2.png" />
+                            <div class="card-img-overlay d-flex align-items-center justify-content-center p-4">
+                                <div style="max-width: 400px;">
+                                    <h4 class="about-us-card1-title1 text-uppercase">Capabilities</h4>
+                                    <p class="about-us-card1-title2">Our most recent digital and strategy projects.</p>
+                                    <button type="button" class="btn btn-dark About-us-btn mb-0 mt-md-3">View Services<i
+                                            class="fa-solid  mb-0 fa-arrow-right ms-2"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Services and projects cards end -->
+
+            <!-- created a visual system cards and accordion start -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 w-100">
+                    <div class="col order-md-first d-flex justify-content-start">
+                        <div style="max-width: 400px;" class="py-md-3 pt-md-3 pt-5">
+                            <h4 class="about-us-card1-title1 text-black mb-3 text-uppercase">Approach</h4>
+                            <p class="about-us-card1-title2 text-black">We've created a
+                                visual system and strategy</p>
+                            <div class="mt-4">
+                                <h3 class="about-us-progress-bar-title">Structured Media Insights</h3>
+                                <div class="progress2 progress-moved">
+                                    <div class="progress-bar2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col order-md-first ">
+                        <div style="max-width: 400px;" class="py-3 ms-auto">
+                            <div class="accordion border-0" id="AboutusAccordion">
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header border-0" id="headingOne">
+                                        <button type="button"
+                                            class="accordion-button border-0 collapsed about-us-accordion-subtitle1 px-0"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"><img
+                                                src="assets/images/about-us/Vector.svg" class="img-fluid me-2" alt="">
+                                            <h6 class="mb-0 about-us-accordion-title">Website & Mobile App Design</h6>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse border-0 collapse"
+                                        data-bs-parent="#myAccordion">
+                                        <div class="card-body border-0 about-us-accordion-subtitle1">
+                                            We have created a full stack structure for our <span
+                                                class="about-us-accordion-subtitle2">working
+                                                workflow</span> processes, were from the funny the century initial all
+                                            the
+                                            madness.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header border-0" id="headingtwo">
+                                        <button type="button"
+                                            class="accordion-button border-0 collapsed about-us-accordion-subtitle1 px-0"
+                                            data-bs-toggle="collapse" data-bs-target="#collapsetwo"><img
+                                                src="assets/images/about-us/Vector.svg" class="img-fluid me-2" alt="">
+                                            <h6 class="mb-0 about-us-accordion-title">Motion Graphics & Animation</h6>
+                                        </button>
+                                    </h2>
+                                    <div id="collapsetwo" class="accordion-collapse border-0 collapse"
+                                        data-bs-parent="#myAccordion">
+                                        <div class="card-body border-0 about-us-accordion-subtitle1">
+                                            We have created a full stack structure for our <span
+                                                class="about-us-accordion-subtitle2">working
+                                                workflow</span> processes, were from the funny the century initial all
+                                            the
+                                            madness.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header border-0" id="headingthree">
+                                        <button type="button"
+                                            class="accordion-button border-0 collapsed Ready-made-Product-card-accordion-text px-0"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"><img
+                                                src="assets/images/about-us/Vector.svg" class="img-fluid me-2" alt="">
+                                            <h6 class="mb-0 about-us-accordion-title">User Experience</h6>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse border-0 collapse"
+                                        data-bs-parent="#myAccordion">
+                                        <div class="card-body border-0 about-us-accordion-subtitle1">
+                                            We have created a full stack structure for our <span
+                                                class="about-us-accordion-subtitle2">working
+                                                workflow</span> processes, were from the funny the century initial all
+                                            the
+                                            madness.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- created a visual system cards and accordion end -->
+
+        </section>
+        <!-- about us Services and projects end-->
+
+        <section>
+            <div class="container py-5 about-container">
+                <h3 class="text-uppercase text-center about-title">"BELIEVING IS SEEING"</h3>
+
+                <div class="mb-5">
+                    <h4 class="about-us-section-title">Welcome to NB and QK Fashion Bands</h4>
+                    <p class="about-us-section-text">
+                        Discover the epitome of style and elegance with NB and QK Fashion Bands. Our brands redefine
+                        fashion, offering a unique blend of creativity, craftsmanship, and trendsetting designs. Dive
+                        into a world where innovation meets tradition, and every piece tells a story of individuality.
+                    </p>
+                </div>
+
+                <div class="mb-5">
+                    <h4 class="about-us-section-title">Explore Our Collections:</h4>
+                    <p class="about-us-section-text">Browse through our curated collections that showcase the latest
+                        trends in fashion. From casual chic to sophisticated couture, NB and QK bring you a diverse
+                        range of clothing and accessories that cater to every style preference.</p>
+                </div>
+
+                <div class="mb-5">
+                    <h4 class="about-us-section-title">Craftsmanship Beyond Ordinary:</h4>
+                    <p class="about-us-section-text">At NB and QK, we take pride in our commitment to exceptional
+                        craftsmanship. Each piece is meticulously crafted to ensure the highest quality and attention to
+                        detail. Our fashion bands are a testament to the artistry that goes into creating timeless and
+                        memorable pieces.</p>
+                </div>
+
+                <div class="mb-5">
+                    <h4 class="about-us-section-title">Stay Fashion-Forward:</h4>
+                    <p class="about-us-section-text">Stay updated with the latest trends, fashion tips, and
+                        behind-the-scenes insights. Follow our blog and social media channels to be part of the NB and
+                        QK community. Join us on a journey where fashion meets expression, and every outfit becomes a
+                        statement.</p>
+                </div>
+
+                <div class="mb-5">
+                    <h4 class="about-us-section-title">Shop with Confidence:</h4>
+                    <p class="about-us-section-text">Experience hassle-free shopping with secure transactions and
+                        reliable delivery. Our customer service team is dedicated to ensuring your satisfaction, making
+                        your shopping experience as enjoyable as wearing our fashion bands.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-------- About us product icons start-------------->
+        <section style="background-color: #90919C0F;">
+            <div class="container py-5">
+                <div
+                    class="row d-flex justify-content-center align-items-center row-cols-xl-6 row-cols-md-3 row-cols-2 gap-5">
+
+                    <div class="col d-flex justify-content-center align-items-center py-4">
+                        <img src="assets/images/about-us/produc-icons/nblogo.avif" class="" alt="" width="250px">
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center py-4">
+                        <img src="assets/images/about-us/produc-icons/qklogo.avif" class="" alt="" width="250px">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-------- About us product icons end-------------->
+
+
+        <!-- About us testimonials cards start -->
+        <section>
+            <div class="container">
+                <div class="row g-0 w-100 flex-md-row-reverse">
+                    <div class="col-md-5">
+                        <div class="">
+                            <img class="rounded-0 img-fluid d-none d-xl-block w-100"
+                                src="assets/images/about-us/Column3.png" />
+                            <img class="rounded-0 img-fluid d-none d-sm-block d-xl-none w-100"
+                                src="assets/images/about-us/Column-mobile.png" />
+                            <img class="rounded-0 img-fluid d-block d-sm-none w-100"
+                                src="assets/images/about-us/Column3.png" />
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-7 flex-xl-column d-xl-flex justify-content-between about-us-testimonials-line1-mq py-md-0 py-5">
+                        <div class="about-us-testimonials-line1 d-none d-sm-block mb-md-4"></div>
+                        <div>
+                            <div>
+                                <h5 class="about-us-testimonials-card text-uppercase">Testimonials</h5>
+                                <h2 class="about-us-testimonials-card-tital" style="max-width: 300px;">What our clients
+                                    say about us.</h2>
+
+                                <div id="testimonials-carousel" class="owl-carousel">
+                                    <div class="item">
+                                        <span class="badge about-us-testimonials-badge mt-4">Tailoring</span>
+                                        <p class="about-us-testimonials-card-subtital mt-3">"Best suits in town indeed.
+                                            Their workmanship is excellent. They provide the suits on time and it's just
+                                            beyond amazing."</p>
+
+                                        <h4 class="about-us-testimonials-card-pname mt-4">Sameesh Divyan</h4>
+                                        <!-- <h6 class="mt-2"><span class="about-us-testimonials-card-position">UI Designer
+                                                ·</span><span class="about-us-testimonials-card-position2"> Interactive
+                                                Media</span></h6> -->
+                                    </div>
+
+                                    <div class="item">
+                                        <span class="badge about-us-testimonials-badge mt-4">Customer Service </span>
+                                        <p class="about-us-testimonials-card-subtital mt-3">"Super happy with the
+                                            customer service at NB. Had an urgent order for a suit and stepped in to the
+                                            NB fashion gallery at Nugegoda late Monday evening and by Wednesday the
+                                            completed suit was handed over with perfect stitching and body fit with no
+                                            modifications required. I am simply stunned by the awesome service and
+                                            delivery. Keep up the good work."</p>
+
+                                        <h4 class="about-us-testimonials-card-pname mt-4">Alvin Gomesz</h4>
+                                        <!-- <h6 class="mt-2"><span class="about-us-testimonials-card-position">UI Designer
+                                                ·</span><span class="about-us-testimonials-card-position2"> Interactive
+                                                Media</span></h6> -->
+                                    </div>
+
+
+                                    <div class="item">
+                                        <span class="badge about-us-testimonials-badge mt-4">Customer Service </span>
+                                        <p class="about-us-testimonials-card-subtital mt-3">"Great service on formal
+                                            suits, delivered on time and on agreed quality. Wide range of material to
+                                            select from, variety of designs to choose from. Staff were helpful and
+                                            courteous.
+                                            Prices are relatively on the higher side, hence it's a personal decision
+                                            between Value vs Price."</p>
+
+                                        <h4 class="about-us-testimonials-card-pname mt-4">Upul Thennakoon</h4>
+                                        <!-- <h6 class="mt-2"><span class="about-us-testimonials-card-position">UI Designer
+                                                ·</span><span class="about-us-testimonials-card-position2"> Interactive
+                                                Media</span></h6> -->
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-5">
+
+                                    <div class="d-flex align-items-center">
+                                        <h3 id="currentItem" class="about-us-testimonials-card-number mb-0">01</h3>
+                                        <img src="assets/images/about-us/Rectangle.svg" class="img-fluid mx-2" alt="">
+                                        <h3 id="totalItems" class="about-us-testimonials-card-number mb-0">03</h3>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <a type="button" class="btn" onclick="prevTestimonial()"><i
+                                                class="fa-solid fa-arrow-left"></i></a>
+                                        <a type="button" class="btn" onclick="nextTestimonial()"><i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-us-testimonials-line1 mt-md-4 d-none d-xl-block"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About us testimonials cards end -->
+
+
+        <!-- About us video start -->
+        <section class="d-none pt-md-5 mt-md-5">
+            <div class="container-fluid g-0">
+                <div class="row h-100 g-0 justify-content-between">
+                    <div class="col-xl-7 col-md-6  position-relative h-100 pe-xl-4 pe-md-3">
+                        <div><img class="rounded-0 img-fluid w-100" src="assets/images/about-us/Image.png" /></div>
+                        <div class="aboutus-video-btn"><img class="rounded-circle img-fluid"
+                                src="/images/about-us/VideoButton.svg" /></div>
+                    </div>
+
+                    <div class="col-xl-5 col-md-6 h-100 ps-xl-4 ps-md-5 mt-md-0 mt-3">
+                        <div>
+                            <img class="rounded-0 img-fluid d-none d-xl-block w-100"
+                                src="assets/images/about-us/Image2.png" />
+                            <img class="rounded-0 img-fluid d-block d-xl-none w-100"
+                                src="assets/images/about-us/Image-tab.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About us video end -->
+
+
+        <!-- Back to top button start -->
+        <section class="">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                    <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                    <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+                </button>
+
+            </div>
+        </section>
+        <!-- Back to top button start -->
+
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+            <!-- script start-->
+            <%- script_tags %>
+                <!-- script end-->
+
+                <script>
+                    $(document).ready(function () {
+                        $("#testimonials-carousel").owlCarousel({
+                            items: 1,
+                            loop: true,
+                            nav: false,
+                            dots: false,
+                            autoplay: true,
+                            autoplayTimeout: 3000,
+                            autoplayHoverPause: true,
+                        });
+                    });
+
+                    // Function to update current item and total items
+                    // function updateTestimonialCount(event) {
+
+                    //     var currentItem = event.item.index
+                    //     var totalItems = "0" + event.item.count;
+
+                    //     if (!event.item.index == 0) {
+                    //         currentItem = "0" + (event.item.index - 2);
+                    //     }
+
+
+                    //     $("#currentItem").text(currentItem);
+                    //     $("#totalItems").text(totalItems);
+                    // }
+
+                    // Function to navigate to the previous testimonial
+                    function prevTestimonial() {
+                        $("#testimonials-carousel").trigger('prev.owl.carousel');
+                    }
+
+                    // Function to navigate to the next testimonial
+                    function nextTestimonial() {
+                        $("#testimonials-carousel").trigger('next.owl.carousel');
+                    }
+                </script>
+
+
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+                <script>
+                    function showVideo() {
+                        document.getElementById("video-background").innerHTML = "";
+
+                        document.getElementById("video-background").innerHTML = `
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/897127203?h=2d416094c7&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+            `;
+                    }
+                </script>
+
+</body>
+
+</html>

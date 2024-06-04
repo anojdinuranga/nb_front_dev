@@ -1,0 +1,20 @@
+.iziToast-color-red {
+    background: #8B0000 !important;
+    
+} 
+
+.iziToast>.iziToast-body .iziToast-title {
+   color: #eeeeee !important; 
+}
+
+.iziToast-message {
+    color: #d6d6d6 !important; 
+}
+
+.iziToast-close {
+    color: #fff !important;
+}
+
+.iziToast-color-green {
+    background-color: #1e1e1e !important;
+}

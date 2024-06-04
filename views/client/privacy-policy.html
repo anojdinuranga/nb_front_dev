@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Privacy Policy</title>
+    <%- header_tags %>
+</head>
+
+<body>
+
+    <!------------------- navbar --------------->
+    <%- sidebar %>
+        <!------------------- navbar end------------>
+
+        <section>
+            <div class="container mt-5 py-5 about-container">
+                <h3 class="text-uppercase about-title">PRIVACY POLICY</h3>
+
+
+                <p class="about-us-section-text">We are NB Artisan Heritage (Private) Limited.</p>
+
+                <p class="about-us-section-text">When you use our website or mobile application or our associated social media platform or obtain our services to purchase our products online, by providing your personal data, you consent to us collecting, storing, preserving, retrieving, disclosing or transmitting your personal data in accordance with the terms of our Privacy Policy. 
+                </p>
+
+                <p class="about-us-section-text">When you use our website or mobile application or our associated social media platform or obtain our services to purchase our products online, by providing your personal data, you consent to us collecting, storing, preserving, retrieving, disclosing or transmitting your personal data in accordance with the terms of our Privacy Policy. 
+                </p>    
+
+                <p class="about-us-section-text">Your personal data includes your name, identification number, phone number, email address and financial data and any other information that can directly or indirectly identify you. You can browse our web site or go through our social media pages without revealing your personal data. However, to purchase our products on line or to contact our customer care services you will have to disclose your personal data to us. 
+                </p>
+
+                <p class="about-us-section-text">We process your personal data so that we can process your on-line purchase orders or to assist your though our customer care service. We will also process your online usage history, your email for our marketing purposes. Further we want you provide you with the best customer experience when visiting our web site or our online platforms. 
+                </p>
+
+                <p class="about-us-section-text">We are fully committed to provide necessary protection to your personal data as required under the available laws. We have taken necessary technical and organization measures required under the law to process your personal data. Nevertheless, there may be instances where our security measures will be breached by third parties who may attempt to access or intercept our systems and your personal information or your communications will not remain private. We shall not be held responsible for such unlawful acts by third parties. 
+                </p>
+
+                <p class="about-us-section-text">Further, we use third party agencies for the operation of our website and they may have to be provided with your information at times for efficiently fulfil your services. We are also required under the law to disclose your personal information as and when required for regulatory purposes. 
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Back to top button start -->
+        <section class="">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                    <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                    <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+                </button>
+               
+            </div>
+        </section>
+        <!-- Back to top button start -->
+
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+            <!-- script start-->
+            <%- script_tags %>
+                <!-- script end-->
+
+                <script>
+                    $(document).ready(function () {
+                        $("#testimonials-carousel").owlCarousel({
+                            items: 1,
+                            loop: true,
+                            nav: false,
+                            dots: false,
+                            autoplay: true,
+                            autoplayTimeout: 3000,
+                            autoplayHoverPause: true,
+                        });
+                    });
+
+                    // Function to update current item and total items
+                    // function updateTestimonialCount(event) {
+
+                    //     var currentItem = event.item.index
+                    //     var totalItems = "0" + event.item.count;
+
+                    //     if (!event.item.index == 0) {
+                    //         currentItem = "0" + (event.item.index - 2);
+                    //     }
+
+
+                    //     $("#currentItem").text(currentItem);
+                    //     $("#totalItems").text(totalItems);
+                    // }
+
+                    // Function to navigate to the previous testimonial
+                    function prevTestimonial() {
+                        $("#testimonials-carousel").trigger('prev.owl.carousel');
+                    }
+
+                    // Function to navigate to the next testimonial
+                    function nextTestimonial() {
+                        $("#testimonials-carousel").trigger('next.owl.carousel');
+                    }
+                </script>
+
+
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+                <script>
+                    function showVideo() {
+                        document.getElementById("video-background").innerHTML = "";
+
+                        document.getElementById("video-background").innerHTML = `
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/897127203?h=2d416094c7&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+            `;
+                    }
+                </script>
+
+</body>
+
+</html>

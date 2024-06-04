@@ -1,0 +1,502 @@
+[
+    {
+        "category": "sleaves",
+        "category_name": "Sleaves",
+        "name": "sleaves",
+        "file_path": "/assets/models/jacket/sleaves/sleaves.glb",
+        "image": "",
+        "assets_name": "Sleaves",
+        "suite_category": "all"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "b1_base",
+        "file_path": "/assets/models/jacket/front/b1/base.glb",
+        "image": "/assets/images/product-configurator/suit/sb/su_sb1-button.png",
+        "assets_name": "One Button",
+        "suite_category": "one_button"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "b2_base",
+        "file_path": "/assets/models/jacket/front/b2/base.glb",
+        "image": "/assets/images/product-configurator/suit/sb/su_sb2-button.png",
+        "assets_name": "Two Button",
+        "suite_category": "two_button"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "b2_1_base",
+        "file_path": "/assets/models/jacket/front/b2_1/base.glb",
+        "image": "/assets/images/product-configurator/suit/db/su_db-2x1.png",
+        "assets_name": "2x1 Button",
+        "suite_category": "2_1_button"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "b3_base",
+        "file_path": "/assets/models/jacket/front/b3/base.glb",
+        "image": "/assets/images/product-configurator/suit/sb/su_sb3-button.png",
+        "assets_name": "Three Button",
+        "suite_category": "three_button"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "b4_1_base",
+        "file_path": "/assets/models/jacket/front/b4_1/base.glb",
+        "image": "/assets/images/product-configurator/suit/db/su_db-4x1.png",
+        "assets_name": "4x1 Button",
+        "suite_category": "4_1_button"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "b4_2_base",
+        "file_path": "/assets/models/jacket/front/b4_2/base.glb",
+        "image": "/assets/images/product-configurator/suit/db/su_db-4x2.png",
+        "assets_name": "4x2 Button",
+        "suite_category": "4_2_button"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "b6_1_base",
+        "file_path": "/assets/models/jacket/front/b6_1/base.glb",
+        "image": "/assets/images/product-configurator/suit/db/su_db-6x1.png",
+        "assets_name": "6x1 Button",
+        "suite_category": "6_1_button"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "b6_2_base",
+        "file_path": "/assets/models/jacket/front/b6_2/base.glb",
+        "image": "/assets/images/product-configurator/suit/db/su_db-6x2.png",
+        "assets_name": "6x2 Button",
+        "suite_category": "6_2_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b1_notch_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b1/notch_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/lapel/su_sb1-lapel-notch-reguler.png",
+        "assets_name": "Notch Lapel Reguler",
+        "suite_category": "one_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b1_notch_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b1/notch_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/lapel/su_sb1-lapel-notch-slim.png",
+        "assets_name": "Notch Lapel Slim",
+        "suite_category": "one_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b1_peack_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b1/peack_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/lapel/su_sb1-lapel-peak-reguler.png",
+        "assets_name": "Peack Lapel Reguler",
+        "suite_category": "one_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b1_peack_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b1/peack_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/lapel/su_sb1-lapel-peak-slim.png",
+        "assets_name": "Peack Lapel Slim",
+        "suite_category": "one_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b1_shawl_lapel_2xl",
+        "file_path": "/assets/models/jacket/lapel/b1/shawl_lapel_2xl.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/lapel/su_sb1-lapel-shawl-2xl.png",
+        "assets_name": "Shawl Lapel 2xl",
+        "suite_category": "one_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b1_shawl_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b1/shawl_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/lapel/su_sb1-lapel-shawl-reguler.png",
+        "assets_name": "Shawl Lapel Reguler",
+        "suite_category": "one_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b1_shawl_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b1/shawl_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/lapel/su_sb1-lapel-shawl-slim.png",
+        "assets_name": "SHawl Lapel Slim",
+        "suite_category": "one_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b1_shawl_lapel_strait",
+        "file_path": "/assets/models/jacket/lapel/b1/shawl_lapel_strait.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/lapel/su_sb1-lapel-shawl-straitbottom.png",
+        "assets_name": "Shawl Lapel Strait",
+        "suite_category": "one_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b2_notch_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b2/notch_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/sb/2_button/lapel/su_sb2-lapel-notch-reguler.png",
+        "assets_name": "Notch Lapel Reguler",
+        "suite_category": "two_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b2_notch_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b2/notch_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/sb/2_button/lapel/su_sb2-lapel-notch-slim.png",
+        "assets_name": "Notch Lapel Slim",
+        "suite_category": "two_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b2_peack_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b2/peack_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/sb/2_button/lapel/su_sb2-lapel-peak-reguler.png",
+        "assets_name": "Peack Lapel Reguler",
+        "suite_category": "two_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b2_peack_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b2/peack_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/sb/2_button/lapel/su_sb2-lapel-peak-slim.png",
+        "assets_name": "Peack Lapel Slim",
+        "suite_category": "two_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b2_shawl_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b2/shawl_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/sb/2_button/lapel/su_sb2-lapel-shawl-reguler.png",
+        "assets_name": "Shawl Lapel Reguler",
+        "suite_category": "two_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b2_shawl_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b2/shawl_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/sb/2_button/lapel/su_sb2-lapel-shawl-slim.png",
+        "assets_name": "Shawl Lapel Slim",
+        "suite_category": "two_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b2_shawl_lapel_strait",
+        "file_path": "/assets/models/jacket/lapel/b2/shawl_lapel_strait.glb",
+        "image": "/assets/images/product-configurator/suit/sb/2_button/lapel/su_sb2-lapel-shawl-straitbottom.png",
+        "assets_name": "Shawl Lapel Strait",
+        "suite_category": "two_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b3_notch_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b3/notch_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/sb/3_button/lapel/su_sb3-lapel-notch-reguler.png",
+        "assets_name": "Notch Lapel Reguler",
+        "suite_category": "three_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b3_notch_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b3/notch_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/sb/3_button/lapel/su_sb3-lapel-notch-slim.png",
+        "assets_name": "Notch Lapel Slim",
+        "suite_category": "three_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b3_peack_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b3/peack_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/sb/3_button/lapel/su_sb3-lapel-peak-reguler.png",
+        "assets_name": "Peack Lapel Reguler",
+        "suite_category": "three_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b3_peack_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b3/peack_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/sb/3_button/lapel/su_sb3-lapel-peak-slim.png",
+        "assets_name": "Peack Lapel Slim",
+        "suite_category": "three_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b2_1_peack_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b2_1/peack_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/db/2x1/Lapel/su_db-2x1-lapel-peak-reguler.png",
+        "assets_name": "Peack Lapel Reguler",
+        "suite_category": "2_1_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b2_1_shawl_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b2_1/shawl_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/db/2x1/Lapel/su_db-2x1-lapel-shawl-slim.png",
+        "assets_name": "Shawl Lapel Slim",
+        "suite_category": "2_1_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b4_1_peack_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b4_1/peack_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/db/4x1/Lapel/su_db-4x1-lapel-peak-reguler.png",
+        "assets_name": "Peack Lapel Reguler",
+        "suite_category": "4_1_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b4_1_shawl_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b4_1/shawl_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/db/4x1/Lapel/su_db-4x1-lapel-shawl-slim.png",
+        "assets_name": "Shawl Lapel Slim",
+        "suite_category": "4_1_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b4_2_peack_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b4_2/peack_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/db/4x2/Lapel/su_db-4x2-lapel-peak-reguler.png",
+        "assets_name": "Peack Lapel Reguler",
+        "suite_category": "4_2_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b4_2_shawl_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b4_2/shawl_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/db/4x2/Lapel/su_db-4x2-lapel-shawl-slim.png",
+        "assets_name": "Shawl Lapel Slim",
+        "suite_category": "4_2_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b6_1_peack_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b6_1/peack_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/db/6x1/Lapel/su_db-6x1-lapel-peak-reguler.png",
+        "assets_name": "Peack Lapel Reguler",
+        "suite_category": "6_1_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b6_1_shawl_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b6_1/shawl_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/db/6x1/Lapel/su_db-6x1-lapel-shawl-slim.png",
+        "assets_name": "Shawl Lapel Slim",
+        "suite_category": "6_1_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b6_2_peack_lapel_reguler",
+        "file_path": "/assets/models/jacket/lapel/b6_2/peack_lapel_reguler.glb",
+        "image": "/assets/images/product-configurator/suit/db/6x2/Lapel/su_db-6x2-lapel-peak-reguler.png",
+        "assets_name": "Peack Lapel Reguler",
+        "suite_category": "6_2_button"
+    },
+    {
+        "category": "lapel",
+        "category_name": "Lapel",
+        "name": "b6_2_shawl_lapel_slim",
+        "file_path": "/assets/models/jacket/lapel/b6_2/shawl_lapel_slim.glb",
+        "image": "/assets/images/product-configurator/suit/db/6x2/Lapel/su_db-6x2-lapel-shawl-slim.png",
+        "assets_name": "Shawl Lapel Slim",
+        "suite_category": "6_2_button"
+    },
+
+    {
+        "category": "brest_pockets",
+        "category_name": "Brest Pockets",
+        "name": "welt_breast",
+        "file_path": "/assets/models/jacket/brest_pockets/welt_breast.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-breast-welt.png",
+        "assets_name": "Reguler Welt Breast Pocket",
+        "suite_category": "all"
+    },
+    {
+        "category": "brest_pockets",
+        "category_name": "Brest Pockets",
+        "name": "patch_breast",
+        "file_path": "/assets/models/jacket/brest_pockets/patch_breast.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-breast-patch.png",
+        "assets_name": "Patch Breast Pockets",
+        "suite_category": "all"
+    },
+    {
+        "category": "brest_pockets",
+        "category_name": "Brest Pockets",
+        "name": "welt_breast_with_flaps",
+        "file_path": "/assets/models/jacket/brest_pockets/welt_breast_with_flaps.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-breast-welt-flaps.png",
+        "assets_name": "Welt Breast With Flaps Pocket",
+        "suite_category": "all"
+    },
+
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "reguler_pockets",
+        "file_path": "/assets/models/jacket/pockets/reguler_pockets.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-reguler.png",
+        "assets_name": "Reguler Pocket",
+        "suite_category": "all"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "side_jetted_pocket",
+        "file_path": "/assets/models/jacket/pockets/side_jetted_pocket.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-jetted.png",
+        "assets_name": "Side Jetted Pocket",
+        "suite_category": "all"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "side_jetted_slant_pocket",
+        "file_path": "/assets/models/jacket/pockets/side_jetted_slant_pocket.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-jetted-slant.png",
+        "assets_name": "Side Jetted Slant Pocket",
+        "suite_category": "all"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "side_patch_pocket",
+        "file_path": "/assets/models/jacket/pockets/side_patch_pocket.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-patch.png",
+        "assets_name": "Side Patch Pocket",
+        "suite_category": "all"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "side_patch_pocket_flap",
+        "file_path": "/assets/models/jacket/pockets/side_patch_pocket_flap.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-patch.png",
+        "assets_name": "Side Patch Pocket Flap",
+        "suite_category": "all"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "slant_flap_side",
+        "file_path": "/assets/models/jacket/pockets/slant_flap_side.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-slantflapside.png",
+        "assets_name": "Slant Flap Side",
+        "suite_category": "all"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "reguler_ticket_pockets",
+        "file_path": "/assets/models/jacket/pockets/reguler_ticket_pockets.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-reguler-ticket.png",
+        "assets_name": "Reguler Ticket Pockets",
+        "suite_category": "all"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "side_jetted_ticket_pocket",
+        "file_path": "/assets/models/jacket/pockets/side_jetted_ticket_pocket.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-jetted-ticket.png",
+        "assets_name": "Side Jetted Ticket Pocket",
+        "suite_category": "all"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "slant_flap_side_ticket",
+        "file_path": "/assets/models/jacket/pockets/slant_flap_side_ticket.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/pockets/su_sb1-pk-slantflapside-ticket.png",
+        "assets_name": "Slant Flap Side Ticket",
+        "suite_category": "all"
+    },
+    {
+        "category": "back_vent",
+        "category_name": "Back Vent",
+        "name": "plain_vent",
+        "file_path": "/assets/models/jacket/back_vent/plain_vent.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/back/su_sb-bk-vent-plain.png",
+        "assets_name": "Plain Vent",
+        "suite_category": "all"
+    },
+    {
+        "category": "back_vent",
+        "category_name": "Back Vent",
+        "name": "side_vent",
+        "file_path": "/assets/models/jacket/back_vent/side_vent.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/back/su_sb-bk-vent-side-2.png",
+        "assets_name": "Side Vent",
+        "suite_category": "all"
+    },
+    {
+        "category": "back_vent",
+        "category_name": "Back Vent",
+        "name": "center_vent",
+        "file_path": "/assets/models/jacket/back_vent/center_vent.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/back/su_sb-bk-vent-centre-1.png",
+        "assets_name": "Center Vent",
+        "suite_category": "all"
+    },
+
+    {
+        "category": "amf",
+        "category_name": "AMF",
+        "name": "no_AMF",
+        "file_path": "",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/back/su_sb-bk-vent-centre-1.png",
+        "assets_name": "No AMF",
+        "suite_category": "all"
+    },
+    {
+        "category": "amf",
+        "category_name": "AMF",
+        "name": "notch_lapel_reguler_AMF",
+        "file_path": "/assets/models/jacket/amf/notch_lapel_reguler_AMF.glb",
+        "image": "/assets/images/product-configurator/suit/sb/1_button/back/su_sb-bk-vent-centre-1.png",
+        "assets_name": "Notch Lapel Reguler [AMF 6 mm Long stitching]",
+        "suite_category": "all"
+    }
+
+
+]

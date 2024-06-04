@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Profile</title>
+    <%- header_tags %>
+
+        <style>
+            html,
+            body {
+                overflow-x: hidden !important;
+            }
+        </style>
+</head>
+
+<body>
+
+
+    <!------------------- navbar --------------->
+    <%- sidebar %>
+        <!------------------- navbar end--------------->
+
+        <div class="main">
+
+            <!------------------------------ Support start------------------------------>
+            <section id="viewbagsupport" class="" style="margin-top: 300px; margin-bottom: 120px;">
+                <div class="container-fluid pb-md-5 pb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-xl-10 col-md-12 mx-auto">
+                            <div class="row g-0 d-flex ">
+                                <!-- Sidebar -->
+                                <div class="col-md-4 mb-md-0 mb-4">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <h2 class="mb-4 fw-bolder text-black">My Profile</h2>
+                                        <div class="nav flex-column nav-tabs  border-0">
+
+                                            <a class="nav-item nav-link ps-0 pb-3 view-bag-support-link active border-0"
+                                                id="tab1-tab" data-bs-toggle="pill" href="#tab1">Order History</a>
+                                            <a class="nav-item nav-link ps-0 pb-3 view-bag-support-link  border-0"
+                                                id="tab1-tab" data-bs-toggle="pill" href="#tab4">Gift Voucher Booking History</a>
+                                            <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                                id="tab2-tab" data-bs-toggle="pill" href="#tab2">Custom Tailoring</a>
+                                            <a class="nav-item nav-link  ps-0 pb-3 view-bag-support-link border-0"
+                                                id="tab2-tab" data-bs-toggle="pill" href="#tab3">Settings</a>
+
+                                            <!-- Add more tabs as needed -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="col-md-8">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="tab1">
+                                            <h4 class="mb-4">My Order List</h4>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Order ID</th>
+                                                        <th scope="col">Tracking Code</th>
+                                                        <th scope="col">Items</th>
+                                                        <th scope="col">Amount</th>
+                                                        <th scope="col">Status</th>
+                                                        <th scope="col">Date</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <% for (var i=0; i < orders.length; i++) { %>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <%= i + 1 %>
+                                                            </th>
+                                                            <td>QKORD<%= orders[i].id %>
+                                                            </td>
+                                                            <td>TRK00885
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    <ul>
+                                                                        <% for (var j=0; j < orders[i].items.length;
+                                                                            j++) { %>
+                                                                            <li>
+                                                                                <%= orders[i].items[j].product_title %>
+                                                                                    | Size <%=
+                                                                                        orders[i].items[j].attribute_name
+                                                                                        %>
+                                                                            </li>
+                                                                            <% } %>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <%= orders[i].order_amount %>
+                                                                    <%= orders[i].currency %>
+                                                            </td>
+                                                            <td>
+                                                                <% if (orders[i].status===1) { %>
+                                                                    <span class="badge bg-warning">
+                                                                        <%= orders[i].status_name %>
+                                                                    </span>
+                                                                <% } else if (orders[i].status===2) { %>
+                                                                    <span class="badge bg-dark">
+                                                                        <%= orders[i].status_name %>
+                                                                    </span>
+                                                                <% } else if (orders[i].status===3) { %>
+                                                                    <span class="badge bg-success">
+                                                                        <%= orders[i].status_name %>
+                                                                    </span>
+                                                                <% } else if (orders[i].status===4) { %>
+                                                                    <span class="badge bg-danger">
+                                                                        <%= orders[i].status_name %>
+                                                                    </span>
+                                                                <% } else if (orders[i].status===5) { %>
+                                                                    <span class="badge bg-dark">
+                                                                        <%= orders[i].status_name %>
+                                                                    </span>
+                                                                <% } else if (orders[i].status===6) { %>
+                                                                    <span class="badge bg-primary">
+                                                                        Payment Failed
+                                                                    </span>
+                                                                <% } %>
+                                                            </td>
+                                                            <td>
+                                                                <%= orders[i].added_time.substring(0,10).replace("T", " "
+                                                                    ) %>
+                                                            </td>
+                                                        </tr>
+                                                        <% } %>
+
+                                                </tbody>
+                                            </table>
+
+                                            <button onclick="location.href='/new-arrivals'" type="button"
+                                                class="btn btn-dark Contact-us-form-btn mt-4 mb-3">Shop More</button>
+
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="tab2">
+                                            <div class="mb-5">
+                                                <h4 class="mb-4">Order Information</h4>
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">Order ID</th>
+                                                            <th scope="col">Amount</th>
+                                                            <th scope="col">Status</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <% for (var i=0; i < customOrders.length; i++) { %>
+                                                        <tr>
+                                                            <td>01</td>
+                                                            <td>ORD<%= customOrders[i].id %></td>
+                                                            <td><%= customOrders[i].order_amount %></td>
+                                                            <td><%= customOrders[i].status_name %></td>
+                                                            <td><%= customOrders[i].added_time %></td>
+                                                            <td>
+                                                                <button onclick="getSuitSizes();"
+                                                                    class="btn btn-primary" data-bs-toggle="modal"
+                                                                    data-bs-target="#sizeCalculator">Set
+                                                                    Measurement</button>
+                                                            </td>
+                                                        </tr>
+                                                        <% } %>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="tab3">
+                                            <div class="mb-5">
+                                                <h4 class="mb-4">Basic Information</h4>
+                                                <div class="row loginemail">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="" class="form-label">First Name</label>
+                                                        <input type="text" class="form-control" id="first_name"
+                                                            value="<%- first_name %>">
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="" class="form-label">Last Name</label>
+                                                        <input type="text" class="form-control" id="last_name"
+                                                            value="<%- last_name %>">
+                                                    </div>
+
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="" class="form-label">Company Name</label>
+                                                        <input type="text" class="form-control" id="company"
+                                                            value="<%- company %>">
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="" class="form-label">Email Address</label>
+                                                        <input type="text" class="form-control" id="email"
+                                                            value="<%-  email %>">
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="" class="form-label">Mobile Number</label>
+                                                        <input type="text" class="form-control" id="mobile"
+                                                            value="<%- mobile %>" disabled>
+                                                    </div>
+
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="" class="form-label">Shipping Address</label>
+                                                        <textarea class="form-control" id="address"
+                                                            rows="2"><%- address %></textarea>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <button onclick="update_details()" type="button"
+                                                            class="btn btn-dark Contact-us-form-btn mt-4 mb-3">Update
+                                                            Details</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="">
+                                                <h4 class="mb-4">Security Information</h4>
+                                                <div class="row loginemail">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="" class="form-label">New Password</label>
+                                                        <input type="password" class="form-control" id="new_pass1">
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="" class="form-label">Confirm Password</label>
+                                                        <input type="password" class="form-control" id="new_pass2">
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="" class="form-label">Current Password</label>
+                                                        <input type="password" class="form-control" id="old_pass">
+                                                    </div>
+
+                                                    <div class="col-md-6 text-end">
+                                                        <button type="button"
+                                                            class="btn btn-dark Contact-us-form-btn mt-4 mb-3"
+                                                            onclick="update_password()">Change Password</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="tab4">
+                                            <h4 class="mb-4">My Voucher Booking List</h4>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Booking ID</th>
+                                                        <th scope="col">Tracking Code</th>
+                                                        <th scope="col">Items</th>
+                                                        <th scope="col">Amount</th>
+                                                        <th scope="col">Status</th>
+                                                        <th scope="col">Date</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <% for (var i=0; i < 0; i++) { %>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                1
+                                                            </th>
+                                                            <td>VOBK12
+                                                            </td>
+                                                            <td>TRK512
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    <ul>
+                                                                        <li>voucher 1</li>
+                                                                        <li>voucher 2</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                5000 LKR 
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge bg-success">
+                                                                    Delivered
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                               2024-03-05
+                                                            </td>
+                                                        </tr>
+                                                        <% } %>
+
+                                                </tbody>
+                                            </table>
+
+                                            <button onclick="location.href='/gift-voucher'" type="button"
+                                                class="btn btn-dark Contact-us-form-btn mt-4 mb-3">Shop More</button>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!------------------------------ Support End------------------------------>
+
+            <!-- Modal -->
+            <div class="modal fade" id="sizeCalculator" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="sizeCalculatorLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="sizeCalculatorLabel">Measurement Calculator</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="size-dementions"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+
+            <!-- script start -->
+            <%- script_tags %>
+                <!-- script start end-->
+
+                <script>
+
+                    function updateQuantity(inputId, operation, min, max) {
+                        const inputElement = document.getElementById(inputId);
+                        let currentValue = parseFloat(inputElement.value);
+
+                        if (operation === 'plus' && currentValue < max) {
+                            inputElement.value = currentValue += 0.25;
+                        } else if (operation === 'minus' && currentValue > min) {
+                            inputElement.value = currentValue - 0.25;
+                        }
+                    }
+
+                    const getSuitSizes = async () => {
+
+                        let key = localStorage.getItem("suit_size");
+
+                        try {
+
+                            const requestOptions = {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({ key: key, type: 4 }),
+                            };
+
+                            const response = await fetch('/api/get/suit-size', requestOptions);
+                            let dementions = await response.json();
+                            let index = 0;
+
+                            document.getElementById("size-dementions").innerHTML = "";
+
+                            for (const key in dementions) {
+                                if (dementions.hasOwnProperty(key)) {
+                                    const value = dementions[key];
+                                    document.getElementById("size-dementions").innerHTML += `
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+
+                                            <div>
+                                                <h6 class="size-cal-in-store-card-subtital mb-0">${value.name}
+                                                </h6>
+                                            </div>
+
+                                            <div class="">
+                                                <div class="qtybutton">
+                                                    <button type="button" class="qtyminus btn"
+                                                        aria-hidden="true"
+                                                        onclick="updateQuantity('qty${index}', 'minus' ,'${value.min}', '${value.max}')">-</button>
+                                                        
+                                                    <input class="text-center qtyminus-input w-100"
+                                                        type="text" name="qty" id="qty${index}" min="${value.min}" max="${value.max}"
+                                                        step="0.25" value="${value.default}" disabled>
+
+                                                    <button type="button" class="qtyplus btn"
+                                                        aria-hidden="true"
+                                                        onclick="updateQuantity('qty${index}', 'plus', '${value.min}', '${value.max}')">+</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    `;
+                                    index += 1;
+                                }
+                            }
+
+
+                        } catch (error) {
+                            console.error('Error loading assetsData:', error);
+                        }
+                    };
+
+
+                    function update_details() {
+                        $.ajax({
+                            url: '/api/v1/user/own/detail/edit',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "firstName": $('#first_name').val(),
+                                "lastName": $('#last_name').val(),
+                                "email": $('#email').val(),
+                                "company": $('#company').val(),
+                                "address": $('#address').val()
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+
+                                    iziToast.success({
+                                        theme: 'dark',
+                                        title: 'Success',
+                                        message: data.message,
+                                    });
+
+                                } else {
+
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    function update_password() {
+                        if ($("#new_pass1").val() !== $("#new_pass2").val()) {
+                            iziToast.error({
+                                theme: 'dark',
+                                title: 'Error',
+                                message: "New password and confirmation password are not the same"
+                            });
+                            return;
+                        }
+                        $.ajax({
+                            url: '/api/v1/user/password/change',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "password": $('#old_pass').val(),
+                                "newPassword": $('#new_pass1').val()
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+                                    $('#new_pass1').val("");
+                                    $('#new_pass2').val("");
+                                    $('#old_pass').val("");
+                                    iziToast.success({
+                                        theme: 'dark',
+                                        title: 'Success',
+                                        message: data.message,
+                                    });
+
+                                } else {
+
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+
+                </script>
+
+</body>
+
+</html>

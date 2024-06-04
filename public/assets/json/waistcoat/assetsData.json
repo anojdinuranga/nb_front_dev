@@ -1,0 +1,169 @@
+[
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "single_breasted_point_bottom",
+        "file_path": "/assets/models/waist_coat/front/single_breasted_point_bottom.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_sb-point-bottom-5buttons.png",
+        "assets_name": "Single Breasted Point Bottom"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "single_breasted_round_bottom",
+        "file_path": "/assets/models/waist_coat/front/single_breasted_round_bottom.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_sb-round-bottom.png",
+        "assets_name": "Single Breasted Round Bottom"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "single_breasted_straight_bottom",
+        "file_path": "/assets/models/waist_coat/front/single_breasted_straight_bottom.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_sb-straight-bottom.png",
+        "assets_name": "Single Breasted Straight Bottom"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "single_breasted_point_bottom_with_lapel",
+        "file_path": "/assets/models/waist_coat/front/single_breasted_point_bottom_with_lapel.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_sb-notch-lapel-point-bottom.png",
+        "assets_name": "Single Breasted Point Bottom With Lapel"
+    },
+
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "single_breasted_4_buttons_horse_shoe_with_point_bottom",
+        "file_path": "/assets/models/waist_coat/front/single_breasted_4_buttons_horse_shoe_with_point_bottom.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_sb-4buttons-horseshoe-point-bottom.png",
+        "assets_name": "Single Breasted 4 Buttons Horse Shoe With Point Bottom"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "single_breasted_4_buttons_horse_shoe_with_round_bottom",
+        "file_path": "/assets/models/waist_coat/front/single_breasted_4_buttons_horse_shoe_with_round_bottom.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_sb-4buttons-horseshoe-straight-bottom.png",
+        "assets_name": "Single Breasted 4 Buttons Horse Shoe With Round Bottom"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "single_breasted_4_buttons_horse_shoe_with_straight_bottom",
+        "file_path": "/assets/models/waist_coat/front/single_breasted_4_buttons_horse_shoe_with_straight_bottom.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_sb-4buttons-horseshoe-straight-bottom.png",
+        "assets_name": "Single Breasted 4 Buttons Horse Shoe With Straight Bottom"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "double_breasted_8x4_buttons_horse_shoe_with_straight_bottom",
+        "file_path": "/assets/models/waist_coat/front/double_breasted_8x4_buttons_horse_shoe_with_straight_bottom.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_db-8x4buttons-horseshoe-straight-bottom.png",
+        "assets_name": "Double Breasted 8x4 Buttons"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "double_breasted_6x3_buttons_shawl_lapel_straight_bottom",
+        "file_path": "/assets/models/waist_coat/front/double_breasted_6x3_buttons_shawl_lapel_straight_bottom.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_db-6x3buttons-horseshoe-shawl-lapel-straight-bottom.png",
+        "assets_name": "Double Breasted 6x3 Buttons Shawl Lapel"
+    },
+    {
+        "category": "front",
+        "category_name": "Front",
+        "name": "double_breasted_6x3_buttons_peak_lapel_straight_bottom",
+        "file_path": "/assets/models/waist_coat/front/double_breasted_6x3_buttons,_peak_lapel_straight_bottom.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_db-6x3buttons-peak-lapel-straight-bottom.png",
+        "assets_name": "Double Breasted 6x3 Buttons Peak Lapel"
+    },
+
+
+    {
+        "category": "stitching",
+        "category_name": "Stitching",
+        "name": "single_front_stiching",
+        "file_path": "/assets/models/waist_coat/stiching/single_front_stiching.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_2jetted-pockets.png",
+        "assets_name": "Single Front Stitching"
+    },
+    {
+        "category": "stitching",
+        "category_name": "Stitching",
+        "name": "notch_reguler_lapel_stitching",
+        "file_path": "/assets/models/waist_coat/stiching/notch_reguler_lapel_stitching.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_2jetted-pockets.png",
+        "assets_name": "Notch Reguler Lapel Stitching"
+    },
+
+    
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "2_jetted_pockets",
+        "file_path": "/assets/models/waist_coat/pockets/2_jetted_pockets.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_2jetted-pockets.png",
+        "assets_name": "2 Jetted Pockets"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "2_welt_pockets",
+        "file_path": "/assets/models/waist_coat/pockets/2_welt_pockets.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_2welt-pockets.png",
+        "assets_name": "2 Welt Pockets"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "3_jetted_pockets",
+        "file_path": "/assets/models/waist_coat/pockets/3_jetted_pockets.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_3jetted-pockets.png",
+        "assets_name": "3 Jetted Pockets"
+    },
+    {
+        "category": "pockets",
+        "category_name": "Pockets",
+        "name": "3_welt_pockets",
+        "file_path": "/assets/models/waist_coat/pockets/3_welt_pockets.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_3welt-pockets.png",
+        "assets_name": "3 Welt Pockets"
+    },
+
+    {
+        "category": "back",
+        "category_name": "Back",
+        "name": "back",
+        "file_path": "/assets/models/waist_coat/back.glb",
+        "image": "",
+        "assets_name": ""
+    },
+
+    {
+        "category": "lining_back",
+        "category_name": "Fabric Neck",
+        "name": "lining_back",
+        "file_path": "/assets/models/waist_coat/lapel_lining.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_back-fabricneck-liningback.png",
+        "assets_name": "Fabric Neck"
+    },
+    {
+        "category": "buckle",
+        "category_name": "Buckle",
+        "name": "tailored_strap_with_buckle",
+        "file_path": "/assets/models/waist_coat/buckle/tailored_strap_with_buckle.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_back-tailoredstrap-with-buckle.png",
+        "assets_name": "Tailored Strap With Buckle"
+    },
+    {
+        "category": "buckle",
+        "category_name": "Buckle",
+        "name": "with_buckle",
+        "file_path": "/assets/models/waist_coat/buckle/with_buckle.glb",
+        "image": "/assets/images/product-configurator/waistcoat/wc_back-with-buckle.png",
+        "assets_name": "With Buckle"
+    }
+]

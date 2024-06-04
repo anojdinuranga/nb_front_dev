@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Ready made single Product</title>
+    <%- header_tags %>
+        <style>
+            .active-btn {
+                border: 1px solid black;
+            }
+        </style>
+</head>
+
+<body>
+    <!------------- navbar start------------------>
+    <%- sidebar %>
+        <!------------- navbar end------------------>
+
+
+        <!---------------- Ready madesingle Product start-------------------->
+        <!-- <section class="mt-xl-0 pt-xl-0 mt-md-5 pt-md-3 mt-5 pt-3" id="ReadymadesingleProduct">
+            <div class="container-fluid g-0">
+                <div class="row g-0 Ready-made-overflow-y-scroll-mq">
+                    <div class="col-xl-7 col-md-7 Ready-made-overflow-y-scroll select-fabric-scrollbar pb-2" id="images"></div>
+
+                    <div class="ready-made-card-stiky col-xl-5 col-md-5 px-xl-0 px-3 px-md-3 Ready-made-card-mq">
+                        <div class="d-md-flex justify-content-md-center">
+                            <div class="card Ready-made-card border-0">
+                                <div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h5 class="Ready-made-Product-card-name" id="title"></h5>
+                                            <p class="Ready-made-Product-card-description" id="short_description"></p>
+                                        </div>
+                                        <div class="ms-4">
+                                            <h5 class="Ready-made-Product-card-price">Rs. <span id="price"></span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 mt-2 d-flex">
+                                        <button type="button"
+                                            class="btn btn-light d-none me-2 d-sm-block py-2 Ready-made-card-bookmark-btn"><i
+                                                class="fa-regular fa-bookmark"></i></button>
+                                        <button class="btn btn-dark  Ready-made-card-cart-btn" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                            aria-controls="offcanvasExample" disabled>Add to cart</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-4 w-100">
+                                    <div class="accordion w-100" id="myAccordion">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button type="button" class="accordion-button single-product-accordion-button collapsed Ready-made-Product-card-description"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne">Details</button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                                <div class="Ready-made-Product-card-accordion-text">
+                                                    <p id="long_description"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button type="button" class="accordion-button single-product-accordion-button collapsed Ready-made-Product-card-description"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">Size & Fit</button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                                <div class="Ready-made-Product-card-accordion-text">
+                                                    <p id="size_and_fit"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button type="button" class="accordion-button single-product-accordion-button collapsed Ready-made-Product-card-description"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree">Features</button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                                <div class="Ready-made-Product-card-accordion-text">
+                                                    <p id="features"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+
+        <section class="mt-xl-0 pt-xl-0 mt-md-5 pt-md-3 mt-5 pt-3" id="ReadymadesingleProduct">
+            <div class="container-fluid g-0">
+                <div class="row g-0">
+
+                    <div class="ready-made-image-gallery col-xl-7 col-md-7 pb-2" id="images"></div>
+
+                    <div class="ready-made-card-stiky col-xl-5 col-md-5 px-xl-0 px-3 px-md-3 Ready-made-card-mq">
+                        <div class="d-md-flex justify-content-md-center">
+                            <div class="card Ready-made-card border-0">
+                                <div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h5 class="Ready-made-Product-card-name" id="title"></h5>
+                                            <p class="Ready-made-Product-card-description" id="short_description"></p>
+                                        </div>
+                                        <div class="ms-4">
+                                            <h5 class="Ready-made-Product-card-price"><span id="price"></span> <span class="discounted-price" id="discount-price"></span></h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4 mb-3 d-flex justify-content-between align-items-center">
+                                        <span>Available Sizes</span>
+                                        <!-- <button class="btn clear-button">Clear X</button> -->
+                                    </div>
+
+                                    <div class="attribute-btn-container mb-5" id="attributes">
+
+                                    </div>
+
+                                    <p class="low-stock-message" id="low_stock"></p>
+
+                                    <div class="w-100 mt-2 d-flex">
+                                        <button type="button"
+                                            class="btn btn-light d-none me-2 d-sm-block py-2 Ready-made-card-bookmark-btn"><i
+                                                class="fa-regular fa-bookmark"></i></button>
+                                        <button class="btn btn-dark  Ready-made-card-cart-btn" type="button"
+                                            onclick="add_to_cart()">Add to cart</button>
+                                        <button class="btn btn-dark d-none Ready-made-card-cart-btn" id="cartOpen"
+                                            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                            aria-controls="offcanvasExample">Add to cart hidden</button>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 w-100">
+                                    <div class="accordion w-100" id="myAccordion">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button type="button"
+                                                    class="accordion-button single-product-accordion-button collapsed Ready-made-Product-card-description"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne">Details</button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#myAccordion">
+                                                <div class="Ready-made-Product-card-accordion-text">
+                                                    <p id="long_description"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button type="button"
+                                                    class="accordion-button single-product-accordion-button collapsed Ready-made-Product-card-description"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">Size &
+                                                    Fit</button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#myAccordion">
+                                                <div class="Ready-made-Product-card-accordion-text">
+                                                    <p id="size_and_fit"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button type="button"
+                                                    class="accordion-button single-product-accordion-button collapsed Ready-made-Product-card-description"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree">Features</button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#myAccordion">
+                                                <div class="Ready-made-Product-card-accordion-text">
+                                                    <p id="features"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!---------------- Ready madesingle Product end-------------------->
+
+
+        <!---------------- Ready madesingle Product owl carousel-------------------->
+        <section id="ReadymadesingleProduct-owl">
+            <div class="container-fluid g-0 py-5 my-md-4">
+
+                <div class="row g-0 justify-content-between d-flex">
+                    <div class="col-md-1 col-1">
+
+                    </div>
+                    <div class="col-md-11 col-11">
+                        <h3 class="Ready-made-Product-owl-carousel-text">You Might Also Like</h3>
+                        <div class="owl-carousel owl-theme owl-carousel-CustomSuit2 Ready-madesingle-card-widht"
+                            id="categories"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!---------------- Ready madesingle Product owl carousel end-------------------->
+
+
+        <!---------------- Ready made single Product offcanvas start-------------------->
+        <section class="" id="ReadymadesingleProductoffcanvas">
+            <div class="offcanvas offcanvas-start Ready-Product-offcanvas-overflow-mq" tabindex="-1"
+                id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class=" mx-md-5 mx-2 d-flex align-items-center justify-content-between my-5">
+                    <div class="d-flex">
+                        <h5 class="Ready-made-offcanvas-text me-3 mb-0" id="offcanvasExampleLabel">YOUR CART</h5>
+                        <h5 class="Ready-made-offcanvas-price mb-0" id="totalPrice"></h5>
+                    </div>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-close text-reset p-0" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="mx-md-5 mx-2 overflow-y-scroll select-fabric-scrollbar Ready-Product-offcanvas-overflow-scroll"
+                    id="cartList"></div>
+
+                <div class="mx-md-5 mx-2 mt-4 d-flex justify-content-between">
+                    <div>
+                        <h2 class="Ready-made-offcanvas-card-subtotal mb-3">Sub Total</h2>
+                        <h2 class="Ready-made-offcanvas-card-subtotal mb-3 d-none">Delivery charge</h2>
+                        <h2 class="Ready-made-offcanvas-card-total">Total</h2>
+                    </div>
+
+                    <div class="text-end">
+                        <h2 class="Ready-made-offcanvas-card-price mb-3" id="sub_total"></h2>
+                        <h2 class="Ready-made-offcanvas-card-price mb-3 d-none">$20.00</h2>
+                        <h2 class="Ready-made-offcanvas-card-total" id="total"></h2>
+                    </div>
+                </div>
+
+                <div class="row mx-md-5 mx-2 no-row-padding mt-4">
+
+                    <div class="col-md-6 d-flex gap-5 align-items-end justify-content-center justify-content-md-start">
+                        <div class="">
+                            <img src="/assets/images/visa.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="/assets/images/master.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="/assets/images/american-express.png">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 d-flex flex-column gap-3 mt-4">
+                        <a href="/view-bag" type="button"
+                            class="btn btn-outline Ready-Product-offcanvas-btn1 py-2 w-100">VIEW
+                            BAG</a>
+                        <a href="/view-bag" type="button"
+                            class="btn btn-secondary Ready-Product-offcanvas-btn2 py-2 w-100">PROCEED
+                            TO
+                            PAY</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!---------------- Ready made single Product offcanvas end-------------------->
+
+
+        <!-- Back to top button start -->
+        <section class="">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                    <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                    <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+                </button>
+
+            </div>
+        </section>
+        <!-- Back to top button start -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="sizeGuideModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Size Guide</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="size_chart_image" src="" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+            <!-- script start-->
+            <%- script_tags %>
+                <!-- script start-->
+
+                <script>
+                    // Get the current URL
+                    var currentUrl = window.location.href;
+                    var parts = currentUrl.split('/');
+                    var id = parts[parts.length - 1];
+                    var category;
+                    var sub_category;
+                    var attributeId = 0;
+
+                    function add_to_cart() {
+                        if (attributeId == 0) {
+                            iziToast.error({
+                                title: 'Warn',
+                                message: 'Please select size',
+                            });
+                            return;
+                        }
+                        addToCard(id, attributeId);
+                    }
+
+                    function attributeSelect(attribute, qty, name, element) {
+                        Array.from(document.getElementsByClassName('attributes')).forEach(element2 => element2.classList.remove('active-btn'));
+                        if (qty === 1) {
+                            document.getElementById("low_stock").innerHTML = "01 In Stock";
+                        } else if (qty <= 0) {
+                            document.getElementById("low_stock").innerHTML = "Out of Stock";
+                            return;
+                        } else {
+                            document.getElementById("low_stock").innerHTML = "";
+                        }
+                        attributeId = attribute;
+                        element.classList.add("active-btn");
+                        // Add selected status here
+                    }
+
+                    function addToCard(productId, attributeId) {
+                        if (!localStorage.cart) {
+                            localStorage.cart = JSON.stringify([]);
+                        }
+                        let cart = JSON.parse(localStorage.cart);
+                        let check = cart.find(item => item.attribute === attributeId && item.id === productId);
+                        if (!check) {
+                            cart.push({
+                                id: productId,
+                                attribute: attributeId
+                            });
+                        }
+                        localStorage.cart = JSON.stringify(cart);
+                        viewCart(localStorage.cart);
+                    }
+
+                    async function removeFromCart(productId, attributeId) {
+                        if (!localStorage.cart) {
+                            localStorage.cart = JSON.stringify([]);
+                        }
+                        let cart = JSON.parse(localStorage.cart);
+                        let newCart = [];
+                        await Promise.all(cart.map(item => {
+                            if (item.id === `${productId}` && item.attribute == `${attributeId}`) {
+                                return item;
+                            } else {
+                                newCart.push(item);
+                                return item;
+                            }
+                        }));
+                        localStorage.cart = JSON.stringify(newCart);
+                        viewCart(localStorage.cart, true);
+                    }
+
+                    function viewCart(cart, type = false) {
+                        let data = JSON.parse(localStorage.cart);
+                        data = {
+                            ids: data
+                        }
+                        $.ajax({
+                            url: '/api/v1/cart/cart',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify(data),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+                                    const obj = data.data;
+                                    document.getElementById("totalPrice").innerHTML = `${priceShow(data.data.currency, obj.totalPrice.toLocaleString())}`;
+                                    document.getElementById("sub_total").innerHTML = `${priceShow(data.data.currency, obj.totalPrice.toLocaleString())}`;
+                                    document.getElementById("total").innerHTML = `${priceShow(data.data.currency, obj.totalPrice.toLocaleString())}`;
+                                    document.getElementById("cartList").innerHTML = '';
+                                    for (let i = 0; i < obj.data.length; i++) {
+                                        let item = obj.data[i];
+                                        document.getElementById("cartList").innerHTML += `
+                                        <div class="card border-0 shadow-none">
+                                            <div class="card-body d-flex p-0 justify-content-between align-items-center">
+                                                <div class="d-flex">
+                                                    <img class="img-fluid" width="20%" src="${item.feature_image_url}" />
+                                                    <div class="ms-3">
+                                                        <h5 class="Ready-made-offcanvas-card-hadder mb-0">${item.title}</h5>
+                                                        <p class="Ready-made-offcanvas-card-address">${item.product_category_name}</p>
+                                                        <div class="mt-5 d-flex">
+                                                            <h3 class="Ready-made-offcanvas-card-address">Colour: &nbsp;<span
+                                                                    class="Ready-made-offcanvas-card-color">${item.color_name}</span>
+                                                            </h3>
+
+                                                            <h3 class="Ready-made-offcanvas-card-address ms-2">Sizer: &nbsp;<span
+                                                                    class="Ready-made-offcanvas-card-color">${item.size}</span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end w-25">
+                                                    <button style="font-size:11px;" type="button" class="btn-close" onclick="removeFromCart(${item.id}, ${item.product_attribute_id})"></button>
+                                                    <p class="Ready-made-offcanvas-card-price mb-0 mt-5">${priceShow(data.data.currency, item.price.toLocaleString())}</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>`;
+                                    }
+                                    if (!type) {
+                                        document.getElementById("cartOpen").click();
+                                    }
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+
+
+                    function viewProduct() {
+                        $.ajax({
+                            url: '/api/v1/product_public/view',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "id": id,
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+                                    const productContainer = document.getElementById('product');
+                                    const item = data.data;
+                                    if (item.status !== 1) {
+                                        location.href = "/";
+                                    }
+                                    category = item.category;
+                                    sub_category = item.sub_category;
+                                    getProduct();
+
+                                    // Assuming item.images is your array of images
+                                    const sortedImages = item.images.slice().sort((a, b) => {
+                                        return a.image_url.localeCompare(b.image_url);
+                                    });
+
+                                    document.getElementById("images").innerHTML = ""
+
+                                    sortedImages.forEach(image => {
+                                        document.getElementById("images").innerHTML += `
+                                        <div class="mb-2">
+                                            <img src="${image.image_url}" style="background-color: #EFEFEF" class="img-fluid w-100" alt="">
+                                        </div>`;
+                                    });
+
+                                    document.getElementById("attributes").innerHTML = '';
+                                    item.attributes.forEach(obj => {
+                                        document.getElementById("attributes").innerHTML += `<button onclick="attributeSelect('${obj.attribute_id}', '${obj.qty}', '${obj.name}', this)" class="attribute-btn attributes">${obj.name}</button>`;
+                                    });
+
+                                    document.getElementById("attributes").innerHTML += '<button id="size-chart-button" class="attribute-btn-text" data-bs-toggle="modal" data-bs-target="#sizeGuideModal">Size Guide</button>';
+
+                                    document.getElementById("title").innerHTML = item.title;
+                                    document.getElementById("price").innerHTML = priceShow(data.data.currency, item.price.toLocaleString());
+                                    document.getElementById("short_description").innerHTML = item.short_description;
+                                    document.getElementById("long_description").innerHTML = item.long_description;
+                                    document.getElementById("size_and_fit").innerHTML = item.size_and_fit;
+                                    document.getElementById("features").innerHTML = item.features;
+                                    document.getElementById("size_chart_image").src = item.size_image_url;
+
+                                    document.getElementById("discount-price").innerHTML = priceShow(data.data.currency, item.price.toLocaleString());
+
+                                    if(item.size_image_url == "") {
+                                        document.getElementById("size-chart-button").style.display = "none";
+                                    }
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    viewProduct()
+
+                    //get same category Products
+                    function getProduct() {
+                        $.ajax({
+                            url: '/api/v1/product_public/product/same-category',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "id": id,
+                                "category": sub_category
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+
+                                    document.getElementById('categories').innerHTML = ''
+
+                                    for (let i = 0; i < data.data.data.length; i++) {
+                                        const item = data.data.data[i];
+                                        if (i > 4) continue;
+
+                                        // Generate HTML for each item
+                                        document.getElementById('categories').innerHTML += `
+                                        <a href="/ready-made-single-product/${item.id}" class="item">
+                                            <div class="card border-0">
+                                                <div class="ert"><img src="${item.feature_image_url}"
+                                                        class="img-fluid madesingleProduct-owl-image" style="background-color: #EFEFEF" alt="">
+                                                </div>
+                                                <div class="mt-4">
+                                                    <h1 class="new-item-hadder-text mb-1">${item.title}</h1>
+                                                    <h5 class="new-item-hadder-description mb-1">${item.short_description}</h5>
+                                                    <h1 class="new-item-hadder-text mb-1">${priceShow(data.data.currency, item.price.toLocaleString())}</h1>
+                                                </div>
+                                            </div>
+                                        </a>`;
+                                    }
+
+                                    $('.owl-carousel-CustomSuit2').trigger('destroy.owl.carousel').owlCarousel({
+                                        loop: true,
+                                        autoplay: true,
+                                        autoplayTimeout: 2000,
+                                        autoplayHoverPause: true,
+                                        margin: 5,
+                                        navText: ['<span class="fa-solid fa-angle-right fa-2xl" aria-hidden="true"></span>', '<span class="fa-solid fa-angle-right fa-2xl" aria-hidden="true"></span>'],
+                                        nav: true,
+                                        dots: false,
+                                        items: 2.1,
+                                        responsive: {
+                                            0: {
+                                                items: 1,
+                                            },
+                                            764: {
+                                                items: 2.1,
+                                            },
+                                            2652: {
+                                                items: 2.1,
+
+                                            },
+                                        }
+                                    })
+
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+
+                </script>
+</body>
+
+
+</html>

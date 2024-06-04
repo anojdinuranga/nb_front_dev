@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Login</title>
+    <%- header_tags %>
+        <style>
+            html,
+            body {
+                overflow-x: hidden !important;
+            }
+        </style>
+</head>
+
+<body>
+
+    <!------------------- navbar start--------------->
+    <%- sidebar %>
+        <!----------------- navbar end--------------->
+
+
+        <!------------------ Login form ------------------>
+
+        <section class="w-full form-container">
+            <div class="form-content">
+                <div class="d-flex justify-content-center">
+                    <h6 class="Login-Or-register-text mb-3">Login</h6>
+                </div>
+                <div class="text-center w-100 loginemail" id="">
+                    <div class="mb-2">
+                        <input class="" type="email" id="email" placeholder="Email" />
+                    </div>
+
+                    <div class="mb-2">
+                        <input class="" type="password" id="password" placeholder="Password" />
+                    </div>
+                    <!-- <p class="login-form-laber text-start">Please enter your email.</p> -->
+                    <div class="text-end">
+                        <a href="/password-reset" class="register-form-link">Forget Your Password? Reset</a>
+                    </div>
+
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <button class="btn btn-dark text-white d-block mt-4 login-button" onclick="login()"
+                            type="submit">Login</button>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="/register" class="register-form-link">Don't have an account?
+                            Register</a>
+                    </div>
+                </div>
+                <div class="border-top mt-5">
+                    <div class="d-flex justify-content-center w-100 mt-5">
+                        <button href="https://auth.queenkuweni.com/auth/google?redirect=/profile" type="button" class="btn login-button2 w-50 me-3" disabled>
+                            <img src="assets/images/Login/Group.svg" class="img-fluid" alt="">
+                        </button>
+
+                        <!-- <button type="button" class="btn login-button2 w-50">
+                            <img src="assets/images/Login/Vector.svg" class="img-fluid" alt="">
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------ Login form End------------------>
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+            <!-- script start-->
+            <script>
+
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const paramValue = urlParams.get('redirect');
+
+                function login() {
+
+                    $.ajax({
+                        url: '/api/v1/user/login',
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            "email": $('#email').val(),
+                            "password": $('#password').val()
+                        }),
+                        success: function (data) {
+                            if (data.status === true || data.status === "true") {
+
+                                iziToast.success({
+                                    theme: 'dark',
+                                    title: 'Success',
+                                    message: data.message,
+                                });
+
+                                if (paramValue) {
+                                    window.location = paramValue;
+                                    return;
+                                }
+                                window.location = "/profile";
+
+                            } else {
+
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: data.message,
+                                });
+                            }
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            console.error('Error making the request:', textStatus, errorThrown);
+                            iziToast.error({
+                                theme: 'dark',
+                                title: 'Error',
+                                message: 'An error occurred while processing your request.',
+                            });
+                        }
+                    });
+                }
+            </script>
+            <%- script_tags %>
+                <!-- script start-->
+</body>
+
+</html>

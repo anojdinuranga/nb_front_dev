@@ -1,0 +1,302 @@
+[
+    {
+        "category": "base",
+        "category_name": "Base",
+        "name": "base",
+        "file_path": "/assets/models/trouser/base.glb",
+        "image": "",
+        "assets_name": "base"
+    },
+    
+    {
+        "category": "pleat",
+        "category_name": "Pleat",
+        "name": "1_reverse_pleat_with_creased",
+        "file_path": "/assets/models/trouser/pleat/1_reverse_pleat_with_creased.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_1reverse-pleat-with-creased.png",
+        "assets_name": "1 Reverse Pleat With Creased"
+    },
+
+
+
+    {
+        "category": "pleat",
+        "category_name": "Pleat",
+        "name": "2_reverse_pleat_with_creased",
+        "file_path": "/assets/models/trouser/pleat/2_reverse_pleat_with_creased.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_2reverse-pleat-with-creased.png",
+        "assets_name": "2 Reverse Pleat With Creased"
+    },
+
+    {
+        "category": "belt",
+        "category_name": "Belt Extensions",
+        "name": "with_extension_one_steel_hook",
+        "file_path": "/assets/models/trouser/belt/with_extension_one_steel_hook.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_with-extension-one-steel-hook.png",
+        "assets_name": "With Extension One Steel Hook"
+    },
+    {
+        "category": "belt",
+        "category_name": "Belt Extensions",
+        "name": "with_extension_two_buttons",
+        "file_path": "/assets/models/trouser/belt/with_extension_two_buttons.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_with-extension-two-buttons.png",
+        "assets_name": "With Extension Two Buttons"
+    },
+    {
+        "category": "belt",
+        "category_name": "Belt Extensions",
+        "name": "without_extension_one_button",
+        "file_path": "/assets/models/trouser/belt/without_extension_one_button.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_without-extension-one-button.png",
+        "assets_name": "Without Extension One Button"
+    },
+
+    {
+        "category": "belt_loops",
+        "category_name": "Belt Loops",
+        "name": "waistband_with_6_belt_loops",
+        "file_path": "/assets/models/trouser/belt_loops/waistband_with_6_belt_loops.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_waistband-with-6belt-loops.png",
+        "assets_name": "Waistband With 6 Belt Loops"
+    },
+    {
+        "category": "belt_loops",
+        "category_name": "Belt Loops",
+        "name": "waistband_with_8_belt_loops",
+        "file_path": "/assets/models/trouser/belt_loops/waistband_with_8_belt_loops.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_waistband-with-8belt-loops.png",
+        "assets_name": "Waistband With 8 Belt Loops"
+    },
+
+    {
+        "category": "side_pockets",
+        "category_name": "Side Pockets",
+        "name": "frogmouth_pockets",
+        "file_path": "/assets/models/trouser/side_pockets/frogmouth_pockets.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_side-pockets-frogmouth.png",
+        "assets_name": "Frogmouth Pockets"
+    },
+    {
+        "category": "side_pockets",
+        "category_name": "Side Pockets",
+        "name": "jetted_pockets",
+        "file_path": "/assets/models/trouser/side_pockets/jetted_pockets.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_side-pockets-jetted.png",
+        "assets_name": "Jetted Pockets"
+    },
+    {
+        "category": "side_pockets",
+        "category_name": "Side Pockets",
+        "name": "round_pockets",
+        "file_path": "/assets/models/trouser/side_pockets/round_pockets.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_side-pockets-round.png",
+        "assets_name": "Round Pockets"
+    },
+    {
+        "category": "side_pockets",
+        "category_name": "Side Pockets",
+        "name": "slant_side_pockets",
+        "file_path": "/assets/models/trouser/side_pockets/slant_side_pockets.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_side-pockets-slant.png",
+        "assets_name": "Slant Side Pockets"
+    },
+    {
+        "category": "side_pockets",
+        "category_name": "Side Pockets",
+        "name": "straight_side_pockets",
+        "file_path": "/assets/models/trouser/side_pockets/straight_side_pockets.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_side-pockets-straight.png",
+        "assets_name": "Straight Side Pockets"
+    },
+    {
+        "category": "side_pockets",
+        "category_name": "Side Pockets",
+        "name": "watch_pocket_with_flap",
+        "file_path": "/assets/models/trouser/side_pockets/watch_pocket_with_flap.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_watch-pocket-with-flap.png",
+        "assets_name": "Watch Pocket With Flap"
+    },
+    {
+        "category": "side_pockets",
+        "category_name": "Side Pockets",
+        "name": "welted_side_pockets",
+        "file_path": "/assets/models/trouser/side_pockets/welted_side_pockets.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_side-pockets-welted.png",
+        "assets_name": "Welted Side Pockets"
+    },
+    {
+        "category": "side_pockets",
+        "category_name": "Side Pockets",
+        "name": "welted_watch_pocket",
+        "file_path": "/assets/models/trouser/side_pockets/welted_watch_pocket.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_welted-watch-pocket.png",
+        "assets_name": "Welted Watch Pocket"
+    },
+
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "single_jetted_pocket",
+        "file_path": "/assets/models/trouser/back_pockets/single_jetted_pocket.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-single-jetted.png",
+        "assets_name": "Single Jetted Pocket"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "single_jetted_pocket_with_button",
+        "file_path": "/assets/models/trouser/back_pockets/single_jetted_pocket_with_button.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-single-jetted-button.png",
+        "assets_name": "Single Jetted Pocket With Button"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "single_welted_pocket",
+        "file_path": "/assets/models/trouser/back_pockets/single_welted_pocket.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-Single-Welted-pocket-button.png",
+        "assets_name": "Single Welted Pocket"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "single_welted_pocket_with_button",
+        "file_path": "/assets/models/trouser/back_pockets/single_welted_pocket_with_button.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-Single-Welted-pocket-button.png",
+        "assets_name": "Single Welted Pocket With Button"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "single_welted_pocket_with_flap_&_button",
+        "file_path": "/assets/models/trouser/back_pockets/single_welted_pocket_with_flap_&_button.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-single-welted-flap-button.png",
+        "assets_name": "Single Welted Pocket With Flap & Button"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "single_welted_pocket_with_flap",
+        "file_path": "/assets/models/trouser/back_pockets/single_welted_pocket_with_flap.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-single-welted-flap.png",
+        "assets_name": "Single Welted Pocket With Flap"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "two_jetted_pockets",
+        "file_path": "/assets/models/trouser/back_pockets/two_jetted_pockets.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-two-jetted.png",
+        "assets_name": "Two Jetted Pockets"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "two_jetted_pockets_with_buttons",
+        "file_path": "/assets/models/trouser/back_pockets/two_jetted_pockets_with_buttons.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-two-jetted-buttons.png",
+        "assets_name": "Two Jetted Pockets With Buttons"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "two_welted_pockets",
+        "file_path": "/assets/models/trouser/back_pockets/two_welted_pockets.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-two-welted-pockets.png",
+        "assets_name": "Two Welted Pockets"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "two_welted_pockets_with_buttons",
+        "file_path": "/assets/models/trouser/back_pockets/two_welted_pockets_with_buttons.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-two-welted-pockets-with-buttons.png",
+        "assets_name": "Two Welted Pockets With Buttons"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "two_welted_pockets_with_flaps_&_buttons",
+        "file_path": "/assets/models/trouser/back_pockets/two_welted_pockets_with_flaps_&_buttons.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-two-welted-flap-button.png",
+        "assets_name": "Two Welted Pockets With Flaps & Buttons"
+    },
+    {
+        "category": "back_pockets",
+        "category_name": "Back Pockets",
+        "name": "two_welted_pockets_with_flaps",
+        "file_path": "/assets/models/trouser/back_pockets/two_welted_pockets_with_flaps.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hippockets-two-welted-flap.png",
+        "assets_name": "Two Welted Pockets With Flaps"
+    },
+   
+    
+    {
+        "category": "hem",
+        "category_name": "Hem",
+        "name": "5_cm_finished",
+        "file_path": "/assets/models/trouser/hem/5_cm_finished.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hem-5cm-finished.png",
+        "assets_name": "5cm Finished"
+    },
+    {
+        "category": "hem",
+        "category_name": "Hem",
+        "name": "5_cm_unfinished",
+        "file_path": "/assets/models/trouser/hem/5_cm_unfinished.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hem-5cm-unfinished.png",
+        "assets_name": "5cm Unfinished"
+    },
+    {
+        "category": "hem",
+        "category_name": "Hem",
+        "name": "turn_up_4_cm_finished",
+        "file_path": "/assets/models/trouser/hem/turn_up_4_cm_finished.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hem-turn-up-4cm-finished.png",
+        "assets_name": "Turn Up 4cm Finished"
+    },
+    {
+        "category": "hem",
+        "category_name": "Hem",
+        "name": "vent_4_cm_in_side_seam_finished",
+        "file_path": "/assets/models/trouser/hem/vent_4_cm_in_side_seam_finished.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hem-vent-4cm-insideseam-finished.png",
+        "assets_name": "Vent 4cm Inside Seam Finished"
+    },
+    {
+        "category": "hem",
+        "category_name": "Hem",
+        "name": "vent_4_cm_in_side_seam_unfinished",
+        "file_path": "/assets/models/trouser/hem/vent_4_cm_in_side_seam_unfinished.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_hem-vent-4cm-insideseam-unfinished.png",
+        "assets_name": "Vent 4cm Inside Seam Unfinished"
+    }
+   ,{
+        "category": "piping",
+        "category_name": "Piping",
+        "name": "no_piping",
+        "file_path": "",
+        "image": "/assets/images/product-configurator/trouser/tr_reguler-trouser.png",
+        "assets_name": "No Pipping"
+    },
+    {
+        "category": "piping",
+        "category_name": "Piping",
+        "name": "double_silk_side_seams",
+        "file_path": "/assets/models/trouser/piping/double_silk_side_seams.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_double-silk-side-seams.png",
+        "assets_name": "Double Silk Side Seams"
+    },
+    {
+        "category": "piping",
+        "category_name": "Piping",
+        "name": "single_silk_side_seams",
+        "file_path": "/assets/models/trouser/piping/single_silk_side_seams.glb",
+        "image": "/assets/images/product-configurator/trouser/tr_single-silk-side-seams.png",
+        "assets_name": "Single Silk Side Seams"
+    } 
+
+   
+]

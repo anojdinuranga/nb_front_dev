@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Queen Kuweni - Order Confirmation</title>
+    <%- header_tags %>
+
+        <style>
+            html,
+            body {
+                overflow-x: hidden !important;
+            }
+        </style>
+</head>
+
+<body>
+
+
+    <!------------------- navbar --------------->
+    <%- sidebar %>
+        <!------------------- navbar end--------------->
+
+        <!------------------------ Acknowledgement of Payment start------------------------------>
+        <section class="">
+            <div class="container">
+                <div class="row mt-5 pt-4 mb-5 pb-xl-3">
+                    <div class="col-md-12 text-center">
+                        <div class="py-xl-5 my-5">
+                            <img src="assets/images/gift-voucher/Group167.svg" class="img-fluid" alt="" srcset="">
+                        </div>
+                        <h3 class="thank-you-tital-text">Order confirmation</h3>
+
+                    </div>
+                </div>
+                <div class="row my-xl-5">
+                    <div class="col-xl-8 col-md-12 mx-auto">
+                        <div class="row g-0">
+                            <div class="col">
+                                <div class="mx-md-5 mx-2">
+                                    <div class="card" style="background-color: transparent">
+                                        <div class="card-body px-md-5 px-4 py-md-3 py-3">
+                                            <h5 class="booking-payment-proceed-card-tital text-center mt-3">
+                                                Acknowledgement
+                                                of Payment</h5>
+                                            <div class="mt-4">
+                                                <h6 class="booking-payment-proceed-card-subtital text-uppercase"><span
+                                                        id="locationName"></span></h6>
+                                                <p class="booking-payment-proceed-card-paragraph mt-3">Experience high
+                                                    fashion, couture elegance, and trendsetting styles at our exclusive
+                                                    runway showcase</p>
+
+                                                <div class="d-flex align-items-center mb-4 mt-4">
+                                                    <img src="assets/images/ticket-booking-payment-proceed/Vector.svg"
+                                                        class="img-fluid mb-1 me-2" alt="">
+                                                    <p class="booking-payment-proceed-card-date text-uppercase mb-0">
+                                                        <span id="eventDate"></span> <span id="eventTime"></span></p>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="d-flex align-items-center pt-2">
+                                                            <img src="assets/images/ticket-booking-payment-proceed/Vector1.svg"
+                                                                class="img-fluid mb-1 me-2" alt="">
+                                                            <p class="booking-payment-proceed-card-row mb-0"><span
+                                                                    id="seatData"></span></p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 d-flex justify-content-end">
+                                                        <div class="py-1">
+                                                            <h3><span
+                                                                    class="booking-payment-proceed-card-row me-2">Total</span><span
+                                                                    class="thank-you-tital-price" id="totalPrice">LKR
+                                                                    100,000</span></h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------------- order confirmed start---------------->
+                <div class="mb-xl-5 pb-xl-4 pt-5 mt-3 mt-xl-0">
+                    <div class="row d-flex justify-content-center pb-xl-5">
+                        <div class="col text-center" style="max-width: 600px;">
+                            <h3 class="text-uppercase"><span class="thank-you-for-shopping-text">Thank you for shopping
+                                    with
+                                    us.
+                                    Your order <span class="thank-you-for-shopping-text2">181149345940980</span> is
+                                    confirmed</span></h3>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center pt-5 pb-5">
+                        <div class="col text-center">
+                            <h3 class="thank-you-for-shopping-text3">Thank you for using QK payment gateway. Your
+                                payment is
+                                confirmed by the bank.</h3>
+                        </div>
+                    </div>
+                </div>
+                <!---------------- order confirmed end---------------->
+            </div>
+        </section>
+        <!------------------------ Acknowledgement of Payment END------------------------------>
+
+
+        <!-- Back to top button start -->
+        <section class="">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                    <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                    <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+                </button>
+            </div>
+        </section>
+        <!-- Back to top button start -->
+
+
+        <!-- Footer Start-->
+        <%- web_footer %>
+            <!-- Footer End-->
+
+
+            <!-- script start -->
+            <%- script_tags %>
+                <!-- script start end-->
+
+                <script>
+                    // Get the current URL
+                    const currentUrl = window.location.search;
+                    const urlParams = new URLSearchParams(currentUrl);
+                    var tableId = urlParams.get('table');
+                    var seatCount = urlParams.get('seatCount');
+
+                    function formatTime(inputTime) {
+                        // Split the input time into hours and minutes
+                        var timeParts = inputTime.split(':');
+                        var hours = parseInt(timeParts[0], 10);
+                        var minutes = parseInt(timeParts[1], 10);
+
+                        // Create a Date object and set the hours and minutes
+                        var date = new Date();
+                        date.setHours(hours);
+                        date.setMinutes(minutes);
+
+                        // Format the time using toLocaleTimeString
+                        var formattedTime = date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+
+                        return formattedTime;
+                    }
+
+                    function formatDate(inputDate) {
+                        // Create a Date object from the input date
+                        var date = new Date(inputDate);
+
+                        // Format the date using toLocaleDateString
+                        var options = { day: '2-digit', month: 'long', year: 'numeric' };
+                        var formattedDate = date.toLocaleDateString('en-US', options);
+
+                        // Append the ordinal suffix to the day
+                        var day = date.getDate();
+                        var ordinalSuffix = getOrdinalSuffix(day);
+                        formattedDate = formattedDate.replace(/\d{1,2}/, day + ordinalSuffix);
+
+                        return formattedDate;
+                    }
+
+                    function getOrdinalSuffix(number) {
+                        var suffix = 'th';
+                        if (number % 10 === 1 && number % 100 !== 11) {
+                            suffix = 'st';
+                        } else if (number % 10 === 2 && number % 100 !== 12) {
+                            suffix = 'nd';
+                        } else if (number % 10 === 3 && number % 100 !== 13) {
+                            suffix = 'rd';
+                        }
+                        return suffix;
+                    }
+
+                    function getEventData() {
+                        $.ajax({
+                            url: '/api/v1/booking/event/detail/by/table',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                "id": tableId,
+                            }),
+                            success: function (data) {
+                                if (data.status === true || data.status === "true") {
+
+
+                                    document.getElementById("locationName").innerHTML = data.data.location;
+                                    document.getElementById("eventDate").innerHTML = formatDate(data.data.event_date);
+                                    document.getElementById("eventTime").innerHTML = formatTime(data.data.event_start_time);
+                                    document.getElementById("seatData").innerHTML = data.data.ticket_category_name + " - " + "Table 0" + data.data.table_number + " x " + seatCount;
+                                    document.getElementById("totalPrice").innerHTML = "Rs." + (seatCount * data.data.price);
+
+                                } else {
+                                    iziToast.error({
+                                        theme: 'dark',
+                                        title: 'Error',
+                                        message: data.message,
+                                    });
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error making the request:', textStatus, errorThrown);
+                                iziToast.error({
+                                    theme: 'dark',
+                                    title: 'Error',
+                                    message: 'An error occurred while processing your request.',
+                                });
+                            }
+                        });
+                    }
+                    getEventData()
+                </script>
+</body>
+
+</html>
